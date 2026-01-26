@@ -10,9 +10,9 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
           <div className="main-menu-three__wrapper">
             <div className="main-menu-three__wrapper-inner">
               <div className="main-menu-three__logo">
-                <a href="/">
+                <Link href="/">
                   <img src="assets/images/resources/logo-2.png"  />
-                </a>
+                </Link>
               </div>
               <div className="main-menu-three__top">
                 <div className="main-menu-three__top-inner">
@@ -26,9 +26,9 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                       </div>
                       <div className="text">
                         <p>
-                          <a href="mailto:info-zeena@gmail.com">
+                          <Link href="mailto:info-zeena@gmail.com">
                             info-zeena@gmail.com
-                          </a>
+                          </Link>
                         </p>
                       </div>
                     </li>
@@ -42,18 +42,12 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                     </li>
                   </ul>
                   <div className="main-menu-three__top-social">
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
+                    <Link href="#">
                       <i className="fab fa-facebook" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p" />
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link href="#">
                       <i className="fab fa-instagram" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -144,13 +138,7 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                   </ul>
                   <div className="main-menu-three__top-social">
                     <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
                       <i className="fab fa-facebook" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p" />
                     </a>
                     <a href="#">
                       <i className="fab fa-instagram" />

@@ -98,9 +98,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     </ul>
                     <div className="mobile-nav__top">
                         <div className="mobile-nav__social">
-                            <Link href="#" className="fab fa-twitter"></Link>
                             <Link href="#" className="fab fa-facebook-square"></Link>
-                            <Link href="#" className="fab fa-pinterest-p"></Link>
                             <Link href="#" className="fab fa-instagram"></Link>
                         </div>
                     </div>
