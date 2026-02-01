@@ -1,943 +1,959 @@
-'use client'
-import Link from "next/link"
-import { useState } from 'react'
-import Layout from "@/components/layout/Layout"
-import TestimonialSlider from "@/components/slider/TestimonialSlider"
-import { Autoplay, Navigation, Pagination } from "swiper/modules"
-import { Swiper, SwiperSlide } from "swiper/react"
+"use client";
+import Link from "next/link";
+import { useState } from "react";
+import Layout from "@/components/layout/Layout";
+import TestimonialSlider from "@/components/slider/TestimonialSlider";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 const swiperOptions = {
-    modules: [Autoplay, Pagination, Navigation],
-    slidesPerView: 6,
-    spaceBetween: 0,
-    
-    loop: true,
+  modules: [Autoplay, Pagination, Navigation],
+  slidesPerView: 6,
+  spaceBetween: 0,
 
-    // Navigation
-    navigation: {
-        nextEl: '.srn',
-        prevEl: '.srp',
+  loop: true,
+
+  // Navigation
+  navigation: {
+    nextEl: ".srn",
+    prevEl: ".srp",
+  },
+
+  // Pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
     },
-
-    // Pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+    575: {
+      slidesPerView: 2,
     },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            
-        },
-        575: {
-            slidesPerView: 2,
-            
-        },
-        767: {
-            slidesPerView: 4,
-            
-        },
-        991: {
-            slidesPerView: 5,
-            
-        },
-        1199: {
-            slidesPerView: 6,
-            
-        },
-        1350: {
-            slidesPerView: 6,
-            
-        },
-    }
-
-
-
-}
+    767: {
+      slidesPerView: 4,
+    },
+    991: {
+      slidesPerView: 5,
+    },
+    1199: {
+      slidesPerView: 6,
+    },
+    1350: {
+      slidesPerView: 6,
+    },
+  },
+};
 export default function Home() {
-    return (
-        <>
-        <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Our services">
-
+  return (
+    <>
+      <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="Our services">
         {/*Brand One Start*/}
         <section className="brand-one">
-            <div className="brand-one__inner">
-            <Swiper {...swiperOptions}
-                className="brand-one__carousel thm-owl__carousel owl-theme owl-carousel"
+          <div className="brand-one__inner">
+            <Swiper
+              {...swiperOptions}
+              className="brand-one__carousel thm-owl__carousel owl-theme owl-carousel"
             >
-                <SwiperSlide>
+              <SwiperSlide>
                 {/*Brand One Single*/}
                 <div className="brand-one__single">
-                <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-1.png"  />
+                  <div className="brand-one__img">
+                    <img src="assets/images/brand/brand-1-1.png" />
+                  </div>
                 </div>
-                </div>
-                </SwiperSlide>
-                <SwiperSlide>
+              </SwiperSlide>
+              <SwiperSlide>
                 {/*Brand One Single*/}
                 <div className="brand-one__single">
-                <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-2.png"  />
+                  <div className="brand-one__img">
+                    <img src="assets/images/brand/brand-1-2.png" />
+                  </div>
                 </div>
-                </div>
-                </SwiperSlide>
-                <SwiperSlide>
+              </SwiperSlide>
+              <SwiperSlide>
                 {/*Brand One Single*/}
                 <div className="brand-one__single">
-                <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-3.png"  />
+                  <div className="brand-one__img">
+                    <img src="assets/images/brand/brand-1-3.png" />
+                  </div>
                 </div>
-                </div>
-                </SwiperSlide>
-                <SwiperSlide>
+              </SwiperSlide>
+              <SwiperSlide>
                 {/*Brand One Single*/}
                 <div className="brand-one__single">
-                <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-4.png"  />
+                  <div className="brand-one__img">
+                    <img src="assets/images/brand/brand-1-4.png" />
+                  </div>
                 </div>
-                </div>
-                </SwiperSlide>
-                <SwiperSlide>
+              </SwiperSlide>
+              <SwiperSlide>
                 {/*Brand One Single*/}
                 <div className="brand-one__single">
-                <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-5.png"  />
+                  <div className="brand-one__img">
+                    <img src="assets/images/brand/brand-1-5.png" />
+                  </div>
                 </div>
-                </div>
-                </SwiperSlide>
-                <SwiperSlide>
+              </SwiperSlide>
+              <SwiperSlide>
                 {/*Brand One Single*/}
                 <div className="brand-one__single">
-                <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-4.png"  />
+                  <div className="brand-one__img">
+                    <img src="assets/images/brand/brand-1-4.png" />
+                  </div>
                 </div>
-                </div>
-                </SwiperSlide>
-                <SwiperSlide>
+              </SwiperSlide>
+              <SwiperSlide>
                 {/*Brand One Single*/}
                 <div className="brand-one__single">
-                <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-5.png"  />
+                  <div className="brand-one__img">
+                    <img src="assets/images/brand/brand-1-5.png" />
+                  </div>
                 </div>
-                </div>
-                </SwiperSlide>
+              </SwiperSlide>
             </Swiper>
             {/* If we need navigation buttons */}
-            </div>
+          </div>
         </section>
         {/*Brand One End*/}
 
         {/*Feature One Start*/}
         <section className="feature-one">
-            <div className="container">
+          <div className="container">
             <div className="row">
-                {/*Feature One Single Start*/}
-                <div className="col-xl-3 col-lg-6 col-md-6">
+              {/*Feature One Single Start*/}
+              <div className="col-xl-3 col-lg-6 col-md-6">
                 <div className="feature-one__single">
-                    <div className="feature-one__icon">
-                    <span className="icon-project-management" />
-                    </div>
-                    <div className="feature-one__content">
-                    <h3 className="feature-one__title">
-                        <Link href="services-details">Manage It Services</Link>
-                    </h3>
-                    <p className="feature-one__text">
-                        Complete account of system, and expound the actual
-                    </p>
-                    </div>
-                </div>
-                </div>
-                {/*Feature One Single End*/}
-                {/*Feature One Single Start*/}
-                <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="feature-one__single">
-                    <div className="feature-one__icon">
-                    <span className="icon-supply-chain" />
-                    </div>
-                    <div className="feature-one__content">
-                    <h3 className="feature-one__title">
-                        <Link href="services-details">Digital Experience</Link>
-                    </h3>
-                    <p className="feature-one__text">
-                        Complete account of system, and expound the actual
-                    </p>
-                    </div>
-                </div>
-                </div>
-                {/*Feature One Single End*/}
-                {/*Feature One Single Start*/}
-                <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="feature-one__single">
-                    <div className="feature-one__icon">
-                    <span className="icon-cyber-security" />
-                    </div>
-                    <div className="feature-one__content">
-                    <h3 className="feature-one__title">
-                        <Link href="services-details">Cyber Security</Link>
-                    </h3>
-                    <p className="feature-one__text">
-                        Complete account of system, and expound the actual
-                    </p>
-                    </div>
-                </div>
-                </div>
-                {/*Feature One Single End*/}
-                {/*Feature One Single Start*/}
-                <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="feature-one__single">
-                    <div className="feature-one__icon">
+                  <div className="feature-one__icon">
                     <span className="icon-content-management-1" />
-                    </div>
-                    <div className="feature-one__content">
+                  </div>
+                  <div className="feature-one__content">
                     <h3 className="feature-one__title">
-                        <Link href="services-details">Deployment Service</Link>
+                      <Link href="services-details">
+                        Digitize Your Business
+                      </Link>
                     </h3>
                     <p className="feature-one__text">
-                        Complete account of system, and expound the actual
+                      Build systems that scale with your business.
                     </p>
-                    </div>
+                  </div>
                 </div>
+              </div>
+              {/*Feature One Single End*/}
+              {/*Feature One Single Start*/}
+              <div className="col-xl-3 col-lg-6 col-md-6">
+                <div className="feature-one__single">
+                  <div className="feature-one__icon">
+                    <span className="icon-ux-design" />
+                  </div>
+                  <div className="feature-one__content">
+                    <h3 className="feature-one__title">
+                      <Link href="services-details">
+                        Design A Website UI/UX
+                      </Link>
+                    </h3>
+                    <p className="feature-one__text">
+                      Conversion-focused website design built for real users.
+                    </p>
+                  </div>
                 </div>
-                {/*Feature One Single End*/}
+              </div>
+              {/*Feature One Single End*/}
+              {/*Feature One Single Start*/}
+              <div className="col-xl-3 col-lg-6 col-md-6">
+                <div className="feature-one__single">
+                  <div className="feature-one__icon">
+                    <span className="icon-project-management" />
+                  </div>
+                  <div className="feature-one__content">
+                    <h3 className="feature-one__title">
+                      <Link href="services-details">
+                        Digital Growth Strategy
+                      </Link>
+                    </h3>
+                    <p className="feature-one__text">
+                      A clear roadmap before you invest further
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/*Feature One Single End*/}
+              {/*Feature One Single Start*/}
+              <div className="col-xl-3 col-lg-6 col-md-6">
+                <div className="feature-one__single">
+                  <div className="feature-one__icon">
+                    <span className="icon-supply-chain" />
+                  </div>
+                  <div className="feature-one__content">
+                    <h3 className="feature-one__title">
+                      <Link href="services-details">
+                        Web Development Consulting
+                      </Link>
+                    </h3>
+                    <p className="feature-one__text">
+                      Make the right digital decisions before you build.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/*Feature One Single End*/}
             </div>
-            </div>
+          </div>
         </section>
         {/*Feature One End*/}
 
         {/*Services Four Start*/}
         <section className="services-four services-five">
-            <div
+          <div
             className="services-four__bg"
             style={{
-                backgroundImage: "url(assets/images/backgrounds/services-four-bg.png)"
+              backgroundImage:
+                "url(assets/images/backgrounds/services-four-bg.png)",
             }}
-            />
-            <div className="container">
+          />
+          <div className="container">
             <div className="section-title text-center">
-                <div className="section-title__tagline-box">
+              <div className="section-title__tagline-box">
                 <div className="section-title__tagline-icon">
-                    <img src="assets/images/icon/section-title-icon.png"  />
+                  <img src="assets/images/icon/section-title-icon.png" />
                 </div>
                 <p className="section-title__tagline">What We Offering</p>
-                </div>
-                <h2 className="section-title__title">We Make Bright Agency</h2>
+              </div>
+              <h2 className="section-title__title">We Help Businesses Grow</h2>
             </div>
             <div className="row">
-                {/*Services Four Single Start*/}
-                <div
+              {/*Services Four Single Start*/}
+              <div
                 className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
                 data-wow-delay="100ms"
-                >
+              >
                 <div className="services-four__single">
-                    <div className="services-four__shape-1" />
-                    <div className="services-four__shape-2" />
-                    <div className="services-four__icon">
-                    <span className="icon-web-page" />
-                    </div>
-                    <h3 className="services-four__title">
+                  <div className="services-four__shape-1" />
+                  <div className="services-four__shape-2" />
+                  <div className="services-four__icon">
+                    <span className="icon-software" />
+                  </div>
+                  <h3 className="services-four__title">
                     <Link href="services-details">
-                        Speed <br /> Optimization
+                      CRM <br /> System
                     </Link>
-                    </h3>
-                    <p className="services-four__text">
-                    Lorem ipsum is are many variations of pass of majority.
-                    </p>
-                    <Link href="" className="services-four__arrow">
+                  </h3>
+                  <p className="services-four__text">
+                    Expert guidance to design, optimize, and integrate CRM and
+                    automation workflows that support scalable business growth
+                  </p>
+                  <Link href="" className="services-four__arrow">
                     <span className="icon-back" />
-                    </Link>
+                  </Link>
                 </div>
-                </div>
-                {/*Services Four Single End*/}
-                {/*Services Four Single Start*/}
-                <div
+              </div>
+              {/*Services Four Single End*/}
+              {/*Services Four Single Start*/}
+              <div
                 className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
                 data-wow-delay="200ms"
-                >
+              >
                 <div className="services-four__single">
-                    <div className="services-four__shape-1" />
-                    <div className="services-four__shape-2" />
-                    <div className="services-four__icon">
-                    <span className="icon-money" />
-                    </div>
-                    <h3 className="services-four__title">
+                  <div className="services-four__shape-1" />
+                  <div className="services-four__shape-2" />
+                  <div className="services-four__icon">
+                    <span className="icon-web-page" />
+                  </div>
+                  <h3 className="services-four__title">
                     <Link href="services-details">
-                        Digital <br /> Marketing
+                      Speed <br /> Optimization
                     </Link>
-                    </h3>
-                    <p className="services-four__text">
-                    Lorem ipsum is are many variations of pass of majority.
-                    </p>
-                    <Link href="" className="services-four__arrow">
+                  </h3>
+                  <p className="services-four__text">
+                    Improve website performance, stability, and technical health
+                    to support user experience and sustainable business growth
+                  </p>
+                  <Link href="" className="services-four__arrow">
                     <span className="icon-back" />
-                    </Link>
+                  </Link>
                 </div>
-                </div>
-                {/*Services Four Single End*/}
-                {/*Services Four Single Start*/}
-                <div
+              </div>
+              {/*Services Four Single End*/}
+              {/*Services Four Single Start*/}
+              <div
                 className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
                 data-wow-delay="300ms"
-                >
+              >
                 <div className="services-four__single">
-                    <div className="services-four__shape-1" />
-                    <div className="services-four__shape-2" />
-                    <div className="services-four__icon">
-                    <span className="icon-content-management-1" />
-                    </div>
-                    <h3 className="services-four__title">
+                  <div className="services-four__shape-1" />
+                  <div className="services-four__shape-2" />
+                  <div className="services-four__icon">
+                    <span className="icon-shopping-online" />
+                  </div>
+                  <h3 className="services-four__title">
                     <Link href="services-details">
-                        Content <br /> Management
+                      E-commerce <br /> Solutions
                     </Link>
-                    </h3>
-                    <p className="services-four__text">
-                    Lorem ipsum is are many variations of pass of majority.
-                    </p>
-                    <Link href="" className="services-four__arrow">
+                  </h3>
+                  <p className="services-four__text">
+                    Design and build scalable e-commerce platforms that support
+                    sales, operations, and long-term business growth.
+                  </p>
+                  <Link href="" className="services-four__arrow">
                     <span className="icon-back" />
-                    </Link>
+                  </Link>
                 </div>
-                </div>
-                {/*Services Four Single End*/}
-                {/*Services Four Single Start*/}
-                <div
+              </div>
+              {/*Services Four Single End*/}
+              {/*Services Four Single Start*/}
+              <div
                 className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
                 data-wow-delay="400ms"
-                >
+              >
                 <div className="services-four__single">
-                    <div className="services-four__shape-1" />
-                    <div className="services-four__shape-2" />
-                    <div className="services-four__icon">
-                    <span className="icon-project-management" />
-                    </div>
-                    <h3 className="services-four__title">
+                  <div className="services-four__shape-1" />
+                  <div className="services-four__shape-2" />
+                  <div className="services-four__icon">
+                    <span className="icon-cyber-security" />
+                  </div>
+                  <h3 className="services-four__title">
                     <Link href="services-details">
-                        Content <br /> Marketing
+                      Website <br /> Maintenance
                     </Link>
-                    </h3>
-                    <p className="services-four__text">
-                    Lorem ipsum is are many variations of pass of majority.
-                    </p>
-                    <Link href="" className="services-four__arrow">
+                  </h3>
+                  <p className="services-four__text">
+                    Keep your websites and systems secure, performant, and
+                    aligned with evolving business needs.
+                  </p>
+                  <Link href="" className="services-four__arrow">
                     <span className="icon-back" />
-                    </Link>
+                  </Link>
                 </div>
-                </div>
-                {/*Services Four Single End*/}
+              </div>
+              {/*Services Four Single End*/}
             </div>
-            </div>
+          </div>
         </section>
         {/*Services Four End*/}
 
         {/*Process One Start*/}
         <section className="process-one">
-            <div className="process-one__inner">
+          <div className="process-one__inner">
             <div className="process-one__shape-1 float-bob-y-2">
-                <img src="assets/images/shapes/process-one-shape-1.png"  />
+              <img src="assets/images/shapes/process-one-shape-1.png" />
             </div>
             <div className="container">
-                <ul className="process-one__process-list list-unstyled">
+              <ul className="process-one__process-list list-unstyled">
                 <li className="wow fadeInUp" data-wow-delay="100ms">
-                    <div className="process-one__single">
+                  <div className="process-one__single">
                     <div className="process-one__icon">
-                        <span className="icon-zoom-in" />
+                      <span className="icon-zoom-in" />
                     </div>
                     <p className="process-one__text">Research</p>
                     <div className="process-one__count" />
-                    </div>
+                  </div>
                 </li>
                 <li className="wow fadeInUp" data-wow-delay="200ms">
-                    <div className="process-one__single">
+                  <div className="process-one__single">
                     <div className="process-one__icon">
-                        <span className="icon-test" />
+                      <span className="icon-test" />
                     </div>
                     <p className="process-one__text">Concept</p>
                     <div className="process-one__count" />
-                    </div>
+                  </div>
                 </li>
                 <li className="wow fadeInUp" data-wow-delay="300ms">
-                    <div className="process-one__single">
+                  <div className="process-one__single">
                     <div className="process-one__icon">
-                        <span className="icon-self-development" />
+                      <span className="icon-self-development" />
                     </div>
                     <p className="process-one__text">Develop</p>
                     <div className="process-one__count" />
-                    </div>
+                  </div>
                 </li>
                 <li className="wow fadeInUp" data-wow-delay="400ms">
-                    <div className="process-one__single">
+                  <div className="process-one__single">
                     <div className="process-one__icon">
-                        <span className="icon-growth" />
+                      <span className="icon-new-product" />
                     </div>
-                    <p className="process-one__text">Test</p>
+                    <p className="process-one__text">Launch</p>
                     <div className="process-one__count" />
-                    </div>
+                  </div>
                 </li>
-                </ul>
+                 <li className="wow fadeInUp" data-wow-delay="400ms">
+                  <div className="process-one__single">
+                    <div className="process-one__icon">
+                      <span className="icon-solution-1" />
+                    </div>
+                    <p className="process-one__text">Support</p>
+                    <div className="process-one__count" />
+                  </div>
+                </li>
+              </ul>
             </div>
-            </div>
+          </div>
         </section>
         {/*Process One End*/}
 
         {/*Services One Start*/}
-        <section className="services-one">
-            <div className="container">
+        {/* <section className="services-one">
+          <div className="container">
             <div className="section-title text-center">
-                <div className="section-title__tagline-box">
+              <div className="section-title__tagline-box">
                 <div className="section-title__tagline-icon">
-                    <img src="assets/images/icon/section-title-icon.png"  />
+                  <img src="assets/images/icon/section-title-icon.png" />
                 </div>
                 <p className="section-title__tagline">What We Offering</p>
-                </div>
-                <h2 className="section-title__title">We Make Bright Agency</h2>
+              </div>
+              <h2 className="section-title__title">We Make Bright Agency</h2>
             </div>
             <div className="services-one__inner">
-                <ul className="services-one__services-list list-unstyled">
+              <ul className="services-one__services-list list-unstyled">
                 <li>
-                    <div className="services-one__single">
+                  <div className="services-one__single">
                     <div className="services-one__icon">
-                        <span className="icon-coding" />
+                      <span className="icon-coding" />
                     </div>
                     <h3 className="services-one__title">
-                        <Link href="services-details">
+                      <Link href="services-details">
                         Product
                         <br /> Development
-                        </Link>
+                      </Link>
                     </h3>
-                    </div>
+                  </div>
                 </li>
                 <li>
-                    <div className="services-one__single">
+                  <div className="services-one__single">
                     <div className="services-one__icon">
-                        <span className="icon-cloud-database" />
+                      <span className="icon-cloud-database" />
                     </div>
                     <h3 className="services-one__title">
-                        <Link href="services-details">
+                      <Link href="services-details">
                         Cloud
                         <br /> Computing
-                        </Link>
+                      </Link>
                     </h3>
-                    </div>
+                  </div>
                 </li>
                 <li>
-                    <div className="services-one__single">
+                  <div className="services-one__single">
                     <div className="services-one__icon">
-                        <span className="icon-ux-design" />
+                      <span className="icon-ux-design" />
                     </div>
                     <h3 className="services-one__title">
-                        <Link href="services-details">
+                      <Link href="services-details">
                         UI/UX
                         <br /> Designing
-                        </Link>
+                      </Link>
                     </h3>
-                    </div>
+                  </div>
                 </li>
                 <li>
-                    <div className="services-one__single">
+                  <div className="services-one__single">
                     <div className="services-one__icon">
-                        <span className="icon-cyber-security" />
+                      <span className="icon-cyber-security" />
                     </div>
                     <h3 className="services-one__title">
-                        <Link href="services-details">
+                      <Link href="services-details">
                         Cyber
                         <br /> Security
-                        </Link>
+                      </Link>
                     </h3>
-                    </div>
+                  </div>
                 </li>
-                </ul>
-                <ul className="services-one__services-list list-unstyled">
+              </ul>
+              <ul className="services-one__services-list list-unstyled">
                 <li>
-                    <div className="services-one__single">
+                  <div className="services-one__single">
                     <div className="services-one__icon">
-                        <span className="icon-event-management" />
+                      <span className="icon-event-management" />
                     </div>
                     <h3 className="services-one__title">
-                        <Link href="services-details">
+                      <Link href="services-details">
                         Event
                         <br /> Processing
-                        </Link>
+                      </Link>
                     </h3>
-                    </div>
+                  </div>
                 </li>
                 <li>
-                    <div className="services-one__single">
+                  <div className="services-one__single">
                     <div className="services-one__icon">
-                        <span className="icon-content-management-1" />
+                      <span className="icon-content-management-1" />
                     </div>
                     <h3 className="services-one__title">
-                        <Link href="services-details">
+                      <Link href="services-details">
                         Content
                         <br /> Management
-                        </Link>
+                      </Link>
                     </h3>
-                    </div>
+                  </div>
                 </li>
                 <li>
-                    <div className="services-one__single">
+                  <div className="services-one__single">
                     <div className="services-one__icon">
-                        <span className="icon-cyber-security" />
+                      <span className="icon-cyber-security" />
                     </div>
                     <h3 className="services-one__title">
-                        <Link href="services-details">
+                      <Link href="services-details">
                         Cyber
                         <br /> Security
-                        </Link>
+                      </Link>
                     </h3>
-                    </div>
+                  </div>
                 </li>
                 <li>
-                    <div className="services-one__single">
+                  <div className="services-one__single">
                     <div className="services-one__icon">
-                        <span className="icon-backup" />
+                      <span className="icon-backup" />
                     </div>
                     <h3 className="services-one__title">
-                        <Link href="services-details">
+                      <Link href="services-details">
                         Backup
                         <br /> &amp; Recovery
-                        </Link>
+                      </Link>
                     </h3>
-                    </div>
+                  </div>
                 </li>
-                </ul>
+              </ul>
             </div>
-            </div>
-        </section>
+          </div>
+        </section> */}
         {/*Services One End*/}
 
         {/*Pricing One Start*/}
-        <section className="pricing-one">
-            <div
+        {/* <section className="pricing-one">
+          <div
             className="pricing-one__bg"
             style={{
-                backgroundImage: "url(assets/images/backgrounds/pricing-one-bg.jpg)"
+              backgroundImage:
+                "url(assets/images/backgrounds/pricing-one-bg.jpg)",
             }}
-            ></div>
-            <div className="container">
+          ></div>
+          <div className="container">
             <div className="section-title text-center">
-                <div className="section-title__tagline-box">
+              <div className="section-title__tagline-box">
                 <div className="section-title__tagline-icon">
-                    <img src="assets/images/icon/section-title-icon.png"  />
+                  <img src="assets/images/icon/section-title-icon.png" />
                 </div>
                 <p className="section-title__tagline">Our Pricing</p>
-                </div>
-                <h2 className="section-title__title">Select Your Choice Plan</h2>
+              </div>
+              <h2 className="section-title__title">Select Your Choice Plan</h2>
             </div>
             <div className="row">
-                {/*Pricing One Single Start*/}
-                <div className="col-xl-4 col-lg-4">
+              {/*Pricing One Single Start*/}
+              {/* <div className="col-xl-4 col-lg-4">
                 <div className="pricing-one__single">
-                    <div className="pricing-one__inner">
+                  <div className="pricing-one__inner">
                     <div className="pricing-one__shape-1">
-                        <img
-                        src="assets/images/shapes/pricing-one-shape-1.png"
-                        
-                        />
+                      <img src="assets/images/shapes/pricing-one-shape-1.png" />
                     </div>
                     <div className="pricing-one__shape-2">
-                        <img
-                        src="assets/images/shapes/pricing-one-shape-2.png"
-                        
-                        />
+                      <img src="assets/images/shapes/pricing-one-shape-2.png" />
                     </div>
                     <div className="pricing-one__price-box">
-                        <h3 className="pricing-one__title">Enterprise</h3>
-                        <p className="pricing-one__price">
+                      <h3 className="pricing-one__title">Enterprise</h3>
+                      <p className="pricing-one__price">
                         <span>$</span>35.00
-                        </p>
-                        <span className="pricing-one__sub-title">Per Month</span>
+                      </p>
+                      <span className="pricing-one__sub-title">Per Month</span>
                     </div>
                     <ul className="pricing-one__points list-unstyled">
-                        <li>
+                      <li>
                         <div className="icon">
-                            <span className="icon-check" />
+                          <span className="icon-check" />
                         </div>
                         <div className="text">
-                            <p>Financial Solutions</p>
+                          <p>Financial Solutions</p>
                         </div>
-                        </li>
-                        <li>
+                      </li>
+                      <li>
                         <div className="icon">
-                            <span className="icon-check" />
+                          <span className="icon-check" />
                         </div>
                         <div className="text">
-                            <p>12 Hours Support</p>
+                          <p>12 Hours Support</p>
                         </div>
-                        </li>
+                      </li>
                     </ul>
                     <div className="pricing-one__btn-box">
-                        <Link href="contact" className="pricing-one__btn">
+                      <Link href="contact" className="pricing-one__btn">
                         Get Started Now
                         <span className="icon-back" />
-                        </Link>
+                      </Link>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </div>
-                {/*Pricing One Single End*/}
-                {/*Pricing One Single Start*/}
-                <div className="col-xl-4 col-lg-4">
+              </div> */}
+              {/*Pricing One Single End*/}
+              {/*Pricing One Single Start*/}
+              {/* <div className="col-xl-4 col-lg-4">
                 <div className="pricing-one__single">
-                    <div className="pricing-one__inner">
+                  <div className="pricing-one__inner">
                     <div className="pricing-one__shape-1">
-                        <img
-                        src="assets/images/shapes/pricing-one-shape-1.png"
-                        
-                        />
+                      <img src="assets/images/shapes/pricing-one-shape-1.png" />
                     </div>
                     <div className="pricing-one__shape-2">
-                        <img
-                        src="assets/images/shapes/pricing-one-shape-2.png"
-                        
-                        />
+                      <img src="assets/images/shapes/pricing-one-shape-2.png" />
                     </div>
                     <div className="pricing-one__price-box">
-                        <h3 className="pricing-one__title">Regular</h3>
-                        <p className="pricing-one__price">
+                      <h3 className="pricing-one__title">Regular</h3>
+                      <p className="pricing-one__price">
                         <span>$</span>55.00
-                        </p>
-                        <span className="pricing-one__sub-title">Per Month</span>
+                      </p>
+                      <span className="pricing-one__sub-title">Per Month</span>
                     </div>
                     <ul className="pricing-one__points list-unstyled">
-                        <li>
+                      <li>
                         <div className="icon">
-                            <span className="icon-check" />
+                          <span className="icon-check" />
                         </div>
                         <div className="text">
-                            <p>Financial Solutions</p>
+                          <p>Financial Solutions</p>
                         </div>
-                        </li>
-                        <li>
+                      </li>
+                      <li>
                         <div className="icon">
-                            <span className="icon-check" />
+                          <span className="icon-check" />
                         </div>
                         <div className="text">
-                            <p>12 Hours Support</p>
+                          <p>12 Hours Support</p>
                         </div>
-                        </li>
+                      </li>
                     </ul>
                     <div className="pricing-one__btn-box">
-                        <Link href="contact" className="pricing-one__btn">
+                      <Link href="contact" className="pricing-one__btn">
                         Get Started Now
                         <span className="icon-back" />
-                        </Link>
+                      </Link>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </div>
-                {/*Pricing One Single End*/}
-                {/*Pricing One Single Start*/}
-                <div className="col-xl-4 col-lg-4">
+              </div> */}
+              {/*Pricing One Single End*/}
+              {/*Pricing One Single Start*/}
+              {/* <div className="col-xl-4 col-lg-4">
                 <div className="pricing-one__single">
-                    <div className="pricing-one__inner">
+                  <div className="pricing-one__inner">
                     <div className="pricing-one__shape-1">
-                        <img
-                        src="assets/images/shapes/pricing-one-shape-1.png"
-                        
-                        />
+                      <img src="assets/images/shapes/pricing-one-shape-1.png" />
                     </div>
                     <div className="pricing-one__shape-2">
-                        <img
-                        src="assets/images/shapes/pricing-one-shape-2.png"
-                        
-                        />
+                      <img src="assets/images/shapes/pricing-one-shape-2.png" />
                     </div>
                     <div className="pricing-one__price-box">
-                        <h3 className="pricing-one__title">Professional</h3>
-                        <p className="pricing-one__price">
+                      <h3 className="pricing-one__title">Professional</h3>
+                      <p className="pricing-one__price">
                         <span>$</span>85.00
-                        </p>
-                        <span className="pricing-one__sub-title">Per Month</span>
+                      </p>
+                      <span className="pricing-one__sub-title">Per Month</span>
                     </div>
                     <ul className="pricing-one__points list-unstyled">
-                        <li>
+                      <li>
                         <div className="icon">
-                            <span className="icon-check" />
+                          <span className="icon-check" />
                         </div>
                         <div className="text">
-                            <p>Financial Solutions</p>
+                          <p>Financial Solutions</p>
                         </div>
-                        </li>
-                        <li>
+                      </li>
+                      <li>
                         <div className="icon">
-                            <span className="icon-check" />
+                          <span className="icon-check" />
                         </div>
                         <div className="text">
-                            <p>12 Hours Support</p>
+                          <p>12 Hours Support</p>
                         </div>
-                        </li>
+                      </li>
                     </ul>
                     <div className="pricing-one__btn-box">
-                        <Link href="contact" className="pricing-one__btn">
+                      <Link href="contact" className="pricing-one__btn">
                         Get Started Now
                         <span className="icon-back" />
-                        </Link>
+                      </Link>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </div>
-                {/*Pricing One Single End*/}
-            </div>
-            </div>
-        </section>
+              </div> */}
+              {/*Pricing One Single End*/}
+            {/* </div>
+          </div>
+        </section> */} 
         {/*Pricing One End*/}
 
         {/*Video One Start*/}
         <section className="video-one">
-            <div
+          <div
             className="video-one__bg"
             style={{
-                backgroundImage: "url(assets/images/backgrounds/video-one-bg.jpg)"
+              backgroundImage:
+                "url(assets/images/backgrounds/video-one-bg.jpg)",
             }}
-            />
-            <div
+          />
+          <div
             className="video-one__bg-2"
             style={{
-                backgroundImage: "url(assets/images/backgrounds/video-one-bg-2.jpg)"
+              backgroundImage:
+                "url(assets/images/backgrounds/video-one-bg-2.jpg)",
             }}
-            ></div>
-            <div
+          ></div>
+          <div
             className="video-one__bg-3"
             style={{
-                backgroundImage: "url(assets/images/backgrounds/video-one-bg-3.png)"
+              backgroundImage:
+                "url(assets/images/backgrounds/video-one-bg-3.png)",
             }}
-            ></div>
-            <div
+          ></div>
+          <div
             className="video-one__bg-4"
             style={{
-                backgroundImage: "url(assets/images/backgrounds/video-one-bg-4.png)"
+              backgroundImage:
+                "url(assets/images/backgrounds/video-one-bg-4.png)",
             }}
-            ></div>
-            <div className="container">
+          ></div>
+          <div className="container">
             <div className="video-one__inner">
-                <div className="video-one__video-link">
-                <a
-                    className="video-popup"
-                >
-                    <div className="video-one__video-icon">
+              <div className="video-one__video-link">
+                <a className="video-popup">
+                  <div className="video-one__video-icon">
                     <span className="fa fa-play" />
                     <i className="ripple" />
-                    </div>
+                  </div>
                 </a>
-                </div>
-                <h3 className="video-one__title">
+              </div>
+              <h3 className="video-one__title">
                 Watch This Video Presentation
                 <br /> Our Work And Etc
-                </h3>
+              </h3>
             </div>
-            </div>
+          </div>
         </section>
         {/*Video One End*/}
 
         {/*Testimonial Four Start*/}
         <section className="testimonial-four">
-            <div className="testimonial-four__wrap">
+          <div className="testimonial-four__wrap">
             <div className="container">
-                <div className="section-title text-center">
+              <div className="section-title text-center">
                 <div className="section-title__tagline-box">
-                    <div className="section-title__tagline-icon">
-                    <img src="assets/images/icon/section-title-icon.png"  />
-                    </div>
-                    <p className="section-title__tagline">Our Testimonial</p>
+                  <div className="section-title__tagline-icon">
+                    <img src="assets/images/icon/section-title-icon.png" />
+                  </div>
+                  <p className="section-title__tagline">Our Testimonial</p>
                 </div>
-                <h2 className="section-title__title">Our Sweet Client Feedback</h2>
-                </div>
-                <div className="testimonial-four__inner">
-                <TestimonialSlider/>
-                </div>
+                <h2 className="section-title__title">
+                  Our Sweet Client Feedback
+                </h2>
+              </div>
+              <div className="testimonial-four__inner">
+                <TestimonialSlider />
+              </div>
             </div>
-            </div>
+          </div>
         </section>
         {/*Testimonial Four End*/}
 
         {/*Blog One Start*/}
         <section className="blog-one">
-            <div className="container">
+          <div className="container">
             <div className="section-title text-center">
-                <div className="section-title__tagline-box">
+              <div className="section-title__tagline-box">
                 <div className="section-title__tagline-icon">
-                    <img src="assets/images/icon/section-title-icon.png"  />
+                  <img src="assets/images/icon/section-title-icon.png" />
                 </div>
                 <p className="section-title__tagline">Our Blog</p>
-                </div>
-                <h2 className="section-title__title">Latest Articles &amp; Blogs</h2>
+              </div>
+              <h2 className="section-title__title">
+                Latest Articles &amp; Blogs
+              </h2>
             </div>
             <div className="row">
-                {/*Blog One Single Start*/}
-                <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+              {/*Blog One Single Start*/}
+              <div
+                className="col-xl-4 col-lg-4 wow fadeInUp"
+                data-wow-delay="100ms"
+              >
                 <div className="blog-one__single">
-                    <div className="blog-one__img-box">
+                  <div className="blog-one__img-box">
                     <div className="blog-one__img">
-                        <img src="assets/images/blog/blog-1-1.jpg"  />
+                      <img src="assets/images/blog/blog-1-1.jpg" />
                     </div>
                     <div className="blog-one__date">
-                        <p>
+                      <p>
                         20
                         <br /> May
-                        </p>
+                      </p>
                     </div>
-                    </div>
-                    <div className="blog-one__content">
+                  </div>
+                  <div className="blog-one__content">
                     <ul className="blog-one__meta list-unstyled">
-                        <li>
+                      <li>
                         <p>
-                            <span className="fa fa-user" />
-                            Admin
+                          <span className="fa fa-user" />
+                          Admin
                         </p>
-                        </li>
-                        <li>
+                      </li>
+                      <li>
                         <p>
-                            <span className="fa fa-comments" />
-                            02 Comment
+                          <span className="fa fa-comments" />
+                          02 Comment
                         </p>
-                        </li>
+                      </li>
                     </ul>
                     <h3 className="blog-one__title">
-                        <Link href="blog-details">
+                      <Link href="blog-details">
                         Easy Yo Use our Software New Innovation
-                        </Link>
+                      </Link>
                     </h3>
                     <p className="blog-one__text">
-                        Lorem ipsum is simply is text used by copytyping refreshing.
+                      Lorem ipsum is simply is text used by copytyping
+                      refreshing.
                     </p>
                     <div className="blog-one__btn">
-                        <Link href="blog-details">
+                      <Link href="blog-details">
                         Read more
                         <span className="icon-right-arrow1" />
-                        </Link>
+                      </Link>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </div>
-                {/*Blog One Single End*/}
-                {/*Blog One Single Start*/}
-                <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+              </div>
+              {/*Blog One Single End*/}
+              {/*Blog One Single Start*/}
+              <div
+                className="col-xl-4 col-lg-4 wow fadeInUp"
+                data-wow-delay="200ms"
+              >
                 <div className="blog-one__single">
-                    <div className="blog-one__img-box">
+                  <div className="blog-one__img-box">
                     <div className="blog-one__img">
-                        <img src="assets/images/blog/blog-1-2.jpg"  />
+                      <img src="assets/images/blog/blog-1-2.jpg" />
                     </div>
                     <div className="blog-one__date">
-                        <p>
+                      <p>
                         20
                         <br /> May
-                        </p>
+                      </p>
                     </div>
-                    </div>
-                    <div className="blog-one__content">
+                  </div>
+                  <div className="blog-one__content">
                     <ul className="blog-one__meta list-unstyled">
-                        <li>
+                      <li>
                         <p>
-                            <span className="fa fa-user" />
-                            Admin
+                          <span className="fa fa-user" />
+                          Admin
                         </p>
-                        </li>
-                        <li>
+                      </li>
+                      <li>
                         <p>
-                            <span className="fa fa-comments" />
-                            02 Comment
+                          <span className="fa fa-comments" />
+                          02 Comment
                         </p>
-                        </li>
+                      </li>
                     </ul>
                     <h3 className="blog-one__title">
-                        <Link href="blog-details">
+                      <Link href="blog-details">
                         Ipsum is simply is text used by copytyping
-                        </Link>
+                      </Link>
                     </h3>
                     <p className="blog-one__text">
-                        Lorem ipsum is simply is text used by copytyping refreshing.
+                      Lorem ipsum is simply is text used by copytyping
+                      refreshing.
                     </p>
                     <div className="blog-one__btn">
-                        <Link href="blog-details">
+                      <Link href="blog-details">
                         Read more
                         <span className="icon-right-arrow1" />
-                        </Link>
+                      </Link>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </div>
-                {/*Blog One Single End*/}
-                {/*Blog One Single Start*/}
-                <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+              </div>
+              {/*Blog One Single End*/}
+              {/*Blog One Single Start*/}
+              <div
+                className="col-xl-4 col-lg-4 wow fadeInUp"
+                data-wow-delay="300ms"
+              >
                 <div className="blog-one__single">
-                    <div className="blog-one__img-box">
+                  <div className="blog-one__img-box">
                     <div className="blog-one__img">
-                        <img src="assets/images/blog/blog-1-3.jpg"  />
+                      <img src="assets/images/blog/blog-1-3.jpg" />
                     </div>
                     <div className="blog-one__date">
-                        <p>
+                      <p>
                         20
                         <br /> May
-                        </p>
+                      </p>
                     </div>
-                    </div>
-                    <div className="blog-one__content">
+                  </div>
+                  <div className="blog-one__content">
                     <ul className="blog-one__meta list-unstyled">
-                        <li>
+                      <li>
                         <p>
-                            <span className="fa fa-user" />
-                            Admin
+                          <span className="fa fa-user" />
+                          Admin
                         </p>
-                        </li>
-                        <li>
+                      </li>
+                      <li>
                         <p>
-                            <span className="fa fa-comments" />
-                            02 Comment
+                          <span className="fa fa-comments" />
+                          02 Comment
                         </p>
-                        </li>
+                      </li>
                     </ul>
                     <h3 className="blog-one__title">
-                        <Link href="blog-details">
+                      <Link href="blog-details">
                         Simply is text used by copytyping refreshing.
-                        </Link>
+                      </Link>
                     </h3>
                     <p className="blog-one__text">
-                        Lorem ipsum is simply is text used by copytyping refreshing.
+                      Lorem ipsum is simply is text used by copytyping
+                      refreshing.
                     </p>
                     <div className="blog-one__btn">
-                        <Link href="blog-details">
+                      <Link href="blog-details">
                         Read more
                         <span className="icon-right-arrow1" />
-                        </Link>
+                      </Link>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </div>
-                {/*Blog One Single End*/}
+              </div>
+              {/*Blog One Single End*/}
             </div>
-            </div>
+          </div>
         </section>
         {/*Blog One End*/}
 
         {/*Newsletter One Start*/}
         <section className="newsletter-one">
-            <div className="container">
+          <div className="container">
             <div className="newsletter-one__inner">
-                <div
+              <div
                 className="newsletter-one__bg float-bob-y"
                 style={{
-                    backgroundImage:
-                    "url(assets/images/backgrounds/newsletter-one-bg.jpg)"
+                  backgroundImage:
+                    "url(assets/images/backgrounds/newsletter-one-bg.jpg)",
                 }}
-                />
-                <h3 className="newsletter-one__title">Newsletter</h3>
-                <p className="newsletter-one__sub-title">Stay updated</p>
-                <div className="newsletter-one__form mc-form" data-url="MC_FORM_URL">
+              />
+              <h3 className="newsletter-one__title">Newsletter</h3>
+              <p className="newsletter-one__sub-title">Stay updated</p>
+              <div
+                className="newsletter-one__form mc-form"
+                data-url="MC_FORM_URL"
+              >
                 <input type="email" name="EMAIL" placeholder="Email address" />
                 <button type="submit" className="newsletter-one__btn">
-                    <span>
+                  <span>
                     Subscribe
                     <i className="icon-arrow" />
-                    </span>
+                  </span>
                 </button>
-                </div>
-                {/* /.subscribe-one__form */}
-                <div className="mc-form__response" />
-                {/* /.mc-form__response */}
+              </div>
+              {/* /.subscribe-one__form */}
+              <div className="mc-form__response" />
+              {/* /.mc-form__response */}
             </div>
-            </div>
+          </div>
         </section>
         {/*Newsletter One End*/}
-
-        </Layout>
-        </>
-    )
+      </Layout>
+    </>
+  );
 }
