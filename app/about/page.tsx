@@ -137,7 +137,7 @@ export default function Home() {
         {/*Brand One End*/}
 
         {/*Feature One Start*/}
-        <section className="feature-one">
+        <section className="feature-one" >
           <div className="container">
             <div className="row">
               {/*Feature One Single Start*/}

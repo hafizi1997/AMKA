@@ -11,10 +11,10 @@ export default function Service() {
                 <img src="assets/images/icon/section-title-icon.png"  />
               </div>
               <p className="section-title__tagline">
-                <Link href="#">What We Offering</Link>
+                <Link href="#">We specialize in</Link>
               </p>
             </div>
-            <h2 className="section-title__title">We Make Bright Agency</h2>
+            <h2 className="section-title__title">Secure and Reliable Solutions</h2>
           </div>
           <div className="services-one__inner">
             <ul className="services-one__services-list list-unstyled">

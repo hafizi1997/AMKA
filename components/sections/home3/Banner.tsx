@@ -28,6 +28,63 @@ const swiperOptions = {
 }
 
 export default function Banner() {
+    const slides = [
+    {
+      bg: "assets/images/backgrounds/services-banner.png",
+      subTitle: "Strategic Digital Solutions",
+      title: (
+        <>
+          Helping Businesses Grow <br />
+          Through Smart Digital Systems
+        </>
+      ),
+      text: (
+        <>
+          We design digital systems, websites, and platforms that help Malaysian
+          businesses operate better, convert more customers, and scale with
+          confidence.
+        </>
+      ),
+      ctaText: "Get a Free Growth Strategy",
+      ctaLink: "/contact",
+    },
+    {
+      bg: "assets/images/backgrounds/services-banner-2.png",
+      subTitle: "What We Do",
+      title: (
+        <>
+          From Strategy to <br />
+          Scalable Execution
+        </>
+      ),
+      text: (
+        <>
+          Digital systems, UI/UX design, CRM workflows, e-commerce solutions,
+          and ongoing optimization — built around real business needs.
+        </>
+      ),
+      ctaText: "View Our Services",
+      ctaLink: "/services",
+    },
+    {
+      bg: "assets/images/backgrounds/services-banner-3.png",
+      subTitle: "Why AMKA Digital",
+      title: (
+        <>
+          Enterprise Thinking, <br />
+          SME Agility
+        </>
+      ),
+      text: (
+        <>
+          We combine strategic thinking with practical execution to deliver
+          clarity, performance, and long-term digital growth.
+        </>
+      ),
+      ctaText: "Talk to Our Experts",
+      ctaLink: "/contact",
+    },
+  ];
   return (
     <>
 
@@ -54,11 +111,12 @@ export default function Banner() {
           <div
             className="main-slider-three__carousel owl-carousel owl-theme thm-owl__carousel"
           >
+            {slides.map((slide, index) => (
             <SwiperSlide>
               <div className="item main-slider-three__slide-1">
                 <div className="main-slider-three__img">
                   <img
-                    src="assets/images/resources/main-slider-three-img-1.jpg"
+                    src={slide.bg}
                     
                   />
                 </div>
@@ -72,93 +130,24 @@ export default function Banner() {
                 <div className="container">
                   <div className="main-slider-three__content">
                     <p className="main-slider-three__sub-title">
-                      Modern I Business I Consultan
+                      {slide.subTitle}
                     </p>
                     <h2 className="main-slider-three__title">
-                      Best Grow Your <br /> Business
+                      {slide.title}
                     </h2>
                     <p className="main-slider-three__text">
-                      Our Best Business Technology Consulting
+                      {slide.text}
                     </p>
                     <div className="main-slider-three__btn-box">
-                      <Link href="contact" className="main-slider-three__btn">
-                        Free Consultation
+                      <Link href={slide.ctaLink} className="main-slider-three__btn">
+                        {slide.ctaText}
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="item main-slider-three__slide-1">
-                <div className="main-slider-three__img">
-                  <img
-                    src="assets/images/resources/main-slider-three-img-1.jpg"
-                    
-                  />
-                </div>
-                <div className="main-slider-three__overly" />
-                <div className="main-slider-three__shape-1 float-bob-y">
-                  <img
-                    src="assets/images/shapes/main-slider-three-shape-1.png"
-                    
-                  />
-                </div>
-                <div className="container">
-                  <div className="main-slider-three__content">
-                    <p className="main-slider-three__sub-title">
-                      Modern I Business I Consultan
-                    </p>
-                    <h2 className="main-slider-three__title">
-                      Best Grow Your <br /> Business
-                    </h2>
-                    <p className="main-slider-three__text">
-                      Our Best Business Technology Consulting
-                    </p>
-                    <div className="main-slider-three__btn-box">
-                      <Link href="contact" className="main-slider-three__btn">
-                        Free Consultation
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="item main-slider-three__slide-1">
-                <div className="main-slider-three__img">
-                  <img
-                    src="assets/images/resources/main-slider-three-img-1.jpg"
-                    
-                  />
-                </div>
-                <div className="main-slider-three__overly" />
-                <div className="main-slider-three__shape-1 float-bob-y">
-                  <img
-                    src="assets/images/shapes/main-slider-three-shape-1.png"
-                    
-                  />
-                </div>
-                <div className="container">
-                  <div className="main-slider-three__content">
-                    <p className="main-slider-three__sub-title">
-                      Modern I Business I Consultan
-                    </p>
-                    <h2 className="main-slider-three__title">
-                      Best Grow Your <br /> Business
-                    </h2>
-                    <p className="main-slider-three__text">
-                      Our Best Business Technology Consulting
-                    </p>
-                    <div className="main-slider-three__btn-box">
-                      <Link href="contact" className="main-slider-three__btn">
-                        Free Consultation
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+            ))}
           </div>
         </Swiper>
       </section>

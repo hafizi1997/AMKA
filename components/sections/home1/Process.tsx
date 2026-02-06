@@ -39,9 +39,18 @@ export default function Process() {
               <li className="wow fadeInUp" data-wow-delay="400ms">
                 <div className="process-one__single">
                   <div className="process-one__icon">
-                    <span className="icon-growth" />
+                    <span className="icon-new-product" />
                   </div>
-                  <p className="process-one__text">Test</p>
+                  <p className="process-one__text">Launch</p>
+                  <div className="process-one__count" />
+                </div>
+              </li>
+              <li className="wow fadeInUp" data-wow-delay="400ms">
+                <div className="process-one__single">
+                  <div className="process-one__icon">
+                    <span className="icon-solution-1" />
+                  </div>
+                  <p className="process-one__text">Support</p>
                   <div className="process-one__count" />
                 </div>
               </li>

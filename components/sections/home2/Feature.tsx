@@ -14,12 +14,12 @@ export default function Feature() {
             >
               <div className="feature-two__single">
                 <div className="feature-two__icon">
-                  <span className="icon-management" />
+                  <span className="icon-content-management-1" />
                 </div>
                 <h3 className="feature-two__title">
-                  <Link href="team">Consultancy</Link>
+                  <Link href="team"> Digitize Your Business</Link>
                 </h3>
-                <p className="feature-two__text">We’ve been using tech</p>
+                <p className="feature-two__text">Build systems that scale with your business.</p>
               </div>
             </div>
             {/*Feature Two Single End */}
@@ -30,12 +30,12 @@ export default function Feature() {
             >
               <div className="feature-two__single">
                 <div className="feature-two__icon">
-                  <span className="icon-briefing" />
+                  <span className="icon-ux-design" />
                 </div>
                 <h3 className="feature-two__title">
-                  <Link href="contact">Computing</Link>
+                  <Link href="contact">Web UI/UX Design</Link>
                 </h3>
-                <p className="feature-two__text">We’ve been using tech</p>
+                <p className="feature-two__text"> Conversion-focused website design built for real users.</p>
               </div>
             </div>
             {/*Feature Two Single End */}
@@ -46,12 +46,12 @@ export default function Feature() {
             >
               <div className="feature-two__single">
                 <div className="feature-two__icon">
-                  <span className="icon-cyber-security" />
+                  <span className="icon-project-management" />
                 </div>
                 <h3 className="feature-two__title">
-                  <Link href="services">Security</Link>
+                  <Link href="services">Digital Growth Strategy</Link>
                 </h3>
-                <p className="feature-two__text">We’ve been using tech</p>
+                <p className="feature-two__text">A clear roadmap before you invest further</p>
               </div>
             </div>
             {/*Feature Two Single End */}
@@ -62,12 +62,12 @@ export default function Feature() {
             >
               <div className="feature-two__single">
                 <div className="feature-two__icon">
-                  <span className="icon-backup" />
+                  <span className="icon-supply-chain" />
                 </div>
                 <h3 className="feature-two__title">
-                  <Link href="services">Backup</Link>
+                  <Link href="services">Website Consultant</Link>
                 </h3>
-                <p className="feature-two__text">We’ve been using tech</p>
+                <p className="feature-two__text">Make the right digital decisions before you build.</p>
               </div>
             </div>
             {/*Feature Two Single End */}

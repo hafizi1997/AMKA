@@ -29,10 +29,7 @@ export default function Benefit() {
                   data-wow-delay="100ms"
                   data-wow-duration="2500ms"
                 >
-                  <img
-                    src="assets/images/resources/benefits-one-img-1.jpg"
-                    
-                  />
+                  <img src="assets/images/resources/benefits-one-img-1.jpg" />
                 </div>
               </div>
             </div>
@@ -41,22 +38,21 @@ export default function Benefit() {
                 <div className="section-title text-left">
                   <div className="section-title__tagline-box">
                     <div className="section-title__tagline-icon">
-                      <img
-                        src="assets/images/icon/section-title-icon.png"
-                        
-                      />
+                      <img src="assets/images/icon/section-title-icon.png" />
                     </div>
                     <p className="section-title__tagline">Our Benefits</p>
                   </div>
                   <h2 className="section-title__title">
-                    Discover The World Of Marketing Agency
+                    Built for Scalability,
+                    <br /> Not Just Delivery
                   </h2>
                 </div>
                 <p className="benefits-one__text">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat proide sunt in culpa qui officia deserunt
-                  mollit anim id est
+                  At AMKA Digital, we don’t just build websites or systems — we
+                  design digital solutions that are structured, scalable, and
+                  aligned with real business operations. Our approach focuses on
+                  clarity, control, and long-term growth, not quick wins or
+                  surface-level fixes.
                 </p>
                 <div className="benefits-one__points-and-mission">
                   <ul className="benefits-one__points list-unstyled">
@@ -65,7 +61,7 @@ export default function Benefit() {
                         <span className="fa fa-check" />
                       </div>
                       <div className="text">
-                        <p>Consulting Agency</p>
+                        <p>Clear Systems</p>
                       </div>
                     </li>
                     <li>
@@ -73,14 +69,15 @@ export default function Benefit() {
                         <span className="fa fa-check" />
                       </div>
                       <div className="text">
-                        <p>Financial Advice</p>
+                        <p>Bussiness Efficiency</p>
                       </div>
                     </li>
                   </ul>
                   <div className="benefits-one__mission">
                     <h3 className="benefits-one__mission-title">Our Mission</h3>
                     <p className="benefits-one__mission-text">
-                      Duis aute irure dolor in <br /> reprehenderit in voluptate
+                      To turn complex business ideas into structured digital
+                      systems that scale without operational chaos.
                     </p>
                   </div>
                 </div>

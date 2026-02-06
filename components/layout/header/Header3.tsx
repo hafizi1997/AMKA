@@ -17,7 +17,7 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
               <div className="main-menu-three__top">
                 <div className="main-menu-three__top-inner">
                   <p className="main-menu-three__top-text">
-                    Wellcome Our Business Company
+                    AMKA Digital Sdn Bhd
                   </p>
                   <ul className="list-unstyled main-menu-three__contact-list">
                     <li>
@@ -26,8 +26,8 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                       </div>
                       <div className="text">
                         <p>
-                          <Link href="mailto:info-zeena@gmail.com">
-                            info-zeena@gmail.com
+                          <Link href="mailto:contact@amkatech.com">
+                            contact@amkatech.com
                           </Link>
                         </p>
                       </div>
@@ -37,7 +37,7 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                         <i className="fas fa-map-marker" />
                       </div>
                       <div className="text">
-                        <p>103 Road kagpur, Dhaka</p>
+                        <p>Cube Self Storage Suite 2.1, Seksyen 51a, 46100, Petaling Jaya, Selangor, Malaysia</p>
                       </div>
                     </li>
                   </ul>
@@ -82,7 +82,7 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
               <div className="main-menu-three__top-call">
                 <div className="main-menu-three__top-call-box">
                   <div className="main-menu-three__top-call-number-box float-bob-y">
-                    <a href="tel:9200368090">+92 (003) 68-090</a>
+                    <a href="tel:9200368090">+60 19-3623141</a>
                   </div>
                   <div className="main-menu-three__top-call-box-two">
                     <div className="main-menu-three__top-call-icon">
@@ -112,7 +112,7 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
               <div className="main-menu-three__top">
                 <div className="main-menu-three__top-inner">
                   <p className="main-menu-three__top-text">
-                    Wellcome Our Business Company
+                    AMKA Digital Sdn Bhd
                   </p>
                   <ul className="list-unstyled main-menu-three__contact-list">
                     <li>
@@ -121,8 +121,8 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                       </div>
                       <div className="text">
                         <p>
-                          <a href="mailto:info-zeena@gmail.com">
-                            info-zeena@gmail.com
+                          <a href="mailto:contact@amkatech.com">
+                            contact@amkatech.com
                           </a>
                         </p>
                       </div>
@@ -132,7 +132,7 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                         <i className="fas fa-map-marker" />
                       </div>
                       <div className="text">
-                        <p>103 Road kagpur, Dhaka</p>
+                        <p>Cube Self Storage Suite 2.1, Seksyen 51a, 46100, Petaling Jaya, Selangor, Malaysia</p>
                       </div>
                     </li>
                   </ul>
@@ -177,7 +177,7 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
               <div className="main-menu-three__top-call">
                 <div className="main-menu-three__top-call-box">
                   <div className="main-menu-three__top-call-number-box float-bob-y">
-                    <a href="tel:9200368090">+92 (003) 68-090</a>
+                    <a href="tel:9200368090">+60 19-3623141</a>
                   </div>
                   <div className="main-menu-three__top-call-box-two">
                     <div className="main-menu-three__top-call-icon">

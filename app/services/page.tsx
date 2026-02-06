@@ -149,7 +149,7 @@ export default function Home() {
                   <div className="feature-one__content">
                     <h3 className="feature-one__title">
                       <Link href="services-details">
-                        Design A Website UI/UX
+                       Web UI/UX Design
                       </Link>
                     </h3>
                     <p className="feature-one__text">
