@@ -46,15 +46,16 @@ const swiperOptions = {
   },
 };
 export default function Home() {
-  const [isActive, setIsActive] = useState({
+  const [isActive, setIsActive] = useState<{ status: boolean; key: number }>({
     status: false,
     key: 1,
   });
 
-  const handleToggle = (key) => {
+  const handleToggle = (key: number) => {
     if (isActive.key === key) {
       setIsActive({
         status: false,
+        key: 0,
       });
     } else {
       setIsActive({
