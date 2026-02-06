@@ -1,5 +1,6 @@
 
 'use client'
+import type { ReactNode } from "react"
 import { useEffect, useState } from "react"
 import BackToTop from '../elements/BackToTop'
 import DataBg from "../elements/DataBg"
@@ -13,7 +14,16 @@ import Footer1 from './footer/Footer1'
 import Footer2 from './footer/Footer2'
 import Footer3 from './footer/Footer3'
 
-export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, wrapperCls }) {
+type LayoutProps = {
+    headerStyle?: number
+    footerStyle?: number
+    headTitle?: string
+    breadcrumbTitle?: string
+    wrapperCls?: string
+    children: ReactNode
+}
+
+export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, wrapperCls }: LayoutProps) {
     const [scroll, setScroll] = useState(0)
     // Mobile Menu
     const [isMobileMenu, setMobileMenu] = useState(false)
