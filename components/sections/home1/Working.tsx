@@ -69,7 +69,7 @@ export default function Benefit() {
                         <span className="fa fa-check" />
                       </div>
                       <div className="text">
-                        <p>Bussiness Efficiency</p>
+                        <p>Business Efficiency</p>
                       </div>
                     </li>
                   </ul>

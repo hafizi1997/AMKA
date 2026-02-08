@@ -8,13 +8,15 @@ export default function Service() {
           <div className="section-title text-center">
             <div className="section-title__tagline-box">
               <div className="section-title__tagline-icon">
-                <img src="assets/images/icon/section-title-icon.png"  />
+                <img src="assets/images/icon/section-title-icon.png" />
               </div>
               <p className="section-title__tagline">
-                <Link href="#">We specialize in</Link>
+                <Link href="#">Experts in Building Digital Systems</Link>
               </p>
             </div>
-            <h2 className="section-title__title">Secure and Reliable Solutions</h2>
+            <h2 className="section-title__title">
+              Secure and Reliable Solutions
+            </h2>
           </div>
           <div className="services-one__inner">
             <ul className="services-one__services-list list-unstyled">

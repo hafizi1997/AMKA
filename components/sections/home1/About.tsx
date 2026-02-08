@@ -54,7 +54,7 @@ export default function About() {
                     <p className="section-title__tagline">About Us</p>
                   </div>
                   <h2 className="section-title__title">
-                    Creating Strategic 
+                    Creating Strategic
                     <br /> Digital Solutions
                   </h2>
                 </div>
@@ -71,7 +71,9 @@ export default function About() {
                       <span className="fa fa-check" />
                     </div>
                     <div className="text">
-                      <p>Growth-first thinking, not template-driven execution</p>
+                      <p>
+                        Growth-first thinking, not template-driven execution
+                      </p>
                     </div>
                   </li>
                   <li>
@@ -79,15 +81,20 @@ export default function About() {
                       <span className="fa fa-check" />
                     </div>
                     <div className="text">
-                      <p>Enterprise-level strategy delivered with SME agility</p>
+                      <p>
+                        Enterprise-level strategy delivered with SME agility
+                      </p>
                     </div>
                   </li>
-                   <li>
+                  <li>
                     <div className="icon">
                       <span className="fa fa-check" />
                     </div>
                     <div className="text">
-                      <p>Practical, data-driven solutions built for long-term scalability</p>
+                      <p>
+                        Practical, data-driven solutions built for long-term
+                        scalability
+                      </p>
                     </div>
                   </li>
                 </ul>
@@ -97,7 +104,8 @@ export default function About() {
                   </div>
                   <div className="about-one__it-solution-content">
                     <p>
-                      IT Solutions Services Company Funded in <span>2026</span>
+                      Focused on Strategy, Execution, and Sustainable
+                      <span> Growth</span>
                     </p>
                   </div>
                 </div>

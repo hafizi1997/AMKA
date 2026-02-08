@@ -3,7 +3,7 @@ export default function Feature() {
   return (
     <>
       {/*Feature One Start*/}
-      <section className="feature-one" id="about-scroll-target">
+      <section className="feature-one">
         <div className="container">
           <div className="row">
             {/*Feature One Single Start*/}

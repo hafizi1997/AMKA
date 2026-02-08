@@ -29,38 +29,34 @@ export default function Faq() {
                 <div className="section-title text-left">
                   <div className="section-title__tagline-box">
                     <div className="section-title__tagline-icon">
-                      <img
-                        src="assets/images/icon/section-title-icon.png"
-                        
-                      />
+                      <img src="assets/images/icon/section-title-icon.png" />
                     </div>
                     <p className="section-title__tagline">
-                      Technology Solution
+                      Frequently Asked Questions
                     </p>
                   </div>
                   <h2 className="section-title__title">
-                    Latest Software Solutions
-                    <br /> Customer
+                    Answers Before You Get
+                    <br /> Started
                   </h2>
                 </div>
                 <p className="faq-one__text">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proide sunt in culpa qui officia
-                  deserunt mollit anim id est laborum. perspiciatis unde omnis
-                  iste natus error sit voluptatem
+                  We work with businesses that want clarity before committing to
+                  a digital project. Below are some of the most common questions
+                  we receive about our approach, process, and how we work with
+                  clients.
                 </p>
                 <div className="faq-one__img-and-system">
                   <div className="faq-one__img">
-                    <img src="assets/images/resources/faq-one-img.jpg"  />
+                    <img src="assets/images/resources/faq-one-img.jpg" />
                   </div>
                   <div className="faq-one__system">
                     <h3 className="faq-one__system-title">
-                      Optimize It System
+                      Designed for Real Operations
                     </h3>
                     <p className="faq-one__system-text">
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum
+                      We design systems that fit how businesses actually
+                      operate, scale, and grow.
                     </p>
                     <div className="faq-one__system-points">
                       <div className="icon">
@@ -87,15 +83,15 @@ export default function Faq() {
                     onClick={() => handleToggle(1)}
                   >
                     <div className="accrodion-title">
-                      <h4>Completely Iterate Covalent Strategic Theme</h4>
+                      <h4>Do you only build websites?</h4>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p>
-                          Excepteur sint occaecat cupidatat non proide sunt in
-                          culpa qui off deserunt mollit anim id est laborum.
-                          omnis iste natus error sit voluptate audantium, totam
-                          rem aperiam,
+                          No. We focus on building digital systems — websites
+                          are just one part of that. Our work often includes
+                          workflows, CRM integration, dashboards, performance
+                          optimization, and long-term system planning.
                         </p>
                       </div>
                       {/* /.inner */}
@@ -108,15 +104,15 @@ export default function Faq() {
                     onClick={() => handleToggle(2)}
                   >
                     <div className="accrodion-title">
-                      <h4>Few Resons Why You Should Choose Us</h4>
+                      <h4>Who do you usually work with?</h4>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p>
-                          Excepteur sint occaecat cupidatat non proide sunt in
-                          culpa qui off deserunt mollit anim id est laborum.
-                          omnis iste natus error sit voluptate audantium, totam
-                          rem aperiam,
+                          We primarily work with SMEs that are serious about
+                          growth. Our systems are designed to scale, so clients
+                          can start small and expand without rebuilding
+                          everything later.
                         </p>
                       </div>
                       {/* /.inner */}
@@ -129,15 +125,15 @@ export default function Faq() {
                     onClick={() => handleToggle(3)}
                   >
                     <div className="accrodion-title">
-                      <h4>How To Update Application New Features</h4>
+                      <h4>Do you offer fixed pricing?</h4>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p>
-                          Excepteur sint occaecat cupidatat non proide sunt in
-                          culpa qui off deserunt mollit anim id est laborum.
-                          omnis iste natus error sit voluptate audantium, totam
-                          rem aperiam,
+                          We don’t believe in one-size-fits-all pricing. Each
+                          project is scoped based on real requirements,
+                          complexity, and long-term goals to ensure the solution
+                          actually works for your business.
                         </p>
                       </div>
                       {/* /.inner */}
@@ -150,17 +146,15 @@ export default function Faq() {
                     onClick={() => handleToggle(4)}
                   >
                     <div className="accrodion-title">
-                      <h4>
-                        How To Connect With The Support To Improve Experience
-                      </h4>
+                      <h4>What makes AMKA Digital different?</h4>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p>
-                          Excepteur sint occaecat cupidatat non proide sunt in
-                          culpa qui off deserunt mollit anim id est laborum.
-                          omnis iste natus error sit voluptate audantium, totam
-                          rem aperiam,
+                          We combine strategy and execution. Instead of just
+                          delivering features, we help clients think through
+                          structure, scalability, and operational impact before
+                          building anything.
                         </p>
                       </div>
                       {/* /.inner */}

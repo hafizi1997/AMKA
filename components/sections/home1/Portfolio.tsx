@@ -8,9 +8,9 @@ export default function Portfolio() {
           <div className="section-title text-center">
             <div className="section-title__tagline-box">
               <div className="section-title__tagline-icon">
-                <img src="assets/images/icon/section-title-icon.png"  />
+                <img src="assets/images/icon/section-title-icon.png" />
               </div>
-              <p className="section-title__tagline">Our Recent Work</p>
+              <p className="section-title__tagline">Our Products</p>
             </div>
             <h2 className="section-title__title">Our New Case Studies</h2>
           </div>
@@ -27,7 +27,7 @@ export default function Portfolio() {
                   <div className="portfolio-one__title-box">
                     <h4 className="portfolio-one__title">
                       <Link href="portfolio-details">
-                        Application integration
+                        Weldding Management System
                       </Link>
                     </h4>
                     <div className="portfolio-one__arrow">
@@ -53,7 +53,9 @@ export default function Portfolio() {
                 >
                   <div className="portfolio-one__title-box">
                     <h4 className="portfolio-one__title">
-                      <Link href="portfolio-details">Platform Integration</Link>
+                      <Link href="portfolio-details">
+                        CRM Integration Solution
+                      </Link>
                     </h4>
                     <div className="portfolio-one__arrow">
                       <Link
@@ -79,7 +81,7 @@ export default function Portfolio() {
                   <div className="portfolio-one__title-box">
                     <h4 className="portfolio-one__title">
                       <Link href="portfolio-details">
-                        Excepteur integration
+                        Secretary Services Platform
                       </Link>
                     </h4>
                     <div className="portfolio-one__arrow">
@@ -105,7 +107,7 @@ export default function Portfolio() {
                 >
                   <div className="portfolio-one__title-box">
                     <h4 className="portfolio-one__title">
-                      <Link href="portfolio-details">Software integration</Link>
+                      <Link href="portfolio-details">Ecommerce Platform</Link>
                     </h4>
                     <div className="portfolio-one__arrow">
                       <Link
