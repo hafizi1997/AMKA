@@ -9,7 +9,7 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
         <nav className="main-menu main-menu-three">
           <div className="main-menu-three__wrapper">
             <div className="main-menu-three__wrapper-inner">
-              <div className="main-menu-three__logo">
+              <div className="main-menu-three__logo ">
                 <Link href="/">
                   <img src="assets/images/resources/logo-3.png" />
                 </Link>
