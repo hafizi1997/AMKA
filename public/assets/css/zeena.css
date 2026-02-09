@@ -3600,6 +3600,39 @@ ul {
   color: rgba(251, 92, 113, .10);
 }
 
+.process-one__desc {
+  position: relative;
+  display: inline-block;
+  max-width: 860px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--zeena-gray);
+  margin: 10px auto 0;
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.process-one__desc.is-active,
+.process-one__desc.is-idle {
+  animation: process-one-desc-in 700ms ease forwards;
+}
+
+@keyframes process-one-desc-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .process-one__desc {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /*--------------------------------------------------------------
 # Services One
 --------------------------------------------------------------*/

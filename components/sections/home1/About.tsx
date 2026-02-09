@@ -71,9 +71,7 @@ export default function About() {
                       <span className="fa fa-check" />
                     </div>
                     <div className="text">
-                      <p>
-                        Growth-first thinking, not template-driven execution
-                      </p>
+                      <p>SME-Focused, Growth-Aligned</p>
                     </div>
                   </li>
                   <li>
@@ -91,10 +89,7 @@ export default function About() {
                       <span className="fa fa-check" />
                     </div>
                     <div className="text">
-                      <p>
-                        Practical, data-driven solutions built for long-term
-                        scalability
-                      </p>
+                      <p>Outcome-Driven Engineering</p>
                     </div>
                   </li>
                 </ul>

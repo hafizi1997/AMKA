@@ -12,7 +12,7 @@ export default function Team() {
               </div>
               <p className="section-title__tagline">Meet Our Team</p>
             </div>
-            <h2 className="section-title__title">Meet Our Expart Mambers</h2>
+            <h2 className="section-title__title">Meet Our Expert Members</h2>
           </div>
           <div className="row">
             {/*Team One Single Start*/}
@@ -26,9 +26,9 @@ export default function Team() {
                     <img src="assets/images/team/team-1-1.jpg"  />
                     <div className="team-one__name-box">
                       <h3 className="team-one__name">
-                        <Link href="team-details">Jecika Brown</Link>
+                        <Link href="team-details">Muhammad Hafizi</Link>
                       </h3>
-                      <p className="team-one__sub-title">Web Designer</p>
+                      <p className="team-one__sub-title">Co-Founder</p>
                     </div>
                   </div>
                   <ul className="list-unstyled team-one__social">
@@ -68,9 +68,9 @@ export default function Team() {
                     <img src="assets/images/team/team-1-2.jpg"  />
                     <div className="team-one__name-box">
                       <h3 className="team-one__name">
-                        <Link href="team-details">Jhon Smith</Link>
+                        <Link href="team-details">Nur Musfirah</Link>
                       </h3>
-                      <p className="team-one__sub-title">Web Designer</p>
+                      <p className="team-one__sub-title">Senior Marketing</p>
                     </div>
                   </div>
                   <ul className="list-unstyled team-one__social">
@@ -110,9 +110,9 @@ export default function Team() {
                     <img src="assets/images/team/team-1-3.jpg"  />
                     <div className="team-one__name-box">
                       <h3 className="team-one__name">
-                        <Link href="team-details">Alisha Martin</Link>
+                        <Link href="team-details">Irsyad Murtadha</Link>
                       </h3>
-                      <p className="team-one__sub-title">Web Designer</p>
+                      <p className="team-one__sub-title">Senior Software Developer</p>
                     </div>
                   </div>
                   <ul className="list-unstyled team-one__social">
