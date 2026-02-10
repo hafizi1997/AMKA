@@ -73,12 +73,12 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                       className="main-menu-three__search search-toggler icon-search"
                     />
                   </div>
-                  <div className="main-menu-three__cart-box">
+                  {/* <div className="main-menu-three__cart-box">
                     <a
                       href="cart"
                       className="main-menu-three__cart icon-shopping-cart"
                     />
-                  </div>
+                  </div> */}
                   <div className="main-menu-three__btn-box">
                     <a href="contact">
                       Get Free Quote <span className="icon-back" />
@@ -176,10 +176,10 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                       />
                     </div>
                     <div className="main-menu-three__cart-box">
-                      <a
+                      {/* <a
                         href="cart"
                         className="main-menu-three__cart icon-shopping-cart"
-                      />
+                      /> */}
                     </div>
                     <div className="main-menu-three__btn-box">
                       <a href="contact">
