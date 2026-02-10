@@ -75,13 +75,13 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }) {
                         className="main-menu__search search-toggler icon-search"
                         />
                     </div>
-                    <div className="main-menu__cart-box">
+                    {/* <div className="main-menu__cart-box">
                         <Link
                         href="cart"
                         className="main-menu__cart icon-shopping-cart"
                         />
                         <div className="main-menu__cart-count">0</div>
-                    </div>
+                    </div> */}
                     </div>
                 </div>
                 <div className="main-menu__right">
