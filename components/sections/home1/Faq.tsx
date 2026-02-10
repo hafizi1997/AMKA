@@ -48,7 +48,7 @@ export default function Faq() {
                 </p>
                 <div className="faq-one__img-and-system">
                   <div className="faq-one__img">
-                    <img src="assets/images/resources/faq-one-img.jpg" />
+                    <img src="assets/images/resources/faq-one-img.png" />
                   </div>
                   <div className="faq-one__system">
                     <h3 className="faq-one__system-title">

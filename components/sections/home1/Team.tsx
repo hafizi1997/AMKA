@@ -23,7 +23,7 @@ export default function Team() {
               <div className="team-one__single">
                 <div className="team-one__img-box">
                   <div className="team-one__img">
-                    <img src="assets/images/team/team-1-1.jpg"  />
+                    <img src="assets/images/team/team-1-1.png"  />
                     <div className="team-one__name-box">
                       <h3 className="team-one__name">
                         <Link href="team-details">Muhammad Hafizi</Link>

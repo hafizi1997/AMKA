@@ -29,7 +29,7 @@ export default function Benefit() {
                   data-wow-delay="100ms"
                   data-wow-duration="2500ms"
                 >
-                  <img src="assets/images/resources/benefits-one-img-1.jpg" />
+                  <img src="assets/images/resources/benefits-one-img-1.png" />
                 </div>
               </div>
             </div>

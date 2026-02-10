@@ -13,13 +13,13 @@ export default function About() {
                   data-wow-delay="100ms"
                   data-wow-duration="2500ms"
                 >
-                  <img src="assets/images/resources/about-one-img-1.jpg" />
+                  <img src="assets/images/resources/about-one-img-1.png" />
                   <div className="about-one__experience-text">
                     <p>we're it Specialist</p>
                   </div>
                   <div className="about-one__img-box">
                     <div className="about-one__img-2">
-                      <img src="assets/images/resources/about-one-img-2.jpg" />
+                      <img src="assets/images/resources/about-one-img-2.png" />
                       <div className="about-one__video-link">
                         <a className="video-popup">
                           <div className="about-one__video-icon">
