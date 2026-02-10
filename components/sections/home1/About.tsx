@@ -95,7 +95,10 @@ export default function About() {
                 </ul>
                 <div className="about-one__it-solution">
                   <div className="about-one__it-solution-img">
-                    <img src="assets/images/resources/about-one-it-solution-img.jpg" />
+                    <img
+                      src="assets/images/resources/about-one-it-solution-img3.png"
+                      style={{ width: "210px", height: "82px" }}
+                    />
                   </div>
                   <div className="about-one__it-solution-content">
                     <p>
