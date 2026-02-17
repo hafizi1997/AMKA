@@ -5,7 +5,7 @@ import "swiper/css/pagination"
 import 'swiper/css/free-mode';
 import { openSans, poppins } from '@/lib/font'
 export const metadata = {
-    title: 'Zeena',
+    title: 'AMKA Digital Sdn Bhd',
     description: 'Next Js template'
 }
 

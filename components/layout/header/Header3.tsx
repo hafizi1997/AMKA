@@ -14,8 +14,8 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                   <img src="assets/images/resources/logo-3.png" />
                 </Link>
               </div>
-              <div className="main-menu-three__top">
-                <div className="main-menu-three__top-inner">
+              <div className="main-menu-three__top" style={{ padding: "20px" }}>
+                {/* <div className="main-menu-three__top-inner">
                   <p className="main-menu-three__top-text">
                     AMKA Digital Sdn Bhd
                   </p>
@@ -52,7 +52,7 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                       <i className="fab fa-instagram" />
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="main-menu-three__bottom">
                 <div className="main-menu-three__main-menu-box">
@@ -66,24 +66,24 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                   <Menu />
                 </div>
                 <div className="main-menu-three__search-cart-btn-box">
-                  <div className="main-menu-three__search-box">
+                  {/* <div className="main-menu-three__search-box">
                     <a
                       onClick={handlePopup}
                       href="#"
                       className="main-menu-three__search search-toggler icon-search"
                     />
-                  </div>
+                  </div> */}
                   {/* <div className="main-menu-three__cart-box">
                     <a
                       href="cart"
                       className="main-menu-three__cart icon-shopping-cart"
                     />
                   </div> */}
-                  <div className="main-menu-three__btn-box">
+                  {/* <div className="main-menu-three__btn-box">
                     <a href="contact">
                       Get Free Quote <span className="icon-back" />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="main-menu-three__top-call">
@@ -116,8 +116,8 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                     <img src="assets/images/resources/logo-3.png" />
                   </a>
                 </div>
-                <div className="main-menu-three__top">
-                  <div className="main-menu-three__top-inner">
+                <div className="main-menu-three__top" style={{ padding: "20px" }}>
+                  {/* <div className="main-menu-three__top-inner">
                     <p className="main-menu-three__top-text">
                       AMKA Digital Sdn Bhd
                     </p>
@@ -154,7 +154,7 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                         <i className="fab fa-instagram" />
                       </a>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="main-menu-three__bottom">
                   <div className="main-menu-three__main-menu-box">
@@ -167,26 +167,26 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
                     </a>
                     <Menu />
                   </div>
-                  <div className="main-menu-three__search-cart-btn-box">
-                    <div className="main-menu-three__search-box">
+                  {/* <div className="main-menu-three__search-cart-btn-box"> */}
+                    {/* <div className="main-menu-three__search-box">
                       <a
                         onClick={handlePopup}
                         href="#"
                         className="main-menu-three__search search-toggler icon-search"
                       />
-                    </div>
-                    <div className="main-menu-three__cart-box">
+                    </div> */}
+                    {/* <div className="main-menu-three__cart-box"> */}
                       {/* <a
                         href="cart"
                         className="main-menu-three__cart icon-shopping-cart"
                       /> */}
-                    </div>
+                    {/* </div>
                     <div className="main-menu-three__btn-box">
                       <a href="contact">
                         Get Free Quote <span className="icon-back" />
                       </a>
-                    </div>
-                  </div>
+                    </div> */}
+                  {/* </div> */}
                 </div>
                 <div className="main-menu-three__top-call">
                   <div className="main-menu-three__top-call-box">
