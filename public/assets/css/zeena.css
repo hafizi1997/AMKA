@@ -2951,16 +2951,23 @@ ul {
   display: block;
 }
 
+.brand-one__carousel .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 .brand-one__single {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
   text-align: center;
   z-index: 1;
+  width: 100%;
 }
 
 .brand-one__img {
   position: relative;
-  display: block;
+  display: inline-block;
   border-radius: 10px;
   z-index: 10;
 }
@@ -2987,8 +2994,10 @@ ul {
 
 .brand-one__img>img {
   position: relative;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   margin: 0 auto;
+  display: block;
   -webkit-transition: 500ms;
   transition: 500ms;
   opacity: 0.3;

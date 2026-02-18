@@ -38,16 +38,10 @@ export default function Footer1() {
                   </div>
                   <ul className="footer-widget__list list-unstyled">
                     <li>
-                      <Link href="about">Causes</Link>
-                    </li>
-                    <li>
                       <Link href="about">About Us</Link>
                     </li>
                     <li>
                       <Link href="about">New Campaign</Link>
-                    </li>
-                    <li>
-                      <Link href="about">Site Map</Link>
                     </li>
                     <li>
                       <Link href="about">New Events</Link>
@@ -68,16 +62,13 @@ export default function Footer1() {
                       <Link href="about">Press Release</Link>
                     </li>
                     <li>
-                      <Link href="contact">Contact</Link>
+                      <Link href="contact">Our Teams</Link>
                     </li>
                     <li>
                       <Link href="blog">Blog Posts</Link>
                     </li>
                     <li>
                       <Link href="about">Social Connect</Link>
-                    </li>
-                    <li>
-                      <Link href="about">Help Topics</Link>
                     </li>
                   </ul>
                 </div>
@@ -92,16 +83,19 @@ export default function Footer1() {
                   </div>
                   <ul className="footer-widget__list list-unstyled">
                     <li>
-                      <Link href="about">Company</Link>
+                      <Link
+                        href="https://www.amkatechnologies.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Main Company
+                      </Link>
                     </li>
                     <li>
                       <Link href="blog">Latest News</Link>
                     </li>
                     <li>
-                      <Link href="services">Popular Services</Link>
-                    </li>
-                    <li>
-                      <Link href="about">Financial</Link>
+                      <Link href="/services">Popular Services</Link>
                     </li>
                     <li>
                       <Link href="about">Consulting</Link>
@@ -129,9 +123,6 @@ export default function Footer1() {
                     </li>
                     <li>
                       <Link href="about">Being Volunteer</Link>
-                    </li>
-                    <li>
-                      <Link href="about">Raise fund to help</Link>
                     </li>
                   </ul>
                 </div>
@@ -183,7 +174,7 @@ export default function Footer1() {
           <div className="container">
             <div className="site-footer__bottom-inner">
               <p className="site-footer__bottom-text">
-                Copyright © 2025 All Rights Reserved.
+                Copyright © {new Date().getFullYear()} AMKA Digital Sdn Bhd. All Rights Reserved.
               </p>
               <ul className="list-unstyled site-footer__bottom-links">
                 <li>

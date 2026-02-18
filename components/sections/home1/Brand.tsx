@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
   slidesPerView: 6,
-  spaceBetween: 0,
+  spaceBetween: 20,
 
   loop: true,
 
@@ -23,21 +23,27 @@ const swiperOptions = {
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 12,
     },
     575: {
       slidesPerView: 2,
+      spaceBetween: 14,
     },
     767: {
       slidesPerView: 3,
+      spaceBetween: 16,
     },
     991: {
       slidesPerView: 4,
+      spaceBetween: 18,
     },
     1199: {
       slidesPerView: 5,
+      spaceBetween: 20,
     },
     1350: {
       slidesPerView: 6,
+      spaceBetween: 22,
     },
   },
 };
@@ -55,7 +61,7 @@ export default function Brands() {
               {/*Brand One Single*/}
               <div className="brand-one__single">
                 <div className="brand-one__img">
-                  <img src="assets/images/brand/brand-1-1.png"  />
+                  <img src="assets/images/brand/panasonic.png" />
                 </div>
               </div>
             </SwiperSlide>
@@ -63,7 +69,7 @@ export default function Brands() {
               {/*Brand One Single*/}
               <div className="brand-one__single">
                 <div className="brand-one__img">
-                  <img src="assets/images/brand/brand-1-2.png"  />
+                  <img src="assets/images/brand/veolia.png" />
                 </div>
               </div>
             </SwiperSlide>
@@ -71,7 +77,7 @@ export default function Brands() {
               {/*Brand One Single*/}
               <div className="brand-one__single">
                 <div className="brand-one__img">
-                  <img src="assets/images/brand/brand-1-3.png"  />
+                  <img src="assets/images/brand/megajana2.png" />
                 </div>
               </div>
             </SwiperSlide>
@@ -79,7 +85,7 @@ export default function Brands() {
               {/*Brand One Single*/}
               <div className="brand-one__single">
                 <div className="brand-one__img">
-                  <img src="assets/images/brand/brand-1-4.png"  />
+                  <img src="assets/images/brand/gas.png" />
                 </div>
               </div>
             </SwiperSlide>
@@ -87,7 +93,7 @@ export default function Brands() {
               {/*Brand One Single*/}
               <div className="brand-one__single">
                 <div className="brand-one__img">
-                  <img src="assets/images/brand/brand-1-5.png"  />
+                  <img src="assets/images/brand/westports.png" />
                 </div>
               </div>
             </SwiperSlide>
@@ -95,15 +101,7 @@ export default function Brands() {
               {/*Brand One Single*/}
               <div className="brand-one__single">
                 <div className="brand-one__img">
-                  <img src="assets/images/brand/brand-1-4.png"  />
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              {/*Brand One Single*/}
-              <div className="brand-one__single">
-                <div className="brand-one__img">
-                  <img src="assets/images/brand/brand-1-5.png"  />
+                  <img src="assets/images/brand/amka.png" />
                 </div>
               </div>
             </SwiperSlide>
