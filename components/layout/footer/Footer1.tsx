@@ -8,21 +8,21 @@ export default function Footer1() {
           className="site-footer__bg-2"
           style={{
             backgroundImage:
-              "url(assets/images/backgrounds/site-footer-bg-2.jpg)",
+              "url(/assets/images/backgrounds/site-footer-bg-2.jpg)",
           }}
         />
         <div
           className="site-footer__bg-3 float-bob-y"
           style={{
             backgroundImage:
-              "url(assets/images/backgrounds/site-footer-bg-3.png)",
+              "url(/assets/images/backgrounds/site-footer-bg-3.png)",
           }}
         />
         <div
           className="site-footer__bg"
           style={{
             backgroundImage:
-              "url(assets/images/backgrounds/site-footer-bg.jpg)",
+              "url(/assets/images/backgrounds/site-footer-bg.jpg)",
           }}
         ></div>
         <div className="site-footer__top">
@@ -195,3 +195,4 @@ export default function Footer1() {
     </>
   );
 }
+

@@ -73,7 +73,7 @@ export default function TestimonialSlider1() {
                             <div className="testimonial-four__client-box">
                                 <div className="testimonial-four__client-img">
                                     <img
-                                        src="assets/images/testimonial/testimonial-1-1.jpg"
+                                        src="/assets/images/testimonial/testimonial-1-1.jpg"
                                         
                                     />
                                 </div>
@@ -112,7 +112,7 @@ export default function TestimonialSlider1() {
                             <div className="testimonial-four__client-box">
                                 <div className="testimonial-four__client-img">
                                     <img
-                                        src="assets/images/testimonial/testimonial-1-2.jpg"
+                                        src="/assets/images/testimonial/testimonial-1-2.jpg"
                                         
                                     />
                                 </div>
@@ -151,7 +151,7 @@ export default function TestimonialSlider1() {
                             <div className="testimonial-four__client-box">
                                 <div className="testimonial-four__client-img">
                                     <img
-                                        src="assets/images/testimonial/testimonial-1-1.jpg"
+                                        src="/assets/images/testimonial/testimonial-1-1.jpg"
                                         
                                     />
                                 </div>
@@ -190,7 +190,7 @@ export default function TestimonialSlider1() {
                             <div className="testimonial-four__client-box">
                                 <div className="testimonial-four__client-img">
                                     <img
-                                        src="assets/images/testimonial/testimonial-1-2.jpg"
+                                        src="/assets/images/testimonial/testimonial-1-2.jpg"
                                         
                                     />
                                 </div>
@@ -219,3 +219,4 @@ export default function TestimonialSlider1() {
         </>
     )
 }
+

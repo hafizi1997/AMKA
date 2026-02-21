@@ -41,7 +41,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
 
           <div className="logo-box">
             <Link href="/" aria-label="logo image">
-              <img src="assets/images/resources/logo-1.png" width="150" />
+              <img src="/assets/images/resources/logo-1.png" width="150" />
             </Link>
           </div>
 
@@ -164,3 +164,4 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
   );
 };
 export default MobileMenu;
+

@@ -67,170 +67,21 @@ export default function Home() {
 
   return (
     <>
-      <Layout headerStyle={2} footerStyle={1} breadcrumbTitle="About Us">
-        {/*Brand One Start*/}
-        <section className="brand-one">
-          <div className="brand-one__inner">
-            <Swiper
-              {...swiperOptions}
-              className="brand-one__carousel thm-owl__carousel owl-theme owl-carousel"
-            >
-              <SwiperSlide>
-                {/*Brand One Single*/}
-                <div className="brand-one__single">
-                  <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-1.png"  />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                {/*Brand One Single*/}
-                <div className="brand-one__single">
-                  <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-2.png"  />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                {/*Brand One Single*/}
-                <div className="brand-one__single">
-                  <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-3.png"  />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                {/*Brand One Single*/}
-                <div className="brand-one__single">
-                  <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-4.png"  />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                {/*Brand One Single*/}
-                <div className="brand-one__single">
-                  <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-5.png"  />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                {/*Brand One Single*/}
-                <div className="brand-one__single">
-                  <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-4.png"  />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                {/*Brand One Single*/}
-                <div className="brand-one__single">
-                  <div className="brand-one__img">
-                    <img src="assets/images/brand/brand-1-5.png"  />
-                  </div>
-                </div>
-              </SwiperSlide>
-            </Swiper>
-            {/* If we need navigation buttons */}
-          </div>
-        </section>
-        {/*Brand One End*/}
-
-        {/*Feature One Start*/}
-        <section className="feature-one" >
-          <div className="container">
-            <div className="row">
-              {/*Feature One Single Start*/}
-              <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="feature-one__single">
-                  <div className="feature-one__icon">
-                    <span className="icon-project-management" />
-                  </div>
-                  <div className="feature-one__content">
-                    <h3 className="feature-one__title">
-                      <Link href="services-details">Manage It Services</Link>
-                    </h3>
-                    <p className="feature-one__text">
-                      Complete account of system, and expound the actual
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/*Feature One Single End*/}
-              {/*Feature One Single Start*/}
-              <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="feature-one__single">
-                  <div className="feature-one__icon">
-                    <span className="icon-supply-chain" />
-                  </div>
-                  <div className="feature-one__content">
-                    <h3 className="feature-one__title">
-                      <Link href="services-details">Digital Experience</Link>
-                    </h3>
-                    <p className="feature-one__text">
-                      Complete account of system, and expound the actual
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/*Feature One Single End*/}
-              {/*Feature One Single Start*/}
-              <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="feature-one__single">
-                  <div className="feature-one__icon">
-                    <span className="icon-cyber-security" />
-                  </div>
-                  <div className="feature-one__content">
-                    <h3 className="feature-one__title">
-                      <Link href="services-details">Cyber Security</Link>
-                    </h3>
-                    <p className="feature-one__text">
-                      Complete account of system, and expound the actual
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/*Feature One Single End*/}
-              {/*Feature One Single Start*/}
-              <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="feature-one__single">
-                  <div className="feature-one__icon">
-                    <span className="icon-content-management-1" />
-                  </div>
-                  <div className="feature-one__content">
-                    <h3 className="feature-one__title">
-                      <Link href="services-details">Deployment Service</Link>
-                    </h3>
-                    <p className="feature-one__text">
-                      Complete account of system, and expound the actual
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/*Feature One Single End*/}
-            </div>
-          </div>
-        </section>
-        {/*Feature One End*/}
-
+      <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="We help Malaysian businesses grow through smart digital solutions, automation, and scalable technology">
         {/*Services Four Start*/}
         <section className="services-four">
           <div
             className="services-four__bg"
             style={{
               backgroundImage:
-                "url(assets/images/backgrounds/services-four-bg.png)",
+                "url(/assets/images/backgrounds/services-four-bg.png)",
             }}
           />
           <div className="container">
             <div className="section-title text-center">
               <div className="section-title__tagline-box">
                 <div className="section-title__tagline-icon">
-                  <img
-                    src="assets/images/icon/section-title-icon-2.png"
-                    
-                  />
+                  <img src="/assets/images/icon/section-title-icon-2.png" />
                 </div>
                 <p className="section-title__tagline">What We Offering</p>
               </div>
@@ -351,10 +202,7 @@ export default function Home() {
                   <div className="section-title text-left">
                     <div className="section-title__tagline-box">
                       <div className="section-title__tagline-icon">
-                        <img
-                          src="assets/images/icon/section-title-icon.png"
-                          
-                        />
+                        <img src="/assets/images/icon/section-title-icon.png" />
                       </div>
                       <p className="section-title__tagline">
                         Technology Solution
@@ -374,10 +222,7 @@ export default function Home() {
                   </p>
                   <div className="faq-one__img-and-system">
                     <div className="faq-one__img">
-                      <img
-                        src="assets/images/resources/faq-one-img.jpg"
-                        
-                      />
+                      <img src="/assets/images/resources/faq-one-img.png" />
                     </div>
                     <div className="faq-one__system">
                       <h3 className="faq-one__system-title">
@@ -505,7 +350,7 @@ export default function Home() {
             <div className="section-title text-center">
               <div className="section-title__tagline-box">
                 <div className="section-title__tagline-icon">
-                  <img src="assets/images/icon/section-title-icon.png"  />
+                  <img src="/assets/images/icon/section-title-icon.png" />
                 </div>
                 <p className="section-title__tagline">Meet Our Team</p>
               </div>
@@ -520,7 +365,7 @@ export default function Home() {
                 <div className="team-one__single">
                   <div className="team-one__img-box">
                     <div className="team-one__img">
-                      <img src="assets/images/team/team-1-1.jpg"  />
+                      <img src="/assets/images/team/team-1-1.png" />
                       <div className="team-one__name-box">
                         <h3 className="team-one__name">
                           <Link href="team-details">Jecika Brown</Link>
@@ -562,7 +407,7 @@ export default function Home() {
                 <div className="team-one__single">
                   <div className="team-one__img-box">
                     <div className="team-one__img">
-                      <img src="assets/images/team/team-1-2.jpg"  />
+                      <img src="/assets/images/team/team-1-2.jpg" />
                       <div className="team-one__name-box">
                         <h3 className="team-one__name">
                           <Link href="team-details">Jhon Smith</Link>
@@ -604,7 +449,7 @@ export default function Home() {
                 <div className="team-one__single">
                   <div className="team-one__img-box">
                     <div className="team-one__img">
-                      <img src="assets/images/team/team-1-3.jpg"  />
+                      <img src="/assets/images/team/team-1-3.jpg" />
                       <div className="team-one__name-box">
                         <h3 className="team-one__name">
                           <Link href="team-details">Alisha Martin</Link>
@@ -646,7 +491,7 @@ export default function Home() {
                 <div className="team-one__single">
                   <div className="team-one__img-box">
                     <div className="team-one__img">
-                      <img src="assets/images/team/team-1-4.jpg"  />
+                      <img src="/assets/images/team/team-1-4.jpg" />
                       <div className="team-one__name-box">
                         <h3 className="team-one__name">
                           <Link href="team-details">David Kapor</Link>
@@ -691,28 +536,28 @@ export default function Home() {
             className="video-one__bg"
             style={{
               backgroundImage:
-                "url(assets/images/backgrounds/video-one-bg.jpg)",
+                "url(/assets/images/backgrounds/video-one-bg.jpg)",
             }}
           />
           <div
             className="video-one__bg-2"
             style={{
               backgroundImage:
-                "url(assets/images/backgrounds/video-one-bg-2.jpg)",
+                "url(/assets/images/backgrounds/video-one-bg-2.jpg)",
             }}
           ></div>
           <div
             className="video-one__bg-3"
             style={{
               backgroundImage:
-                "url(assets/images/backgrounds/video-one-bg-3.png)",
+                "url(/assets/images/backgrounds/video-one-bg-3.png)",
             }}
           ></div>
           <div
             className="video-one__bg-4"
             style={{
               backgroundImage:
-                "url(assets/images/backgrounds/video-one-bg-4.png)",
+                "url(/assets/images/backgrounds/video-one-bg-4.png)",
             }}
           ></div>
           <div className="container">
@@ -741,10 +586,7 @@ export default function Home() {
               <div className="section-title text-center">
                 <div className="section-title__tagline-box">
                   <div className="section-title__tagline-icon">
-                    <img
-                      src="assets/images/icon/section-title-icon.png"
-                      
-                    />
+                    <img src="/assets/images/icon/section-title-icon.png" />
                   </div>
                   <p className="section-title__tagline">Our Testimonial</p>
                 </div>
@@ -766,7 +608,7 @@ export default function Home() {
             <div className="section-title text-center">
               <div className="section-title__tagline-box">
                 <div className="section-title__tagline-icon">
-                  <img src="assets/images/icon/section-title-icon.png"  />
+                  <img src="/assets/images/icon/section-title-icon.png" />
                 </div>
                 <p className="section-title__tagline">Our Blog</p>
               </div>
@@ -783,7 +625,7 @@ export default function Home() {
                 <div className="blog-one__single">
                   <div className="blog-one__img-box">
                     <div className="blog-one__img">
-                      <img src="assets/images/blog/blog-1-1.jpg"  />
+                      <img src="/assets/images/blog/blog-1-1.jpg" />
                     </div>
                     <div className="blog-one__date">
                       <p>
@@ -834,7 +676,7 @@ export default function Home() {
                 <div className="blog-one__single">
                   <div className="blog-one__img-box">
                     <div className="blog-one__img">
-                      <img src="assets/images/blog/blog-1-2.jpg"  />
+                      <img src="/assets/images/blog/blog-1-2.jpg" />
                     </div>
                     <div className="blog-one__date">
                       <p>
@@ -885,7 +727,7 @@ export default function Home() {
                 <div className="blog-one__single">
                   <div className="blog-one__img-box">
                     <div className="blog-one__img">
-                      <img src="assets/images/blog/blog-1-3.jpg"  />
+                      <img src="/assets/images/blog/blog-1-3.jpg" />
                     </div>
                     <div className="blog-one__date">
                       <p>
@@ -941,7 +783,7 @@ export default function Home() {
                 className="newsletter-one__bg float-bob-y"
                 style={{
                   backgroundImage:
-                    "url(assets/images/backgrounds/newsletter-one-bg.jpg)",
+                    "url(/assets/images/backgrounds/newsletter-one-bg.jpg)",
                 }}
               />
               <h3 className="newsletter-one__title">Newsletter</h3>
@@ -969,3 +811,4 @@ export default function Home() {
     </>
   );
 }
+

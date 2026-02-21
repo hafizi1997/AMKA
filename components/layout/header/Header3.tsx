@@ -11,7 +11,7 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
             <div className="main-menu-three__wrapper-inner">
               <div className="main-menu-three__logo ">
                 <Link href="/">
-                  <img src="assets/images/resources/logo-3.png" />
+                  <img src="/assets/images/resources/logo-3.png" />
                 </Link>
               </div>
               <div className="main-menu-three__top" style={{ padding: "20px" }}>
@@ -113,7 +113,7 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
               <div className="main-menu-three__wrapper-inner">
                 <div className="main-menu-three__logo">
                   <a href="/">
-                    <img src="assets/images/resources/logo-3.png" />
+                    <img src="/assets/images/resources/logo-3.png" />
                   </a>
                 </div>
                 <div className="main-menu-three__top" style={{ padding: "20px" }}>
@@ -211,3 +211,4 @@ export default function Header2({ scroll, handlePopup, handleMobileMenu }) {
     </>
   );
 }
+
