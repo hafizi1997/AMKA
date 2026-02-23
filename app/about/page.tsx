@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
+import Service from "@/components/sections/home3/Service";
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -67,132 +68,15 @@ export default function Home() {
 
   return (
     <>
-      <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="We help Malaysian businesses grow through smart digital solutions, automation, and scalable technology">
+      <Layout
+        headerStyle={3}
+        footerStyle={1}
+        breadcrumbTitle="Empowering Malaysian businesses through digital innovation"
+      >
         {/*Services Four Start*/}
-        <section className="services-four">
-          <div
-            className="services-four__bg"
-            style={{
-              backgroundImage:
-                "url(/assets/images/backgrounds/services-four-bg.png)",
-            }}
-          />
-          <div className="container">
-            <div className="section-title text-center">
-              <div className="section-title__tagline-box">
-                <div className="section-title__tagline-icon">
-                  <img src="/assets/images/icon/section-title-icon-2.png" />
-                </div>
-                <p className="section-title__tagline">What We Offering</p>
-              </div>
-              <h2 className="section-title__title">We Make Bright Agency</h2>
-            </div>
-            <div className="row">
-              {/*Services Four Single Start*/}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                <div className="services-four__single">
-                  <div className="services-four__shape-1" />
-                  <div className="services-four__shape-2" />
-                  <div className="services-four__icon">
-                    <span className="icon-web-page" />
-                  </div>
-                  <h3 className="services-four__title">
-                    <Link href="services-details">
-                      Speed <br /> Optimization
-                    </Link>
-                  </h3>
-                  <p className="services-four__text">
-                    Lorem ipsum is are many variations of pass of majority.
-                  </p>
-                  <Link href="" className="services-four__arrow">
-                    <span className="icon-back" />
-                  </Link>
-                </div>
-              </div>
-              {/*Services Four Single End*/}
-              {/*Services Four Single Start*/}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="200ms"
-              >
-                <div className="services-four__single">
-                  <div className="services-four__shape-1" />
-                  <div className="services-four__shape-2" />
-                  <div className="services-four__icon">
-                    <span className="icon-money" />
-                  </div>
-                  <h3 className="services-four__title">
-                    <Link href="services-details">
-                      Digital <br /> Marketing
-                    </Link>
-                  </h3>
-                  <p className="services-four__text">
-                    Lorem ipsum is are many variations of pass of majority.
-                  </p>
-                  <Link href="" className="services-four__arrow">
-                    <span className="icon-back" />
-                  </Link>
-                </div>
-              </div>
-              {/*Services Four Single End*/}
-              {/*Services Four Single Start*/}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <div className="services-four__single">
-                  <div className="services-four__shape-1" />
-                  <div className="services-four__shape-2" />
-                  <div className="services-four__icon">
-                    <span className="icon-content-management-1" />
-                  </div>
-                  <h3 className="services-four__title">
-                    <Link href="services-details">
-                      Content <br /> Management
-                    </Link>
-                  </h3>
-                  <p className="services-four__text">
-                    Lorem ipsum is are many variations of pass of majority.
-                  </p>
-                  <Link href="" className="services-four__arrow">
-                    <span className="icon-back" />
-                  </Link>
-                </div>
-              </div>
-              {/*Services Four Single End*/}
-              {/*Services Four Single Start*/}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="400ms"
-              >
-                <div className="services-four__single">
-                  <div className="services-four__shape-1" />
-                  <div className="services-four__shape-2" />
-                  <div className="services-four__icon">
-                    <span className="icon-project-management" />
-                  </div>
-                  <h3 className="services-four__title">
-                    <Link href="services-details">
-                      Content <br /> Marketing
-                    </Link>
-                  </h3>
-                  <p className="services-four__text">
-                    Lorem ipsum is are many variations of pass of majority.
-                  </p>
-                  <Link href="" className="services-four__arrow">
-                    <span className="icon-back" />
-                  </Link>
-                </div>
-              </div>
-              {/*Services Four Single End*/}
-            </div>
-          </div>
-        </section>
-        {/*Services Four End*/}
 
+        {/*Services Four End*/}
+        <Service />
         {/*FAQ One Start*/}
         <section className="faq-one about-page-faq">
           <div className="container">
@@ -811,4 +695,3 @@ export default function Home() {
     </>
   );
 }
-
