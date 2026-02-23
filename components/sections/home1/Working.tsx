@@ -55,7 +55,7 @@ export default function Benefit() {
                   surface-level fixes.
                 </p>
                 <div className="benefits-one__points-and-mission">
-                  <ul className="benefits-one__points list-unstyled">
+                  <ul className="benefits-one__points benefits-one__points--row list-unstyled">
                     <li>
                       <div className="icon">
                         <span className="fa fa-check" />
@@ -73,13 +73,13 @@ export default function Benefit() {
                       </div>
                     </li>
                   </ul>
-                  <div className="benefits-one__mission">
+                  {/* <div className="benefits-one__mission">
                     <h3 className="benefits-one__mission-title">Our Mission</h3>
                     <p className="benefits-one__mission-text">
                       To turn complex business ideas into structured digital
                       systems that scale without operational chaos.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

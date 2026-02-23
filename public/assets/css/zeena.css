@@ -3906,6 +3906,20 @@ ul {
   color: var(--zeena-black);
 }
 
+.benefits-one__points--row {
+  display: flex;
+  max-width: 100%;
+  gap: 12px;
+}
+
+.benefits-one__points--row li {
+  flex: 1 1 0;
+}
+
+.benefits-one__points--row li+li {
+  margin-top: 0;
+}
+
 .benefits-one__mission {
   position: relative;
   display: block;
