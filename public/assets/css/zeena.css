@@ -11001,6 +11001,7 @@ section.error-page p {
   margin-top: 13px;
 }
 
+
 .services-three__bottom {
   position: relative;
   display: block;
@@ -11010,6 +11011,55 @@ section.error-page p {
 .services-three__bottom .row {
   --bs-gutter-x: 13px;
 }
+
+.services-three__vm {
+  margin-top: 28px;
+}
+
+.services-three__vm-box {
+  background-color: #fff;
+  border: 1px solid #f2f4fb;
+  box-shadow: 0px 2px 30px 0px rgba(9, 24, 84, 0.08);
+  padding: 24px 24px 20px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+
+.services-three__vm-title {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--zeena-black);
+}
+
+.services-three__vm-text {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.services-three__vm-list li {
+  position: relative;
+  font-size: 16px;
+  line-height: 28px;
+  padding-left: 18px;
+}
+
+.services-three__vm-list li + li {
+  margin-top: 8px;
+}
+
+.services-three__vm-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--zeena-base);
+}
+
 
 .services-three__bottom-single {
   position: relative;

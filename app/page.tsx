@@ -24,16 +24,16 @@ export default function Home() {
         <Banner />
         <Brand />
         <Feature />
-        <About />
+        <Working />
+        {/* <About /> */}
         <Process />
         <Service />
-        <Working />
         <Portfolio />
         <Faq />
         {/* <Cta /> */}
         {/* <Funfact /> */}
         {/* <Pricing /> */}
-        <Team />
+        {/* <Team /> */}
         {/* <Video /> */}
         {/* <Testimonial /> */}
         {/* <Blog /> */}

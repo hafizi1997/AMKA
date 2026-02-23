@@ -29,6 +29,36 @@ export default function Service() {
                   results, ensuring technology works for your business, not
                   against it.
                 </p>
+                <div
+                  className="services-three__vm wow fadeInUp"
+                  data-wow-delay="450ms"
+                >
+                  <div className="services-three__vm-box">
+                    <h4 className="services-three__vm-title">Our Vision</h4>
+                    <p className="services-three__vm-text">
+                      To become a trusted digital transformation partner
+                      empowering businesses across Malaysia and Southeast Asia.
+                    </p>
+                  </div>
+
+                  <div className="services-three__vm-box">
+                    <h4 className="services-three__vm-title">Our Mission</h4>
+                    <ul className="services-three__vm-list list-unstyled">
+                      <li>
+                        Simplify business operations through smart technology
+                      </li>
+                      <li>Deliver practical and scalable digital solutions</li>
+                      <li>
+                        Empower businesses to grow through automation and
+                        innovation
+                      </li>
+                      <li>
+                        Provide reliable, long-term digital support and
+                        partnership
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-xl-6">
@@ -44,11 +74,11 @@ export default function Service() {
                         <img src="assets/images/icon/services-three-right-icon-1.png" />
                       </div>
                       <h3 className="services-three__right-title">
-                        <Link href="services-details">Innovation</Link>
+                        <Link href="services-details">Customer Success</Link>
                       </h3>
                       <p className="services-three__right-text">
-                        We continuously explore smarter ways to solve
-                        <br /> business challenges.
+                        Our success is measured by the growth and
+                        <br /> satisfaction of our clients.
                       </p>
                     </div>
                   </div>
@@ -82,11 +112,11 @@ export default function Service() {
                         <img src="assets/images/icon/services-three-right-icon-3.png" />
                       </div>
                       <h3 className="services-three__right-title">
-                        <Link href="services-details">Customer Success</Link>
+                        <Link href="services-details">Innovation</Link>
                       </h3>
                       <p className="services-three__right-text">
-                        Our success is measured by the growth and
-                        <br /> satisfaction of our clients.
+                        We continuously explore smarter ways to solve
+                        <br /> business challenges.
                       </p>
                     </div>
                   </div>

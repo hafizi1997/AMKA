@@ -3,7 +3,7 @@ export default function Portfolio() {
   return (
     <>
       {/*Portfolio One STart*/}
-      <section className="portfolio-one">
+      <section className="portfolio-one mt-4">
         <div className="container">
           <div className="section-title text-center">
             <div className="section-title__tagline-box">

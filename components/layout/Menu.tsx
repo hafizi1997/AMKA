@@ -11,7 +11,7 @@ export default function Menu() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="#about-scroll-target">About</Link>
+          <Link href="/about">About</Link>
         </li>
         <li className="dropdown">
           <Link href="#">Services</Link>
