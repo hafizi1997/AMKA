@@ -74,7 +74,11 @@ export default function Process() {
                 {processes[activeIndex].description}
               </p>
             ) : (
-              <p className="process-one__desc is-idle" key="idle">
+              <p
+                className="process-one__desc is-idle"
+                key="idle"
+                style={{ color: "var(--zeena-base)" }}
+              >
                 Hover on a step to see details
               </p>
             )}
