@@ -8,7 +8,7 @@ export default function Team() {
           <div className="section-title text-center">
             <div className="section-title__tagline-box">
               <div className="section-title__tagline-icon">
-                <img src="assets/images/icon/section-title-icon.png"  />
+                <img src="assets/images/icon/section-title-icon.png" />
               </div>
               <p className="section-title__tagline">Meet Our Team</p>
             </div>
@@ -23,7 +23,7 @@ export default function Team() {
               <div className="team-one__single">
                 <div className="team-one__img-box">
                   <div className="team-one__img">
-                    <img src="assets/images/team/team-1-1.png"  />
+                    <img src="assets/images/team/team-1-1.png" />
                     <div className="team-one__name-box">
                       <h3 className="team-one__name">
                         <Link href="team-details">Muhammad Hafizi</Link>
@@ -65,7 +65,7 @@ export default function Team() {
               <div className="team-one__single">
                 <div className="team-one__img-box">
                   <div className="team-one__img">
-                    <img src="assets/images/team/team-1-2.jpg"  />
+                    <img src="assets/images/team/team-1-2.jpg" />
                     <div className="team-one__name-box">
                       <h3 className="team-one__name">
                         <Link href="team-details">Nur Musfirah</Link>
@@ -107,12 +107,14 @@ export default function Team() {
               <div className="team-one__single">
                 <div className="team-one__img-box">
                   <div className="team-one__img">
-                    <img src="assets/images/team/team-1-3.jpg"  />
+                    <img src="assets/images/team/team-1-3.jpg" />
                     <div className="team-one__name-box">
                       <h3 className="team-one__name">
                         <Link href="team-details">Irsyad Murtadha</Link>
                       </h3>
-                      <p className="team-one__sub-title">Senior Software Developer</p>
+                      <p className="team-one__sub-title">
+                        Senior Software Developer
+                      </p>
                     </div>
                   </div>
                   <ul className="list-unstyled team-one__social">
@@ -149,12 +151,12 @@ export default function Team() {
               <div className="team-one__single">
                 <div className="team-one__img-box">
                   <div className="team-one__img">
-                    <img src="assets/images/team/team-1-4.jpg"  />
+                    <img src="assets/images/team/team-1-4.jpg" />
                     <div className="team-one__name-box">
                       <h3 className="team-one__name">
-                        <Link href="team-details">David Kapor</Link>
+                        <Link href="team-details">Amirul Mukminin</Link>
                       </h3>
-                      <p className="team-one__sub-title">Web Designer</p>
+                      <p className="team-one__sub-title">Marketing Strategy</p>
                     </div>
                   </div>
                   <ul className="list-unstyled team-one__social">

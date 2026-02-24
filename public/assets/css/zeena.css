@@ -4918,6 +4918,13 @@ ul {
 /*--------------------------------------------------------------
 # Video One 
 --------------------------------------------------------------*/
+.section-padding {
+  position: relative;
+  display: block;
+  padding: 148px 0 258px;
+  z-index: 1;
+}
+
 .video-one {
   position: relative;
   display: block;

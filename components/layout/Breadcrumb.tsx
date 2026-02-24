@@ -7,10 +7,9 @@ export default function Breadcrumb({ breadcrumbTitle, link }) {
         <div
           className="page-header-bg"
           style={{
-            backgroundImage: "url(/assets/images/backgrounds/service-bg.png)",
+            backgroundImage: "url(/assets/images/backgrounds/service-bg2.png)",
           }}
         ></div>
-        <div className="page-header__shape-1" />
         <div className="page-header__shape-2 float-bob-y">
           <img src="/assets/images/shapes/page-header-shape-2.png" />
         </div>
@@ -21,14 +20,21 @@ export default function Breadcrumb({ breadcrumbTitle, link }) {
           <div className="page-header__inner">
             <h2>{breadcrumbTitle}</h2>
             <ul className="thm-breadcrumb list-unstyled">
-              {link && ( <>
-                <li>
-                  <Link href="/">Home</Link>
-                </li>
-                <li> <span>-</span> </li>
+              {link && (
+                <>
+                  <li>
+                    <Link href="/">Home</Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <span>-</span>{" "}
+                  </li>
                 </>
               )}
-              <li>A Malaysian digital agency delivering software, mobile apps, and marketing solutions to move your business forward</li>
+              <li>
+                A Malaysian digital agency delivering software, mobile apps, and
+                marketing solutions to move your business forward
+              </li>
             </ul>
           </div>
         </div>
