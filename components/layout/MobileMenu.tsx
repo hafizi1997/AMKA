@@ -110,8 +110,10 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     <span className="fa fa-angle-right" />
                   </button>
                 </li>
-
-                <li
+                <li>
+                  <Link href="/career/">Career</Link>
+                </li>
+                {/* <li
                   className={
                     isActive.key == 4 ? "dropdown current" : "dropdown"
                   }
@@ -135,7 +137,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                   >
                     <span className="fa fa-angle-right" />
                   </button>
-                </li>
+                </li> */}
                 <li>
                   <Link href="/contact">Contact</Link>
                 </li>
@@ -145,11 +147,11 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
           <ul className="mobile-nav__contact list-unstyled">
             <li>
               <i className="fa fa-envelope"></i>
-              <Link href="mailto:needhelp@zeena.com">needhelp@zeena.com</Link>
+              <Link href="mailto:team@amkatectnologies.com">team@amkatectnologies.com</Link>
             </li>
             <li>
               <i className="fa fa-phone-alt"></i>
-              <Link href="tel:666-888-0000">666 888 0000</Link>
+              <Link href="tel:+60193623141">+60-19-3623141</Link>
             </li>
           </ul>
           <div className="mobile-nav__top">
@@ -164,4 +166,3 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
   );
 };
 export default MobileMenu;
-

@@ -24,16 +24,8 @@ export default function Menu() {
             </li>
           </ul>
         </li>
-        <li className="dropdown">
-          <Link href="#">Blog</Link>
-          <ul className="sub-menu">
-            <li>
-              <Link href="blog">Blog</Link>
-            </li>
-            <li>
-              <Link href="blog-details">Blog details</Link>
-            </li>
-          </ul>
+        <li>
+          <Link href="/career">Career</Link>
         </li>
         <li>
           <Link href="contact">Contact</Link>
