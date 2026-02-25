@@ -73,7 +73,7 @@ export default function Home() {
       <Layout
         headerStyle={3}
         footerStyle={1}
-        breadcrumbTitle="Empowering Malaysian businesses through digital innovation"
+        breadcrumbTitle="Empowering Malaysian Businesses with Smart, Data-Driven Digital Solutions"
       >
         <Service />
         <Team />

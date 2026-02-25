@@ -14,20 +14,20 @@ export default function Service() {
                   </div>
                 </div>
                 <p className="services-three__text-1">
-                  AMKA Digital Technologies Sdn Bhd is a part of the AMKA
-                  Technologies group, a technology company dedicated to helping
-                  businesses modernize their operations, improve efficiency, and
-                  scale sustainably through technology.
+                  AMKA Digital Technologies Sdn Bhd is the digital solutions arm
+                  of AMKA Technologies Sdn Bhd, created to help businesses
+                  modernize how they operate and grow.
                 </p>
                 <p className="services-three__text-2">
-                  We partner with organizations of all sizes — from startups and
-                  SMEs to growing enterprises — delivering practical digital
-                  solutions that solve real business challenges.
+                  We work with startups, SMEs, and growing companies to deliver
+                  practical technology that solves real problems — from reducing
+                  manual work and improving workflow visibility to building
+                  systems that support faster decision-making.
                 </p>
                 <p className="services-three__text-3">
-                  Our approach focuses on clarity, usability, and measurable
-                  results, ensuring technology works for your business, not
-                  against it.
+                  Our approach is simple: build solutions that are clear,
+                  usable, and measurable — so technology supports your business,
+                  not the other way around.
                 </p>
                 <div
                   className="services-three__vm wow fadeInUp"
@@ -47,14 +47,17 @@ export default function Service() {
                       <li>
                         Simplify business operations through smart technology
                       </li>
-                      <li>Deliver practical and scalable digital solutions</li>
                       <li>
-                        Empower businesses to grow through automation and
-                        innovation
+                        Deliver scalable solutions designed for real-world
+                        workflows
                       </li>
                       <li>
-                        Provide reliable, long-term digital support and
-                        partnership
+                        Empower businesses to grow through better systems,
+                        better data, and better execution
+                      </li>
+                      <li>
+                        Provide reliable, long-term support as a technology
+                        partner
                       </li>
                     </ul>
                   </div>
@@ -77,8 +80,8 @@ export default function Service() {
                         <Link href="services-details">Customer Success</Link>
                       </h3>
                       <p className="services-three__right-text">
-                        Our success is measured by the growth and
-                        <br /> satisfaction of our clients.
+                        Our success is measured by the growth, efficiency, and
+                        satisfaction of our clients.
                       </p>
                     </div>
                   </div>
@@ -115,8 +118,8 @@ export default function Service() {
                         <Link href="services-details">Innovation</Link>
                       </h3>
                       <p className="services-three__right-text">
-                        We continuously explore smarter ways to solve
-                        <br /> business challenges.
+                        We continuously explore smarter ways to solve business
+                        challenges and improve results.
                       </p>
                     </div>
                   </div>
@@ -136,8 +139,8 @@ export default function Service() {
                         </Link>
                       </h3>
                       <p className="services-three__right-text">
-                        We evolve with technology to deliver better outcomes
-                        <br /> for our clients.
+                        We learn, iterate, and evolve — so our solutions stay
+                        effective as technology changes
                       </p>
                     </div>
                   </div>

@@ -32,8 +32,9 @@ export default function Breadcrumb({ breadcrumbTitle, link }) {
                 </>
               )}
               <li>
-                A Malaysian digital agency delivering software, mobile apps, and
-                marketing solutions to move your business forward
+                AMKA Digital Technologies Sdn Bhd helps businesses streamline
+                operations, improve customer experience, and scale confidently
+                through software, automation, and digital strategy
               </li>
             </ul>
           </div>
