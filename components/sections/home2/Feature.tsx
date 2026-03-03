@@ -20,7 +20,8 @@ export default function Feature() {
                   <Link href="team"> Digitize Your Business</Link>
                 </h3>
                 <p className="feature-two__text">
-                  Build systems that scale with your business.
+                  Helping businesses transition from manual processes into
+                  digital operations.
                 </p>
               </div>
             </div>
@@ -35,11 +36,11 @@ export default function Feature() {
                   <span className="icon-ux-design" />
                 </div>
                 <h3 className="feature-two__title">
-                  <Link href="contact">Web UI/UX Design</Link>
+                  <Link href="contact">Custom Your Software</Link>
                 </h3>
                 <p className="feature-two__text">
-                  {" "}
-                  Conversion-focused website design built for real users.
+                  Tailored systems designed to support unique operational
+                  requirements.
                 </p>
               </div>
             </div>
@@ -54,10 +55,10 @@ export default function Feature() {
                   <span className="icon-project-management" />
                 </div>
                 <h3 className="feature-two__title">
-                  <Link href="services">Digital Growth Strategy</Link>
+                  <Link href="services">Business AI Analytics</Link>
                 </h3>
                 <p className="feature-two__text">
-                  A clear roadmap before you invest further
+                  Make your business data into actionable insights that support smarter decision-making.
                 </p>
               </div>
             </div>
@@ -72,10 +73,10 @@ export default function Feature() {
                   <span className="icon-supply-chain" />
                 </div>
                 <h3 className="feature-two__title">
-                  <Link href="services">Website Consultant</Link>
+                  <Link href="services">Cloud Infrastructure</Link>
                 </h3>
                 <p className="feature-two__text">
-                  Make the right digital decisions before you build.
+                  Secure and scalable environments that support business growth.
                 </p>
               </div>
             </div>
