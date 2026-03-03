@@ -14294,6 +14294,10 @@ section.error-page p {
         flex-direction: column;
     }
 
+    .process-one__shape-1 {
+        display: none;
+    }
+
     .services-one__services-list li {
         flex: 0 0 100%;
         max-width: 100%;
