@@ -42,49 +42,45 @@ export default function Process() {
   const isActive = activeIndex !== null;
   return (
     <>
-      <section className="process-one">
-        <div className="process-one__inner">
-          <div className="process-one__shape-1 float-bob-y-2">
-            <img src="assets/images/shapes/process-one-shape-1.png" />
-          </div>
-          <div className="container">
-            <ul className="process-one__process-list list-unstyled">
-              {processes.map((process, index) => (
-                <li
-                  className="wow fadeInUp"
-                  data-wow-delay={process.delay}
-                  key={index}
-                  onMouseEnter={() => setActiveIndex(index)}
-                  onMouseLeave={() => setActiveIndex(null)}
-                >
-                  <div className="process-one__single">
-                    <div className="process-one__icon">
-                      <span className={process.icon} />
-                    </div>
-                    <p className="process-one__text">{process.title}</p>
-                    <div className="process-one__count" />
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="text-center">
-            {isActive ? (
-              <p className="process-one__desc is-active" key={activeIndex}>
-                {processes[activeIndex].description}
-              </p>
-            ) : (
-              <p
-                className="process-one__desc is-idle"
-                key="idle"
-                style={{ color: "var(--zeena-base)" }}
-              >
-                Hover on a step to see details
-              </p>
-            )}
-          </div>
+      <div className="process-one__inner">
+        <div className="process-one__shape-1 float-bob-y-2">
+          <img src="/assets/images/shapes/process-one-shape-1.png" />
         </div>
-      </section>
+        <ul className="process-one__process-list list-unstyled">
+          {processes.map((process, index) => (
+            <li
+              className="wow fadeInUp"
+              data-wow-delay={process.delay}
+              key={index}
+              onMouseEnter={() => setActiveIndex(index)}
+              onMouseLeave={() => setActiveIndex(null)}
+            >
+              <div className="process-one__single">
+                <div className="process-one__icon">
+                  <span className={process.icon} />
+                </div>
+                <p className="process-one__text">{process.title}</p>
+                <div className="process-one__count" />
+              </div>
+            </li>
+          ))}
+        </ul>
+        <div className="text-center">
+          {isActive ? (
+            <p className="process-one__desc is-active" key={activeIndex}>
+              {processes[activeIndex].description}
+            </p>
+          ) : (
+            <p
+              className="process-one__desc is-idle"
+              key="idle"
+              style={{ color: "var(--zeena-base)" }}
+            >
+              Hover on a step to see details
+            </p>
+          )}
+        </div>
+      </div>
     </>
   );
 }

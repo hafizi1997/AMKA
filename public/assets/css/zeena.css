@@ -3507,6 +3507,10 @@ ul {
   z-index: 2;
 }
 
+.process-one .section-title__tagline-box {
+  justify-content: center;
+}
+
 .process-one__inner {
   position: relative;
   display: block;

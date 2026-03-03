@@ -193,7 +193,22 @@ export default function Home() {
         {/*Services Four End*/}
 
         {/*Process One Start*/}
-        <Process />
+        <section className="process-one">
+          <div className="container">
+            <div className="section-title text-center">
+              <div className="section-title__tagline-box">
+                <div className="section-title__tagline-icon">
+                  <img src="/assets/images/icon/section-title-icon.png" />
+                </div>
+                <p className="section-title__tagline">Our Approach</p>
+              </div>
+              <h2 className="section-title__title">
+                Our Approach For Better Results
+              </h2>
+            </div>
+          </div>
+          <Process />
+        </section>
         {/*Process One End*/}
 
         {/*Video One Start*/}
