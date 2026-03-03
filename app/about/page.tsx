@@ -74,6 +74,8 @@ export default function Home() {
         headerStyle={3}
         footerStyle={1}
         breadcrumbTitle="Empowering Malaysian Businesses with Smart, Data-Driven Digital Solutions"
+        description=" AMKA Digital Technologies Sdn Bhd helps businesses streamline operations, improve customer experience, and scale confidently through software, automation, and digital strategy"
+        backgroundImage="/assets/images/backgrounds/service-bg2.png"
       >
         <Service />
         <Team />

@@ -26,7 +26,7 @@ export default function Home() {
         <Feature />
         <Working />
         {/* <About /> */}
-        <Process />
+        {/* <Process /> */}
         <Service />
         <Portfolio />
         <Faq />

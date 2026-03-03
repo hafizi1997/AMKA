@@ -21,6 +21,8 @@ type LayoutProps = {
   wrapperCls?: string;
   children: ReactNode;
   link?: boolean;
+  description?: string;
+  backgroundImage?: string;
 };
 
 export default function Layout({
@@ -29,6 +31,8 @@ export default function Layout({
   headTitle,
   breadcrumbTitle,
   link,
+  description,
+  backgroundImage,
   children,
   wrapperCls,
 }: LayoutProps) {
@@ -119,7 +123,14 @@ export default function Layout({
         <Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} />
         <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
 
-        {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} link={link} />}
+        {breadcrumbTitle && (
+          <Breadcrumb
+            breadcrumbTitle={breadcrumbTitle}
+            link={link}
+            description={description}
+            backgroundImage={backgroundImage}
+          />
+        )}
 
         {children}
 

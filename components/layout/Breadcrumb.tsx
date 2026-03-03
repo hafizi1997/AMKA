@@ -1,5 +1,10 @@
 import Link from "next/link";
-export default function Breadcrumb({ breadcrumbTitle, link }) {
+export default function Breadcrumb({
+  breadcrumbTitle,
+  link,
+  description,
+  backgroundImage,
+}) {
   return (
     <>
       {/*Page Header Start*/}
@@ -7,7 +12,7 @@ export default function Breadcrumb({ breadcrumbTitle, link }) {
         <div
           className="page-header-bg"
           style={{
-            backgroundImage: "url(/assets/images/backgrounds/service-bg2.png)",
+            backgroundImage: `url(${backgroundImage})`,
           }}
         ></div>
         <div className="page-header__shape-2 float-bob-y">
@@ -31,11 +36,7 @@ export default function Breadcrumb({ breadcrumbTitle, link }) {
                   </li>
                 </>
               )}
-              <li>
-                AMKA Digital Technologies Sdn Bhd helps businesses streamline
-                operations, improve customer experience, and scale confidently
-                through software, automation, and digital strategy
-              </li>
+              <li>{description}</li>
             </ul>
           </div>
         </div>
