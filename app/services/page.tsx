@@ -202,7 +202,7 @@ export default function Home() {
           <div className="container">
             <div className="section-title text-center">
               <div className="section-title__tagline-box">
-                <div className="section-title__tagline-icon">
+                <div className="section-title__tagline-icon sm:hidden">
                   <img src="/assets/images/icon/section-title-icon.png" />
                 </div>
                 <p className="section-title__tagline">Our Approach</p>
@@ -214,7 +214,6 @@ export default function Home() {
           </div>
           <Process />
         </section>
-
         {/*Process One End*/}
 
         {/*Newsletter One Start*/}

@@ -44,7 +44,7 @@ export default function Process() {
     <>
       <div className="process-one__inner">
         <div className="process-one__shape-1 float-bob-y-2">
-          <img src="/assets/images/shapes/process-one-shape-1.png" />
+          <img src="/assets/images/shapes/process-one-shape-3.png" />
         </div>
         <ul className="process-one__process-list list-unstyled">
           {processes.map((process, index) => (
