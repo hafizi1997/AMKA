@@ -10,14 +10,57 @@ export default function Feature() {
             <div className="col-xl-3 col-lg-6 col-md-6">
               <div className="feature-one__single">
                 <div className="feature-one__icon">
+                  <span className="icon-content-management-1" />
+                </div>
+                <div className="feature-one__content">
+                  <h3 className="feature-one__title">
+                    <Link href="/services/digitalization">
+                      Digitize Your Business
+                    </Link>
+                  </h3>
+                  <p className="feature-one__text">
+                    Helping businesses transition from manual processes into
+                    digital operations.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/*Feature One Single End*/}
+            {/*Feature One Single Start*/}
+            <div className="col-xl-3 col-lg-6 col-md-6">
+              <div className="feature-one__single">
+                <div className="feature-one__icon">
+                  <span className="icon-ux-design" />
+                </div>
+                <div className="feature-one__content">
+                  <h3 className="feature-one__title">
+                    <Link href="/services/software-development">
+                      Custom Your Software
+                    </Link>
+                  </h3>
+                  <p className="feature-one__text">
+                    Tailored systems designed to support unique operational
+                    requirements.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/*Feature One Single End*/}
+            {/*Feature One Single Start*/}
+            <div className="col-xl-3 col-lg-6 col-md-6">
+              <div className="feature-one__single">
+                <div className="feature-one__icon">
                   <span className="icon-project-management" />
                 </div>
                 <div className="feature-one__content">
                   <h3 className="feature-one__title">
-                    <Link href="services-details">Manage It Services</Link>
+                    <Link href="/services/business-ai-analytics">
+                      Business AI Analytics
+                    </Link>
                   </h3>
                   <p className="feature-one__text">
-                    Complete account of system, and expound the actual
+                    Make your business data into actionable insights that
+                    support smarter decision-making.
                   </p>
                 </div>
               </div>
@@ -31,44 +74,13 @@ export default function Feature() {
                 </div>
                 <div className="feature-one__content">
                   <h3 className="feature-one__title">
-                    <Link href="services-details">Digital Experience</Link>
+                    <Link href="/services/cloud-infrastructure">
+                      Cloud Infrastructure
+                    </Link>
                   </h3>
                   <p className="feature-one__text">
-                    Complete account of system, and expound the actual
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/*Feature One Single End*/}
-            {/*Feature One Single Start*/}
-            <div className="col-xl-3 col-lg-6 col-md-6">
-              <div className="feature-one__single">
-                <div className="feature-one__icon">
-                  <span className="icon-cyber-security" />
-                </div>
-                <div className="feature-one__content">
-                  <h3 className="feature-one__title">
-                    <Link href="services-details">Cyber Security</Link>
-                  </h3>
-                  <p className="feature-one__text">
-                    Complete account of system, and expound the actual
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/*Feature One Single End*/}
-            {/*Feature One Single Start*/}
-            <div className="col-xl-3 col-lg-6 col-md-6">
-              <div className="feature-one__single">
-                <div className="feature-one__icon">
-                  <span className="icon-content-management-1" />
-                </div>
-                <div className="feature-one__content">
-                  <h3 className="feature-one__title">
-                    <Link href="services-details">Deployment Service</Link>
-                  </h3>
-                  <p className="feature-one__text">
-                    Complete account of system, and expound the actual
+                    Secure and scalable environments that support business
+                    growth.
                   </p>
                 </div>
               </div>

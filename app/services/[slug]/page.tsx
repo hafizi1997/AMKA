@@ -1,18 +1,22 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Layout from "@/components/layout/Layout";
-import { serviceCategories, servicesBySlug, type ServiceCategory } from "../_data";
+import {
+  serviceCategories,
+  servicesBySlug,
+  type ServiceCategory,
+} from "../_data";
 
 type PageProps = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 };
 
 export function generateStaticParams() {
   return serviceCategories.map((service) => ({ slug: service.slug }));
 }
 
-const industryUseCases: Record<ServiceCategory["slug"], string[]> = {
-  "digitalization": [
+const industryUseCases: Partial<Record<ServiceCategory["slug"], string[]>> = {
+  digitalization: [
     "Operating model digitization for multi-team organizations",
     "Legacy process modernization with phased transition controls",
     "Cross-function data visibility for management reporting",
@@ -22,10 +26,10 @@ const industryUseCases: Record<ServiceCategory["slug"], string[]> = {
     "System integration between finance, CRM, and workflow platforms",
     "Secure business application delivery with long-term maintainability",
   ],
-  "mobile-solutions": [
-    "Mobile apps for customer onboarding and support workflows",
-    "Digital service touchpoints for faster response and retention",
-    "Experience optimization using behavioral analytics",
+  "business-ai-analytics": [
+    "Executive dashboards for KPI visibility and trend monitoring",
+    "Analytics to support pricing, growth, and operational decisions",
+    "Data-driven reporting for management and performance reviews",
   ],
   "cloud-infrastructure": [
     "Cloud migration for critical business workloads",
@@ -39,13 +43,15 @@ const industryUseCases: Record<ServiceCategory["slug"], string[]> = {
   ],
 };
 
-export default async function ServiceDetailPage({ params }: PageProps) {
-  const { slug } = await params;
+export default function ServiceDetailPage({ params }: PageProps) {
+  const { slug } = params;
   const service = servicesBySlug[slug as ServiceCategory["slug"]];
 
   if (!service) {
     notFound();
   }
+
+  const useCases = industryUseCases[service.slug] ?? [];
 
   return (
     <Layout
@@ -66,7 +72,9 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             </div>
             <h2 className="section-title__title">{service.title}</h2>
           </div>
+
           <p className="services-details__text">{service.shortDescription}</p>
+
           <div className="row">
             <div className="col-xl-8 col-lg-7">
               <div className="services-details__left">
@@ -83,19 +91,30 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                     </li>
                   ))}
                 </ul>
+
                 <h3 className="services-details__title">Business Impact</h3>
-                <p className="services-details__text">{service.businessImpact}</p>
-                <h3 className="services-details__title">Typical Use Cases</h3>
-                <ul className="services-details__points-2 list-unstyled">
-                  {industryUseCases[service.slug].map((item) => (
-                    <li key={item}>
-                      <div className="services-details__points-two-shape" />
-                      <p>{item}</p>
-                    </li>
-                  ))}
-                </ul>
+                <p className="services-details__text">
+                  {service.businessImpact}
+                </p>
+
+                {useCases.length > 0 && (
+                  <>
+                    <h3 className="services-details__title">
+                      Typical Use Cases
+                    </h3>
+                    <ul className="services-details__points-2 list-unstyled">
+                      {useCases.map((item) => (
+                        <li key={item}>
+                          <div className="services-details__points-two-shape" />
+                          <p>{item}</p>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
               </div>
             </div>
+
             <div className="col-xl-4 col-lg-5">
               <div className="services-details__right">
                 <div className="sidebar__single sidebar__category">
@@ -105,23 +124,12 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   <ul className="sidebar__category-list list-unstyled">
                     {serviceCategories.map((item) => (
                       <li key={item.slug}>
-                        <Link href={`/services/${item.slug}`}>{item.title}</Link>
+                        <Link href={`/services/${item.slug}`}>
+                          {item.title}
+                        </Link>
                       </li>
                     ))}
                   </ul>
-                </div>
-                <div className="services-details__banner">
-                  <h3 className="services-details__banner-title">
-                    Start Your
-                    <br /> Transformation
-                  </h3>
-                  <p className="services-details__banner-text">
-                    Discuss your priorities with AMKA Digital Technologies and
-                    define a practical delivery roadmap.
-                  </p>
-                  <div className="services-details__banner-btn">
-                    <Link href="/contact">Talk to Our Team</Link>
-                  </div>
                 </div>
               </div>
             </div>

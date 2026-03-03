@@ -58,7 +58,8 @@ export default function Feature() {
                   <Link href="services">Business AI Analytics</Link>
                 </h3>
                 <p className="feature-two__text">
-                  Make your business data into actionable insights that support smarter decision-making.
+                  Make your business data into actionable insights that support
+                  smarter decision-making.
                 </p>
               </div>
             </div>

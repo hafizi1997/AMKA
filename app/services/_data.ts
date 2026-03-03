@@ -2,7 +2,7 @@ export type ServiceCategory = {
   slug:
     | "digitalization"
     | "software-development"
-    | "mobile-solutions"
+    | "business-ai-analytics"
     | "cloud-infrastructure"
     | "automation-ai";
   title: string;
@@ -17,7 +17,7 @@ export const serviceCategories: ServiceCategory[] = [
     slug: "digitalization",
     title: "Digitize Your Business",
     shortDescription:
-      "Modernize core operations with strategy-led digital programs designed for measurable performance improvement.",
+      "Helping businesses transition from manual processes into digital operations.",
     whatWeDeliver: [
       "Digital maturity and process assessment",
       "Transformation roadmap and priority planning",
@@ -44,18 +44,18 @@ export const serviceCategories: ServiceCategory[] = [
     iconClass: "icon-software",
   },
   {
-    slug: "mobile-solutions",
-    title: "Mobile & Customer Experience Solutions",
+    slug: "business-ai-analytics",
+    title: "Business AI Analytics",
     shortDescription:
-      "Create high-value mobile and customer-facing experiences that improve engagement and service delivery.",
+      "Make your business data into actionable insights that support smarter decision-making.",
     whatWeDeliver: [
-      "Customer journey mapping and mobile experience design",
-      "Native and cross-platform mobile application delivery",
-      "Client portal and service interaction platforms",
-      "Analytics-driven optimization of user behavior and retention",
+      "Business performance dashboards (KPI-focused)",
+      "Sales, operations, and financial reporting",
+      "Data visualization and executive views",
+      "Decision-support insights and forecasting (where applicable)",
     ],
     businessImpact:
-      "Higher customer satisfaction, better service responsiveness, and stronger digital channel conversion.",
+      "Better visibility, faster decisions, and improved planning through structured analytics.",
     iconClass: "icon-ux-design",
   },
   {
