@@ -17,7 +17,7 @@ export default function Feature() {
                   <span className="icon-content-management-1" />
                 </div>
                 <h3 className="feature-two__title">
-                  <Link href="team"> Digitize Your Business</Link>
+                  <Link href="/services/digitalization"> Digitize Your Business</Link>
                 </h3>
                 <p className="feature-two__text">
                   Helping businesses transition from manual processes into
@@ -36,7 +36,7 @@ export default function Feature() {
                   <span className="icon-ux-design" />
                 </div>
                 <h3 className="feature-two__title">
-                  <Link href="contact">Custom Your Software</Link>
+                  <Link href="/services/software-development">Custom Your Software</Link>
                 </h3>
                 <p className="feature-two__text">
                   Tailored systems designed to support unique operational
@@ -55,7 +55,7 @@ export default function Feature() {
                   <span className="icon-project-management" />
                 </div>
                 <h3 className="feature-two__title">
-                  <Link href="services">Business AI Analytics</Link>
+                  <Link href="/services/business-ai-analytics">Business AI Analytics</Link>
                 </h3>
                 <p className="feature-two__text">
                   Make your business data into actionable insights that support
@@ -74,7 +74,7 @@ export default function Feature() {
                   <span className="icon-supply-chain" />
                 </div>
                 <h3 className="feature-two__title">
-                  <Link href="services">Cloud Infrastructure</Link>
+                  <Link href="/services/cloud-infrastructure">Cloud Infrastructure</Link>
                 </h3>
                 <p className="feature-two__text">
                   Secure and scalable environments that support business growth.
