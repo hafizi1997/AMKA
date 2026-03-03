@@ -467,16 +467,17 @@ export default function Home() {
                     "url(/assets/images/backgrounds/newsletter-one-bg.jpg)",
                 }}
               />
-              <h3 className="newsletter-one__title">Newsletter</h3>
-              <p className="newsletter-one__sub-title">Stay updated</p>
+              <h3 className="newsletter-one__title">
+                Ready to Modernize Your Business Operations?
+              </h3>
               <div
                 className="newsletter-one__form mc-form"
                 data-url="MC_FORM_URL"
               >
-                <input type="email" name="EMAIL" placeholder="Email address" />
+                <input type="email" name="phone" placeholder="Phone number" />
                 <button type="submit" className="newsletter-one__btn">
                   <span>
-                    Subscribe
+                    Get Contacted
                     <i className="icon-arrow" />
                   </span>
                 </button>
