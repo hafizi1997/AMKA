@@ -194,7 +194,7 @@ export default function Home() {
         {/*Services Four End*/}
 
         {/*Industry Start*/}
-        <Service />
+        {/* <Service /> */}
         {/*Industry End*/}
 
         {/*Process One Start*/}
@@ -214,6 +214,7 @@ export default function Home() {
           </div>
           <Process />
         </section>
+
         {/*Process One End*/}
 
         {/*Newsletter One Start*/}
