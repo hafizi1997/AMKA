@@ -5566,7 +5566,8 @@ ul {
   margin-top: 28px;
 }
 
-.newsletter-one__form input[type=email] {
+.newsletter-one__form input[type=email],
+.newsletter-one__form input[type=tel] {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -15884,4 +15885,5 @@ section.error-page p {
 .dark-version .blog-one__btn {
     border-top: 1px solid rgba(var(--zeena-white-rgb), .10);
 }
+
 
