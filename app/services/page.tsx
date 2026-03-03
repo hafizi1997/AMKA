@@ -6,6 +6,7 @@ import TestimonialSlider from "@/components/slider/TestimonialSlider";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import Process from "@/components/sections/home1/Process";
 import Feature from "@/components/sections/home1/Feature";
+import Service from "@/components/sections/home2/Service";
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
   slidesPerView: 6,
@@ -191,6 +192,10 @@ export default function Home() {
           </div>
         </section>
         {/*Services Four End*/}
+
+        {/*Industry Start*/}
+        <Service />
+        {/*Industry End*/}
 
         {/*Process One Start*/}
         <section className="process-one">

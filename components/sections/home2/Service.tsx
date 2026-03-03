@@ -1,5 +1,51 @@
 import Link from "next/link";
+
 export default function Service() {
+  const industryItems = [
+    {
+      title: "Manufacturing",
+      description:
+        "Digitize production workflows and reduce operational delays.",
+      icon: "icon-self-development",
+      delay: "100ms",
+    },
+    {
+      title: "Logistics & Distribution",
+      description:
+        "Improve visibility across inventory, routes, and fulfillment.",
+      icon: "icon-content-management-1",
+      delay: "200ms",
+    },
+    {
+      title: "Retail & E-commerce",
+      description:
+        "Scale storefront, order flow, and customer experience systems.",
+      icon: "icon-wealth",
+      delay: "300ms",
+    },
+    {
+      title: "Healthcare Services",
+      description:
+        "Support secure records, scheduling, and service operations.",
+      icon: "icon-money",
+      delay: "400ms",
+    },
+    {
+      title: "Financial & Professional Services",
+      description:
+        "Streamline compliance-heavy processes and team productivity.",
+      icon: "icon-brainstorming",
+      delay: "500ms",
+    },
+    {
+      title: "Education & Public Sector",
+      description:
+        "Modernize service delivery and internal administration tools.",
+      icon: "icon-firewall",
+      delay: "600ms",
+    },
+  ];
+
   return (
     <>
       {/*Services Two Start*/}
@@ -7,165 +53,56 @@ export default function Service() {
         <div className="container">
           <div className="section-title-two text-center">
             <div className="section-title-two__tagline-box">
-              <span className="section-title-two__tagline">What We Do</span>
+              <span className="section-title-two__tagline">
+                Industries We Support
+              </span>
             </div>
-            <h2 className="section-title-two__title">Our Best Services</h2>
+            <h2 className="section-title-two__title">
+              Built for Real Operating Environments
+            </h2>
           </div>
+
           <div className="row">
             <div className="col-xl-6">
               <div className="services-two__left">
                 <div className="services-two__img">
                   <img
                     src="assets/images/services/services-two-img-1.jpg"
-                    
+                    alt="Services"
                   />
                 </div>
               </div>
             </div>
+
             <div className="col-xl-6">
               <div className="services-two__right">
                 <div className="row">
                   {/*Services Two Single Start*/}
-                  <div
-                    className="col-xl-6 col-lg-6 wow fadeInUp"
-                    data-wow-delay="100ms"
-                  >
-                    <div className="services-two__single-box">
-                      <div className="services-two__single">
-                        <div className="services-two__icon">
-                          <span className="icon-self-development" />
-                        </div>
-                        <div className="services-two__content">
-                          <h3 className="services-two__title">
-                            <Link href="services-details">
-                              Product Development
-                            </Link>
-                          </h3>
-                          <p className="services-two__text">
-                            Lorem ipsum is simply sit <br /> of free text dolor.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*Services Two Single End*/}
-                  {/*Services Two Single Start*/}
-                  <div
-                    className="col-xl-6 col-lg-6 wow fadeInUp"
-                    data-wow-delay="200ms"
-                  >
-                    <div className="services-two__single-box">
-                      <div className="services-two__single">
-                        <div className="services-two__icon">
-                          <span className="icon-content-management-1" />
-                        </div>
-                        <div className="services-two__content">
-                          <h3 className="services-two__title">
-                            <Link href="services-details">
-                              Content Management
-                            </Link>
-                          </h3>
-                          <p className="services-two__text">
-                            Lorem ipsum is simply sit <br /> of free text dolor.
-                          </p>
+                  {industryItems.map((item, index) => (
+                    <div
+                      key={`${item.title}-${index}`}
+                      className="col-xl-6 col-lg-6 wow fadeInUp"
+                      data-wow-delay={item.delay}
+                    >
+                      <div className="services-two__single-box">
+                        <div className="services-two__single">
+                          <div className="services-two__icon">
+                            <span className={item.icon} />
+                          </div>
+
+                          <div className="services-two__content">
+                            <h3 className="services-two__title">
+                              <Link href="/services-details">{item.title}</Link>
+                            </h3>
+
+                            <p className="services-two__text">
+                              {item.description}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  {/*Services Two Single End*/}
-                  {/*Services Two Single Start*/}
-                  <div
-                    className="col-xl-6 col-lg-6 wow fadeInUp"
-                    data-wow-delay="300ms"
-                  >
-                    <div className="services-two__single-box">
-                      <div className="services-two__single">
-                        <div className="services-two__icon">
-                          <span className="icon-wealth" />
-                        </div>
-                        <div className="services-two__content">
-                          <h3 className="services-two__title">
-                            <Link href="services-details">
-                              Wealth Management
-                            </Link>
-                          </h3>
-                          <p className="services-two__text">
-                            Lorem ipsum is simply sit <br /> of free text dolor.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*Services Two Single End*/}
-                  {/*Services Two Single Start*/}
-                  <div
-                    className="col-xl-6 col-lg-6 wow fadeInUp"
-                    data-wow-delay="400ms"
-                  >
-                    <div className="services-two__single-box">
-                      <div className="services-two__single">
-                        <div className="services-two__icon">
-                          <span className="icon-money" />
-                        </div>
-                        <div className="services-two__content">
-                          <h3 className="services-two__title">
-                            <Link href="services-details">
-                              Finance Consulting
-                            </Link>
-                          </h3>
-                          <p className="services-two__text">
-                            Lorem ipsum is simply sit <br /> of free text dolor.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*Services Two Single End*/}
-                  {/*Services Two Single Start*/}
-                  <div
-                    className="col-xl-6 col-lg-6 wow fadeInUp"
-                    data-wow-delay="500ms"
-                  >
-                    <div className="services-two__single-box">
-                      <div className="services-two__single">
-                        <div className="services-two__icon">
-                          <span className="icon-brainstorming" />
-                        </div>
-                        <div className="services-two__content">
-                          <h3 className="services-two__title">
-                            <Link href="services-details">Data Analysis</Link>
-                          </h3>
-                          <p className="services-two__text">
-                            Lorem ipsum is simply sit <br /> of free text dolor.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*Services Two Single End*/}
-                  {/*Services Two Single Start*/}
-                  <div
-                    className="col-xl-6 col-lg-6 wow fadeInUp"
-                    data-wow-delay="600ms"
-                  >
-                    <div className="services-two__single-box">
-                      <div className="services-two__single">
-                        <div className="services-two__icon">
-                          <span className="icon-firewall" />
-                        </div>
-                        <div className="services-two__content">
-                          <h3 className="services-two__title">
-                            <Link href="services-details">
-                              Firewall Advance
-                            </Link>
-                          </h3>
-                          <p className="services-two__text">
-                            Lorem ipsum is simply sit <br /> of free text dolor.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                   {/*Services Two Single End*/}
                 </div>
               </div>
