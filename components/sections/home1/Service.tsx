@@ -11,7 +11,7 @@ export default function Service() {
                 <img src="assets/images/icon/section-title-icon.png" />
               </div>
               <p className="section-title__tagline">
-                <Link href="#">Experts in Building Digital Systems</Link>
+                Experts in Building Digital Systems
               </p>
             </div>
             <h2 className="section-title__title">
@@ -26,10 +26,8 @@ export default function Service() {
                     <span className="icon-coding" />
                   </div>
                   <h3 className="services-one__title">
-                    <Link href="services-details">
-                      Product
-                      <br /> Development
-                    </Link>
+                    Product
+                    <br /> Development
                   </h3>
                 </div>
               </li>
@@ -39,10 +37,8 @@ export default function Service() {
                     <span className="icon-cloud-database" />
                   </div>
                   <h3 className="services-one__title">
-                    <Link href="services-details">
-                      Cloud
-                      <br /> Computing
-                    </Link>
+                    Cloud
+                    <br /> Computing
                   </h3>
                 </div>
               </li>
@@ -52,10 +48,8 @@ export default function Service() {
                     <span className="icon-ux-design" />
                   </div>
                   <h3 className="services-one__title">
-                    <Link href="services-details">
-                      UI/UX
-                      <br /> Designing
-                    </Link>
+                    UI/UX
+                    <br /> Designing
                   </h3>
                 </div>
               </li>
@@ -65,10 +59,8 @@ export default function Service() {
                     <span className="icon-cyber-security" />
                   </div>
                   <h3 className="services-one__title">
-                    <Link href="services-details">
-                      Cyber
-                      <br /> Security
-                    </Link>
+                    Cyber
+                    <br /> Security
                   </h3>
                 </div>
               </li>
@@ -80,10 +72,8 @@ export default function Service() {
                     <span className="icon-event-management" />
                   </div>
                   <h3 className="services-one__title">
-                    <Link href="services-details">
-                      Event
-                      <br /> Processing
-                    </Link>
+                    Event
+                    <br /> Processing
                   </h3>
                 </div>
               </li>
@@ -93,10 +83,8 @@ export default function Service() {
                     <span className="icon-content-management-1" />
                   </div>
                   <h3 className="services-one__title">
-                    <Link href="services-details">
-                      Content
-                      <br /> Management
-                    </Link>
+                    Content
+                    <br /> Management
                   </h3>
                 </div>
               </li>
@@ -106,10 +94,8 @@ export default function Service() {
                     <span className="icon-cyber-security" />
                   </div>
                   <h3 className="services-one__title">
-                    <Link href="services-details">
-                      Cyber
-                      <br /> Security
-                    </Link>
+                    Cyber
+                    <br /> Security
                   </h3>
                 </div>
               </li>
@@ -119,10 +105,8 @@ export default function Service() {
                     <span className="icon-backup" />
                   </div>
                   <h3 className="services-one__title">
-                    <Link href="services-details">
-                      Backup
-                      <br /> &amp; Recovery
-                    </Link>
+                    Backup
+                    <br /> &amp; Recovery
                   </h3>
                 </div>
               </li>

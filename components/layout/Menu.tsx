@@ -19,9 +19,6 @@ export default function Menu() {
             <li>
               <Link href="services">Services</Link>
             </li>
-            <li>
-              <Link href="service-details">Service Details</Link>
-            </li>
           </ul>
         </li>
         <li>

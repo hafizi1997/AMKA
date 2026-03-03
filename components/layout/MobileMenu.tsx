@@ -99,9 +99,6 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     <li>
                       <Link href="services">Services</Link>
                     </li>
-                    <li>
-                      <Link href="service-details">Services Details</Link>
-                    </li>
                   </ul>
                   <button
                     className={isActive.key == 2 ? "expanded open" : ""}

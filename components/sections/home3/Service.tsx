@@ -77,7 +77,7 @@ export default function Service() {
                         <img src="assets/images/icon/services-three-right-icon-1.png" />
                       </div>
                       <h3 className="services-three__right-title">
-                        <Link href="services-details">Customer Success</Link>
+                        Customer Success
                       </h3>
                       <p className="services-three__right-text">
                         Our success is measured by the growth, efficiency, and
@@ -95,8 +95,8 @@ export default function Service() {
                       <div className="services-three__right-icon">
                         <img src="assets/images/icon/services-three-right-icon-2.png" />
                       </div>
-                      <h3 className="services-three__right-title">
-                        <Link href="services-details">Integrity</Link>
+                      <h3 className="services-three__right-title text-white">
+                        Integrity
                       </h3>
                       <p className="services-three__right-text">
                         We build trust through transparency, honesty,
@@ -114,8 +114,8 @@ export default function Service() {
                       <div className="services-three__right-icon">
                         <img src="assets/images/icon/services-three-right-icon-3.png" />
                       </div>
-                      <h3 className="services-three__right-title">
-                        <Link href="services-details">Innovation</Link>
+                      <h3 className="services-three__right-title text-white">
+                        Innovation
                       </h3>
                       <p className="services-three__right-text">
                         We continuously explore smarter ways to solve business
@@ -134,9 +134,7 @@ export default function Service() {
                         <img src="assets/images/icon/services-three-right-icon-4.png" />
                       </div>
                       <h3 className="services-three__right-title">
-                        <Link href="services-details">
-                          Continuous Improvement
-                        </Link>
+                        Continuous Improvement
                       </h3>
                       <p className="services-three__right-text">
                         We learn, iterate, and evolve — so our solutions stay
