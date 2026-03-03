@@ -13,35 +13,35 @@ export default function Service() {
       title: "Logistics & Distribution",
       description:
         "Improve visibility across inventory, routes, and fulfillment.",
-      icon: "icon-content-management-1",
+      icon: "icon-brainstorming",
       delay: "200ms",
     },
     {
       title: "Retail & E-commerce",
       description:
         "Scale storefront, order flow, and customer experience systems.",
-      icon: "icon-wealth",
+      icon: "icon-shopping-online",
       delay: "300ms",
     },
     {
       title: "Healthcare Services",
       description:
         "Support secure records, scheduling, and service operations.",
-      icon: "icon-money",
+      icon: "icon-heart",
       delay: "400ms",
     },
     {
       title: "Financial & Professional Services",
       description:
         "Streamline compliance-heavy processes and team productivity.",
-      icon: "icon-brainstorming",
+      icon: "icon-report",
       delay: "500ms",
     },
     {
       title: "Education & Public Sector",
       description:
         "Modernize service delivery and internal administration tools.",
-      icon: "icon-firewall",
+      icon: "icon-writer",
       delay: "600ms",
     },
   ];
