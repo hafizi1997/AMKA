@@ -13029,7 +13029,7 @@ section.error-page p {
   display: block;
   background-color: #020202;
   overflow: hidden;
-  padding: 120px 0 220px;
+  padding: 0 0 260px;
   z-index: 1;
 }
 
@@ -13436,6 +13436,10 @@ section.error-page p {
   border: 1px solid rgba(var(--zeena-black-rgb), 0.08);
 }
 
+.services-impact__carousel .swiper-slide {
+  height: auto;
+}
+
 .services-impact__head {
   position: relative;
   display: flex;
@@ -13534,6 +13538,58 @@ section.error-page p {
   border-top-color: rgba(var(--zeena-white-rgb), 0.3);
 }
 
+.services-impact__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.services-impact__nav {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.14);
+  background-color: var(--zeena-white);
+  border-radius: 50%;
+  color: var(--zeena-black);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.services-impact__nav:hover {
+  background-color: var(--zeena-base);
+  color: var(--zeena-white);
+  border-color: var(--zeena-base);
+}
+
+.services-impact__nav.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.services-impact-pagination {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+}
+
+.services-impact-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(var(--zeena-black-rgb), 0.24);
+  opacity: 1;
+  margin: 0 5px !important;
+}
+
+.services-impact-pagination .swiper-pagination-bullet-active {
+  background-color: var(--zeena-base);
+}
+
 @media only screen and (max-width: 767px) {
   .services-impact__intro {
     font-size: 16px;
@@ -13547,6 +13603,10 @@ section.error-page p {
   .services-impact__title {
     font-size: 21px;
     line-height: 32px;
+  }
+
+  .services-impact__controls {
+    margin-top: 18px;
   }
 }
 

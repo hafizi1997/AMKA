@@ -1,4 +1,6 @@
 "use client";
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Layout from "@/components/layout/Layout";
 import Process from "@/components/sections/home1/Process";
 import Feature from "@/components/sections/home1/Feature";
@@ -58,6 +60,29 @@ const impactServices = [
     impact: "Long-term operational stability and reduced business risk.",
   },
 ];
+
+const impactSliderOptions = {
+  modules: [Pagination, Navigation],
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: false,
+  navigation: {
+    nextEl: ".services-impact-next",
+    prevEl: ".services-impact-prev",
+  },
+  pagination: {
+    el: ".services-impact-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+};
 export default function Home() {
   return (
     <>
@@ -99,19 +124,13 @@ export default function Home() {
                 Practical digital solutions applied to real business
                 environments.
               </h2>
-              <p className="services-impact__intro">
-                Strategic systems designed to improve execution quality, reduce
-                operational friction, and make performance measurable across
-                teams.
-              </p>
             </div>
-            <div className="row gutter-y-30">
+            <Swiper
+              {...impactSliderOptions}
+              className="services-impact__carousel"
+            >
               {impactServices.map((service, index) => (
-                <div
-                  key={service.title}
-                  className="col-xl-6 col-lg-6 wow fadeInUp"
-                  data-wow-delay={service.delay}
-                >
+                <SwiperSlide key={service.title}>
                   <article className="services-four__single services-impact__card">
                     <div className="services-four__shape-1" />
                     <div className="services-four__shape-2" />
@@ -138,8 +157,25 @@ export default function Home() {
                       <span>Impact:</span> {service.impact}
                     </p>
                   </article>
-                </div>
+                </SwiperSlide>
               ))}
+            </Swiper>
+            <div className="services-impact__controls">
+              <button
+                type="button"
+                className="services-impact__nav services-impact-prev"
+                aria-label="Previous service"
+              >
+                <span className="icon-left1" />
+              </button>
+              <div className="services-impact-pagination" />
+              <button
+                type="button"
+                className="services-impact__nav services-impact-next"
+                aria-label="Next service"
+              >
+                <span className="icon-back1" />
+              </button>
             </div>
           </div>
         </section>
