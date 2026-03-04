@@ -1,51 +1,63 @@
 "use client";
-import Link from "next/link";
-import { useState } from "react";
 import Layout from "@/components/layout/Layout";
-import TestimonialSlider from "@/components/slider/TestimonialSlider";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import Process from "@/components/sections/home1/Process";
 import Feature from "@/components/sections/home1/Feature";
 import Service from "@/components/sections/home2/Service";
-const swiperOptions = {
-  modules: [Autoplay, Pagination, Navigation],
-  slidesPerView: 6,
-  spaceBetween: 0,
 
-  loop: true,
-
-  // Navigation
-  navigation: {
-    nextEl: ".srn",
-    prevEl: ".srp",
+const impactServices = [
+  {
+    title: "CRM & Sales Operations Systems",
+    icon: "icon-software",
+    delay: "100ms",
+    description:
+      "Design centralized customer management platforms that improve lead tracking, sales visibility, and performance accountability.",
+    points: [
+      "Structured pipeline monitoring",
+      "Automated follow-ups and alerts",
+      "Cross-team visibility into customer lifecycle",
+    ],
+    impact: "Higher conversion rates and stronger sales forecasting accuracy.",
   },
-
-  // Pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  {
+    title: "Digital Performance Optimization",
+    icon: "icon-web-page",
+    delay: "200ms",
+    description:
+      "Improve platform performance, system reliability, and digital user experience to support operational consistency.",
+    points: [
+      "Infrastructure performance tuning",
+      "System stability improvements",
+      "UX performance enhancements",
+    ],
+    impact: "Reduced downtime and improved customer retention.",
   },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    575: {
-      slidesPerView: 2,
-    },
-    767: {
-      slidesPerView: 4,
-    },
-    991: {
-      slidesPerView: 5,
-    },
-    1199: {
-      slidesPerView: 6,
-    },
-    1350: {
-      slidesPerView: 6,
-    },
+  {
+    title: "E-Commerce & Revenue Platforms",
+    icon: "icon-shopping-online",
+    delay: "300ms",
+    description:
+      "Build scalable commerce systems that integrate sales, inventory, payments, and reporting into a unified ecosystem.",
+    points: [
+      "Inventory and order automation",
+      "Secure payment integration",
+      "Sales analytics dashboard",
+    ],
+    impact: "Faster order processing and improved revenue visibility.",
   },
-};
+  {
+    title: "Ongoing System Governance & Support",
+    icon: "icon-cyber-security",
+    delay: "400ms",
+    description:
+      "Maintain operational continuity through structured monitoring, updates, and security hardening.",
+    points: [
+      "System health monitoring",
+      "Backup & recovery strategy",
+      "Technical debt management",
+    ],
+    impact: "Long-term operational stability and reduced business risk.",
+  },
+];
 export default function Home() {
   return (
     <>
@@ -79,107 +91,55 @@ export default function Home() {
                 <div className="section-title__tagline-icon">
                   <img src="/assets/images/icon/section-title-icon.png" />
                 </div>
-                <p className="section-title__tagline">What We Offering</p>
+                <p className="section-title__tagline">
+                  Where We Deliver Impact
+                </p>
               </div>
-              <h2 className="section-title__title">We Help Businesses Grow</h2>
+              <h2 className="section-title__title">
+                Practical digital solutions applied to real business
+                environments.
+              </h2>
+              <p className="services-impact__intro">
+                Strategic systems designed to improve execution quality, reduce
+                operational friction, and make performance measurable across
+                teams.
+              </p>
             </div>
-            <div className="row">
-              {/*Services Four Single Start*/}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                <div className="services-four__single">
-                  <div className="services-four__shape-1" />
-                  <div className="services-four__shape-2" />
-                  <div className="services-four__icon">
-                    <span className="icon-software" />
-                  </div>
-                  <h3 className="services-four__title hover-white">
-                    CRM <br /> System
-                  </h3>
-                  <p className="services-four__text">
-                    Expert guidance to design, optimize, and integrate CRM and
-                    automation workflows that support scalable business growth
-                  </p>
-                  <Link href="" className="services-four__arrow">
-                    <span className="icon-back" />
-                  </Link>
+            <div className="row gutter-y-30">
+              {impactServices.map((service, index) => (
+                <div
+                  key={service.title}
+                  className="col-xl-6 col-lg-6 wow fadeInUp"
+                  data-wow-delay={service.delay}
+                >
+                  <article className="services-four__single services-impact__card">
+                    <div className="services-four__shape-1" />
+                    <div className="services-four__shape-2" />
+                    <div className="services-impact__head">
+                      <div className="services-four__icon">
+                        <span className={service.icon} />
+                      </div>
+                      <span className="services-impact__index">
+                        0{index + 1}
+                      </span>
+                    </div>
+                    <h3 className="services-four__title services-impact__title">
+                      {service.title}
+                    </h3>
+                    <p className="services-four__text services-impact__description">
+                      {service.description}
+                    </p>
+                    <ul className="services-impact__points">
+                      {service.points.map((point) => (
+                        <li key={point}>{point}</li>
+                      ))}
+                    </ul>
+                    <p className="services-impact__impact">
+                      <span>Impact:</span> {service.impact}
+                    </p>
+                  </article>
                 </div>
-              </div>
-              {/*Services Four Single End*/}
-              {/*Services Four Single Start*/}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="200ms"
-              >
-                <div className="services-four__single">
-                  <div className="services-four__shape-1" />
-                  <div className="services-four__shape-2" />
-                  <div className="services-four__icon">
-                    <span className="icon-web-page" />
-                  </div>
-                  <h3 className="services-four__title hover-white">
-                    Speed <br /> Optimization
-                  </h3>
-                  <p className="services-four__text">
-                    Improve website performance, stability, and technical health
-                    to support user experience and sustainable business growth
-                  </p>
-                  <Link href="" className="services-four__arrow">
-                    <span className="icon-back" />
-                  </Link>
-                </div>
-              </div>
-              {/*Services Four Single End*/}
-              {/*Services Four Single Start*/}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <div className="services-four__single">
-                  <div className="services-four__shape-1" />
-                  <div className="services-four__shape-2" />
-                  <div className="services-four__icon">
-                    <span className="icon-shopping-online" />
-                  </div>
-                  <h3 className="services-four__title hover-white">
-                    E-commerce <br /> Solutions
-                  </h3>
-                  <p className="services-four__text">
-                    Design and build scalable e-commerce platforms that support
-                    sales, operations, and long-term business growth.
-                  </p>
-                  <Link href="" className="services-four__arrow">
-                    <span className="icon-back" />
-                  </Link>
-                </div>
-              </div>
-              {/*Services Four Single End*/}
-              {/*Services Four Single Start*/}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="400ms"
-              >
-                <div className="services-four__single">
-                  <div className="services-four__shape-1" />
-                  <div className="services-four__shape-2" />
-                  <div className="services-four__icon">
-                    <span className="icon-cyber-security" />
-                  </div>
-                  <h3 className="services-four__title hover-white">
-                    Website <br /> Maintenance
-                  </h3>
-                  <p className="services-four__text">
-                    Keep your websites and systems secure, performant, and
-                    aligned with evolving business needs.
-                  </p>
-                  <Link href="" className="services-four__arrow">
-                    <span className="icon-back" />
-                  </Link>
-                </div>
-              </div>
-              {/*Services Four Single End*/}
+              ))}
             </div>
           </div>
         </section>

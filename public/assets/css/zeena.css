@@ -13419,6 +13419,137 @@ section.error-page p {
   box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.1);
 }
 
+/*--------------------------------------------------------------
+# Services Impact
+--------------------------------------------------------------*/
+.services-impact__intro {
+  max-width: 820px;
+  margin: 18px auto 0;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5d626a;
+}
+
+.services-impact__card {
+  height: 100%;
+  padding: 38px 36px 34px;
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.08);
+}
+
+.services-impact__head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services-impact__index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background-color: rgba(var(--zeena-base-rgb), 0.08);
+  color: var(--zeena-base);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.services-impact__title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.services-impact__description {
+  margin-bottom: 18px;
+  color: #5d626a;
+}
+
+.services-impact__points {
+  position: relative;
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+.services-impact__points li {
+  position: relative;
+  list-style: none;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--zeena-black);
+  padding-left: 22px;
+}
+
+.services-impact__points li+li {
+  margin-top: 9px;
+}
+
+.services-impact__points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--zeena-base);
+}
+
+.services-impact__impact {
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 28px;
+  color: #5d626a;
+  border-top: 1px dashed rgba(var(--zeena-black-rgb), 0.15);
+  padding-top: 16px;
+}
+
+.services-impact__impact span {
+  color: var(--zeena-black);
+  font-weight: 700;
+}
+
+.services-impact__card:hover .services-impact__index {
+  background-color: rgba(var(--zeena-white-rgb), 0.2);
+  color: var(--zeena-white);
+}
+
+.services-impact__card:hover .services-impact__title,
+.services-impact__card:hover .services-impact__description,
+.services-impact__card:hover .services-impact__points li,
+.services-impact__card:hover .services-impact__impact,
+.services-impact__card:hover .services-impact__impact span {
+  color: var(--zeena-white);
+}
+
+.services-impact__card:hover .services-impact__points li::before {
+  background-color: var(--zeena-white);
+}
+
+.services-impact__card:hover .services-impact__impact {
+  border-top-color: rgba(var(--zeena-white-rgb), 0.3);
+}
+
+@media only screen and (max-width: 767px) {
+  .services-impact__intro {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .services-impact__card {
+    padding: 30px 24px;
+  }
+
+  .services-impact__title {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
 
 
 
