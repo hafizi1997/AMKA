@@ -3512,6 +3512,9 @@ ul {
   justify-content: center;
 }
 
+.hover-white:hover {
+  color: white;
+}
 .process-one__inner {
   position: relative;
   display: block;

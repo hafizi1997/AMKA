@@ -95,10 +95,8 @@ export default function Home() {
                   <div className="services-four__icon">
                     <span className="icon-software" />
                   </div>
-                  <h3 className="services-four__title">
-                    <Link href="services-details">
-                      CRM <br /> System
-                    </Link>
+                  <h3 className="services-four__title hover-white">
+                    CRM <br /> System
                   </h3>
                   <p className="services-four__text">
                     Expert guidance to design, optimize, and integrate CRM and
@@ -121,10 +119,8 @@ export default function Home() {
                   <div className="services-four__icon">
                     <span className="icon-web-page" />
                   </div>
-                  <h3 className="services-four__title">
-                    <Link href="services-details">
-                      Speed <br /> Optimization
-                    </Link>
+                  <h3 className="services-four__title hover-white">
+                    Speed <br /> Optimization
                   </h3>
                   <p className="services-four__text">
                     Improve website performance, stability, and technical health
@@ -147,10 +143,8 @@ export default function Home() {
                   <div className="services-four__icon">
                     <span className="icon-shopping-online" />
                   </div>
-                  <h3 className="services-four__title">
-                    <Link href="services-details">
-                      E-commerce <br /> Solutions
-                    </Link>
+                  <h3 className="services-four__title hover-white">
+                    E-commerce <br /> Solutions
                   </h3>
                   <p className="services-four__text">
                     Design and build scalable e-commerce platforms that support
@@ -173,10 +167,8 @@ export default function Home() {
                   <div className="services-four__icon">
                     <span className="icon-cyber-security" />
                   </div>
-                  <h3 className="services-four__title">
-                    <Link href="services-details">
-                      Website <br /> Maintenance
-                    </Link>
+                  <h3 className="services-four__title hover-white">
+                    Website <br /> Maintenance
                   </h3>
                   <p className="services-four__text">
                     Keep your websites and systems secure, performant, and

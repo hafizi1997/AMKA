@@ -92,7 +92,7 @@ export default function Service() {
 
                           <div className="services-two__content">
                             <h3 className="services-two__title">
-                              <Link href="/services-details">{item.title}</Link>
+                              <Link href="#">{item.title}</Link>
                             </h3>
 
                             <p className="services-two__text">
