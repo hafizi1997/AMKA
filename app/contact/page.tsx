@@ -1,6 +1,66 @@
+"use client";
+
+import emailjs from "@emailjs/browser";
+import { type FormEvent, useState } from "react";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
+
 export default function Home() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [resultMessage, setResultMessage] = useState("");
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setResultMessage("");
+
+    const serviceId =
+      process.env.NEXT_PUBLIC_EMAIL_SERVICEID || process.env.VITE_EMAIL_SERVICEID;
+    const templateId =
+      process.env.NEXT_PUBLIC_EMAIL_TEMPLATEID ||
+      process.env.VITE_EMAIL_TEMPLATEID;
+    const publicKey =
+      process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY ||
+      process.env.VITE_EMAIL_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      setResultMessage("Email service is not configured.");
+      alert("Email service is not configured.");
+      return;
+    }
+
+    try {
+      setIsSubmitting(true);
+      const formElement = event.currentTarget;
+      const formData = new FormData(formElement);
+
+      const payload = {
+        name: String(formData.get("name") || ""),
+        email: String(formData.get("email") || ""),
+        phone: String(formData.get("phone") || ""),
+        subject: String(formData.get("Subject") || ""),
+        message: String(formData.get("message") || ""),
+      };
+
+      const response = await emailjs.send(
+        serviceId,
+        templateId,
+        payload,
+        publicKey
+      );
+
+      console.log("Email sent successfully!", response.status, response.text);
+      alert("Message sent successfully!");
+      setResultMessage("Message sent successfully!");
+      formElement.reset();
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      alert("Failed to send email. Please try again later.");
+      setResultMessage("Failed to send email. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Contact">
@@ -76,9 +136,9 @@ export default function Home() {
                 <div className="contact-page__right">
                   <div className="contact-page__form-box">
                     <form
-                      action="assets/inc/sendemail.php"
+                      onSubmit={handleSubmit}
                       className="contact-page__form contact-form-validated"
-                      noValidate="novalidate"
+                      noValidate
                     >
                       <div className="row">
                         <div className="col-xl-6">
@@ -128,14 +188,19 @@ export default function Home() {
                             />
                           </div>
                           <div className="contact-page__btn-box">
-                            <button type="submit" className="contact-page__btn">
-                              Send Message<span>+</span>
+                            <button
+                              type="submit"
+                              className="contact-page__btn"
+                              disabled={isSubmitting}
+                            >
+                              {isSubmitting ? "Sending..." : "Send Message"}
+                              <span>+</span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </form>
-                    <div className="result" />
+                    <div className="result">{resultMessage}</div>
                   </div>
                 </div>
               </div>
