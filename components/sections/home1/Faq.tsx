@@ -146,7 +146,7 @@ export default function Faq() {
                     onClick={() => handleToggle(4)}
                   >
                     <div className="accrodion-title">
-                      <h4>What makes AMKA Digital different?</h4>
+                      <h4>What makes AMKA Digital Solutions different?</h4>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">

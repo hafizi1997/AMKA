@@ -48,7 +48,7 @@ export default function Benefit() {
                   </h2>
                 </div>
                 <p className="benefits-one__text">
-                  At AMKA Digital, we design scalable digital systems that align
+                  AMKA Digital Solutions, we design scalable digital systems that align
                   with real business operations. Our solutions focus on clarity,
                   efficiency, and long-term growth — not quick fixes.
                 </p>

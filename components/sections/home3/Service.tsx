@@ -14,7 +14,7 @@ export default function Service() {
                   </div>
                 </div>
                 <p className="services-three__text-1">
-                  AMKA Digital Technologies Sdn Bhd is the digital solutions arm
+                  AMKA Digital Solutions Sdn Bhd is the digital solutions arm
                   of AMKA Technologies Sdn Bhd, created to help businesses
                   modernize how they operate and grow.
                 </p>

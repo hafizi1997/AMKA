@@ -59,7 +59,7 @@ export default function About() {
                   </h2>
                 </div>
                 <p className="about-one__text">
-                  AMKA Digital was founded to help Malaysian businesses achieve
+                  AMKA Digital Solutions Sdn Bhd was founded to help Malaysian businesses achieve
                   sustainable growth through smart, practical digital solutions.
                   We work with SMEs that want more than just a website — they
                   want systems, clarity, and strategies that support real

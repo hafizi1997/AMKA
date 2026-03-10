@@ -174,7 +174,7 @@ export default function Footer1() {
           <div className="container">
             <div className="site-footer__bottom-inner">
               <p className="site-footer__bottom-text">
-                Copyright © {new Date().getFullYear()} AMKA Digital Sdn Bhd. All Rights Reserved.
+                Copyright © {new Date().getFullYear()} AMKA Digital Solutions Sdn Bhd. All Rights Reserved.
               </p>
               <ul className="list-unstyled site-footer__bottom-links">
                 <li>

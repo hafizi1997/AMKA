@@ -58,7 +58,7 @@ export default function ServiceDetailPage({ params }: PageProps) {
       headerStyle={3}
       footerStyle={1}
       breadcrumbTitle={service.title}
-      description="AMKA Digital Technologies | Part of AMKA Technologies Sdn Bhd"
+      description="AMKA Digital Solution Sdn Bhd | Part of AMKA Technologies Sdn Bhd"
       backgroundImage="/assets/images/backgrounds/service-bg2.png"
     >
       <section className="services-details">

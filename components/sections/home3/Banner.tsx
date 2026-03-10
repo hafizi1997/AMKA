@@ -68,7 +68,7 @@ export default function Banner() {
     },
     {
       bg: "assets/images/backgrounds/services-banner-3.png",
-      subTitle: "Why AMKA Digital",
+      subTitle: "Why Us",
       title: (
         <>
           Enterprise Thinking, <br />
