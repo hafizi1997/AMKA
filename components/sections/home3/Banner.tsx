@@ -1,8 +1,7 @@
-
-'use client'
-import Link from "next/link"
-import { Autoplay, Navigation, Pagination } from "swiper/modules"
-import { Swiper, SwiperSlide } from "swiper/react"
+"use client";
+import Link from "next/link";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -10,28 +9,29 @@ const swiperOptions = {
   spaceBetween: 0,
 
   loop: true,
+  autoplay: {
+    delay: 7000,
+    disableOnInteraction: false,
+  },
 
   // Navigation
   navigation: {
-    nextEl: '.srn',
-    prevEl: '.srp',
+    nextEl: ".srn",
+    prevEl: ".srp",
   },
 
   // Pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
-
-
-
-}
+};
 
 export default function Banner() {
-    const slides = [
+  const slides = [
     {
       bg: "assets/images/backgrounds/services-banner.png",
-      subTitle: "Strategic Digital Solutions",
+      subTitle: "Digital Systems For Professional Services",
       title: (
         <>
           Helping Businesses Grow <br />
@@ -45,7 +45,7 @@ export default function Banner() {
           confidence.
         </>
       ),
-      ctaText: "Get a Free Growth Strategy",
+      ctaText: "Get a Free Industry Playbook",
       ctaLink: "/contact",
     },
     {
@@ -87,14 +87,13 @@ export default function Banner() {
   ];
   return (
     <>
-
       {/* Main Sllider Start */}
       <section className="main-slider-three">
         <div
           className="main-slider-three__bg-1"
           style={{
             backgroundImage:
-              "url(assets/images/backgrounds/main-slider-three-bg-1.jpg)"
+              "url(assets/images/backgrounds/main-slider-three-bg-1.jpg)",
           }}
         />
         <div className="main-slider-three__social">
@@ -108,52 +107,43 @@ export default function Banner() {
           <li>9am - 7pm</li>
         </ul>
         <Swiper {...swiperOptions} className="main-slider-three__wrap">
-          <div
-            className="main-slider-three__carousel owl-carousel owl-theme thm-owl__carousel"
-          >
+          <div className="main-slider-three__carousel owl-carousel owl-theme thm-owl__carousel">
             {slides.map((slide, index) => (
-            <SwiperSlide>
-              <div className="item main-slider-three__slide-1">
-                <div className="main-slider-three__img">
-                  <img
-                    src={slide.bg}
-                    
-                  />
-                </div>
-                <div className="main-slider-three__overly" />
-                <div className="main-slider-three__shape-1 float-bob-y">
-                  <img
-                    src="assets/images/shapes/main-slider-three-shape-1.png"
-                    
-                  />
-                </div>
-                <div className="container">
-                  <div className="main-slider-three__content">
-                    <p className="main-slider-three__sub-title">
-                      {slide.subTitle}
-                    </p>
-                    <h2 className="main-slider-three__title">
-                      {slide.title}
-                    </h2>
-                    <p className="main-slider-three__text">
-                      {slide.text}
-                    </p>
-                    <div className="main-slider-three__btn-box">
-                      <Link href={slide.ctaLink} className="main-slider-three__btn">
-                        {slide.ctaText}
-                      </Link>
+              <SwiperSlide key={index}>
+                <div className="item main-slider-three__slide-1">
+                  <div className="main-slider-three__img">
+                    <img src={slide.bg} />
+                  </div>
+                  <div className="main-slider-three__overly" />
+                  <div className="main-slider-three__shape-1 float-bob-y">
+                    <img src="assets/images/shapes/main-slider-three-shape-1.png" />
+                  </div>
+                  <div className="container">
+                    <div className="main-slider-three__content">
+                      <p className="main-slider-three__sub-title">
+                        {slide.subTitle}
+                      </p>
+                      <h2 className="main-slider-three__title">
+                        {slide.title}
+                      </h2>
+                      <p className="main-slider-three__text">{slide.text}</p>
+                      <div className="main-slider-three__btn-box">
+                        <Link
+                          href={slide.ctaLink}
+                          className="main-slider-three__btn"
+                        >
+                          {slide.ctaText}
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
             ))}
           </div>
         </Swiper>
       </section>
       {/*Main Sllider Start */}
-
-
     </>
-  )
+  );
 }

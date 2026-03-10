@@ -3779,7 +3779,7 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  width: 661px;
+  width: 891px;
   height: 636px;
   background-color: #f5f6f5;
   z-index: -1;
@@ -3871,7 +3871,7 @@ ul {
   position: relative;
   display: block;
   max-width: 283px;
-  width: 100%;
+  width: 180%;
 }
 
 .benefits-one__points li {
