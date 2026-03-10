@@ -1,7 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import Banner from "@/components/sections/home3/Banner";
 import About from "@/components/sections/home1/About";
-import Wecare from "@/components/sections/home1/Service";
+import OurExperts from "@/components/sections/home1/Service";
 import Testimonial from "@/components/sections/home1/Testimonial";
 import Cta from "@/components/sections/home1/Cta";
 import Blog from "@/components/sections/home1/Blog";
@@ -11,7 +11,7 @@ import Brand from "@/components/sections/home1/Brand";
 import Feature from "@/components/sections/home2/Feature";
 import Process from "@/components/sections/home1/Process";
 import OurProduct from "@/components/sections/home1/Portfolio";
-import Funfact from "@/components/sections/home1/Funfact";
+import Funfact from "@/components/sections/home2/Funfact";
 import Pricing from "@/components/sections/home1/Pricing";
 import Team from "@/components/sections/home1/Team";
 import Video from "@/components/sections/home1/Video";
@@ -27,11 +27,12 @@ export default function Home() {
         <Working />
         {/* <About /> */}
         {/* <Process /> */}
-        <Wecare />
+        <OurExperts />
         <OurProduct />
+        <Funfact />
         <Faq />
         {/* <Cta /> */}
-        {/* <Funfact /> */}
+
         {/* <Pricing /> */}
         {/* <Team /> */}
         {/* <Video /> */}
