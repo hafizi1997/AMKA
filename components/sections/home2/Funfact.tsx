@@ -21,7 +21,7 @@ export default function Funfact() {
                 </div>
                 <p className="counter-two__text">Complete Project</p>
                 <h3>
-                  <CounterUp end={5684} />
+                  <CounterUp end={12} />
                 </h3>
               </div>
             </li>
@@ -32,7 +32,7 @@ export default function Funfact() {
                 </div>
                 <p className="counter-two__text">Total Download</p>
                 <h3>
-                  <CounterUp end={5593} />
+                  <CounterUp end={10} />
                 </h3>
               </div>
             </li>
@@ -41,9 +41,9 @@ export default function Funfact() {
                 <div className="counter-two__icon">
                   <span className="icon-feedback" />
                 </div>
-                <p className="counter-two__text">Positive Review</p>
+                <p className="counter-two__text">SME Companies</p>
                 <h3>
-                  <CounterUp end={5487} />
+                  <CounterUp end={12} />
                 </h3>
               </div>
             </li>
@@ -54,7 +54,7 @@ export default function Funfact() {
                 </div>
                 <p className="counter-two__text">Team Members</p>
                 <h3>
-                  <CounterUp end={2474} />
+                  <CounterUp end={6} />
                 </h3>
               </div>
             </li>
@@ -63,9 +63,9 @@ export default function Funfact() {
                 <div className="counter-two__icon">
                   <span className="icon-solution-1" />
                 </div>
-                <p className="counter-two__text">Cup Of Coffee</p>
+                <p className="counter-two__text">Years of Experience</p>
                 <h3>
-                  <CounterUp end={6497} />
+                  <CounterUp end={3} />
                 </h3>
               </div>
             </li>

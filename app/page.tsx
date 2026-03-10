@@ -29,8 +29,8 @@ export default function Home() {
         {/* <Process /> */}
         <OurExperts />
         <OurProduct />
-        <Funfact />
         <Faq />
+         <Funfact />
         {/* <Cta /> */}
 
         {/* <Pricing /> */}

@@ -6594,10 +6594,10 @@ ul {
 .counter-two {
   position: relative;
   display: block;
-  background-color: #1b1825;
+  background-color: #040405;
   padding: 120px 0 120px;
   overflow: hidden;
-  margin-top: -750px;
+  margin-top: 0;
   z-index: 1;
 }
 
