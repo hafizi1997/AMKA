@@ -3950,7 +3950,7 @@ ul {
 .portfolio-one {
   position: relative;
   display: block;
-  padding: 0 0 173px;
+  padding: 120px 0 120px;
   z-index: 1;
 }
 
@@ -4096,7 +4096,7 @@ ul {
 .faq-one {
   position: relative;
   display: block;
-  padding: 0 0 120px;
+  padding: 120px 0 120px;
   z-index: 1;
 }
 

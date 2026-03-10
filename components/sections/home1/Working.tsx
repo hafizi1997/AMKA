@@ -15,8 +15,7 @@ export default function Benefit() {
         <div
           className="benefits-one__bg-one"
           style={{
-            backgroundImage:
-              "url(assets/images/backgrounds/test3.png)",
+            backgroundImage: "url(assets/images/backgrounds/test3.png)",
           }}
         />
         <div className="benefits-one__overly" />
@@ -48,9 +47,11 @@ export default function Benefit() {
                   </h2>
                 </div>
                 <p className="benefits-one__text">
-                  AMKA Digital Solutions, we design scalable digital systems that align
-                  with real business operations. Our solutions focus on clarity,
-                  efficiency, and long-term growth — not quick fixes.
+                  AMKA Digital Solutions Sdn Bhd designs scalable digital
+                  systems that align with real business operations. Technology
+                  should support operations, not complicate them. Our solutions
+                  focus on clarity, efficiency, and long-term growth — not quick
+                  fixes.
                 </p>
                 <div className="benefits-one__points-and-mission">
                   <ul className="benefits-one__points list-unstyled">
@@ -76,9 +77,8 @@ export default function Benefit() {
                       Our Benefits
                     </h3>
                     <p className="benefits-one__mission-text">
-                      Technology should support operations, not complicate them.
-                      We design solutions that fit the way businesses actually
-                      work.
+                      We design digital solutions that support real engineering
+                      workflows and operational processes.
                     </p>
                   </div>
                 </div>

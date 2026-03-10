@@ -1,18 +1,20 @@
 import Link from "next/link";
-export default function Portfolio() {
+export default function OurProduct() {
   return (
     <>
       {/*Portfolio One STart*/}
-      <section className="portfolio-one mt-4">
+      <section className="portfolio-one">
         <div className="container">
           <div className="section-title text-center">
             <div className="section-title__tagline-box">
               <div className="section-title__tagline-icon">
                 <img src="assets/images/icon/section-title-icon.png" />
               </div>
-              <p className="section-title__tagline">Our Products</p>
+              <p className="section-title__tagline">Solutions We’ve Built</p>
             </div>
-            <h2 className="section-title__title">Our New Case Studies</h2>
+            <h2 className="section-title__title">
+              Helping Businesses Operate Smarter
+            </h2>
           </div>
           <ul className="list-unstyled portfolio-one__list">
             <li>

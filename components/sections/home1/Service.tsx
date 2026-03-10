@@ -1,5 +1,5 @@
 import Link from "next/link";
-export default function Service() {
+export default function Wecare() {
   return (
     <>
       {/*Services One Start*/}
@@ -10,12 +10,10 @@ export default function Service() {
               <div className="section-title__tagline-icon">
                 <img src="assets/images/icon/section-title-icon.png" />
               </div>
-              <p className="section-title__tagline">
-                Experts in Building Digital Systems
-              </p>
+              <p className="section-title__tagline">Our Expertise</p>
             </div>
             <h2 className="section-title__title">
-              Secure and Reliable Solutions
+              Digital Solutions That Power Modern Businesses
             </h2>
           </div>
           <div className="services-one__inner">
