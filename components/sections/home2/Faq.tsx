@@ -24,7 +24,7 @@ export default function Faq() {
       <section className="faq-two">
         <div className="container">
           <div className="row">
-            <div className="col-xl-7 col-lg-7">
+            <div className="col-12 col-lg-7 order-2 order-lg-1">
               <div className="faq-two__right">
                 <div
                   className="accrodion-grp faq-one-accrodion"
@@ -119,7 +119,7 @@ export default function Faq() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-5 col-lg-5">
+            <div className="col-12 col-lg-5 order-1 order-lg-2">
               <div className="faq-two__left">
                 <div className="section-title-two text-left">
                   <div className="section-title-two__tagline-box">

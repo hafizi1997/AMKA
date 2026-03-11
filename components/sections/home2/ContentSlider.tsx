@@ -12,6 +12,14 @@ const swiperOptions = {
   spaceBetween: 0,
   loop: false,
   autoHeight: false,
+  breakpoints: {
+    0: {
+      autoHeight: true,
+    },
+    768: {
+      autoHeight: false,
+    },
+  },
   navigation: {
     nextEl: ".home2-content-slider-next",
     prevEl: ".home2-content-slider-prev",

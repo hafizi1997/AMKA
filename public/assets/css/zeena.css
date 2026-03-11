@@ -16170,4 +16170,29 @@ section.error-page p {
   background-color: var(--zeena-base);
 }
 
+@media only screen and (max-width: 767px) {
+  .about-two,
+  .faq-two,
+  .team-two {
+    min-height: auto;
+    overflow: visible;
+  }
+
+  .home2-content-slider__swiper .swiper-wrapper {
+    align-items: flex-start;
+  }
+
+  .home2-content-slider__swiper .swiper-slide {
+    height: auto;
+  }
+
+  .home2-content-slider__controls {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    margin-top: 12px;
+  }
+}
+
 
