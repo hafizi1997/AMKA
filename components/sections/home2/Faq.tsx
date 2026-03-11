@@ -24,21 +24,6 @@ export default function Faq() {
       <section className="faq-two">
         <div className="container">
           <div className="row">
-            <div className="col-xl-5 col-lg-5">
-              <div className="faq-two__left">
-                <div className="section-title-two text-left">
-                  <div className="section-title-two__tagline-box">
-                    <span className="section-title-two__tagline">Faq</span>
-                  </div>
-                  <h2 className="section-title-two__title">
-                    Innovat Solutions Digital Mindset
-                  </h2>
-                </div>
-                <div className="faq-two__img">
-                  <img src="assets/images/resources/faq-two-img-1.png"  />
-                </div>
-              </div>
-            </div>
             <div className="col-xl-7 col-lg-7">
               <div className="faq-two__right">
                 <div
@@ -131,6 +116,21 @@ export default function Faq() {
                       {/* /.inner */}
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-5 col-lg-5">
+              <div className="faq-two__left">
+                <div className="section-title-two text-left">
+                  <div className="section-title-two__tagline-box">
+                    <span className="section-title-two__tagline">Faq</span>
+                  </div>
+                  <h2 className="section-title-two__title">
+                    Innovat Solutions Digital Mindset
+                  </h2>
+                </div>
+                <div className="faq-two__img">
+                  <img src="assets/images/resources/faq-two-img-1.png" />
                 </div>
               </div>
             </div>
