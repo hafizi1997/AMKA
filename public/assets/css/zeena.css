@@ -6053,7 +6053,9 @@ ul {
 .about-two {
   position: relative;
   display: block;
-  padding: 120px 0 337px;
+  padding: 120px 0 120px;
+  min-height: 970px;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -6925,6 +6927,9 @@ ul {
 .faq-two {
   position: relative;
   display: block;
+  min-height: 970px;
+  overflow: hidden;
+  padding: 120px 0 120px;
 }
 
 .faq-two__left {
@@ -6958,6 +6963,8 @@ ul {
   position: relative;
   display: block;
   padding: 120px 0 100px;
+  min-height: 970px;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -16094,6 +16101,14 @@ section.error-page p {
 
 .home2-content-slider__swiper {
   width: 100%;
+}
+
+.home2-content-slider__swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.home2-content-slider__swiper .swiper-slide {
+  height: auto;
 }
 
 .home2-content-slider__controls {

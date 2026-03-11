@@ -11,7 +11,7 @@ const swiperOptions = {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: false,
-  autoHeight: true,
+  autoHeight: false,
   navigation: {
     nextEl: ".home2-content-slider-next",
     prevEl: ".home2-content-slider-prev",
