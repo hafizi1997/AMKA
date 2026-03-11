@@ -16084,4 +16084,67 @@ section.error-page p {
     border-top: 1px solid rgba(var(--zeena-white-rgb), .10);
 }
 
+/*--------------------------------------------------------------
+# Home2 Content Slider
+--------------------------------------------------------------*/
+.home2-content-slider {
+  position: relative;
+  display: block;
+}
+
+.home2-content-slider__swiper {
+  width: 100%;
+}
+
+.home2-content-slider__controls {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.home2-content-slider__nav {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: var(--zeena-white);
+  color: var(--zeena-black);
+  min-width: 95px;
+  height: 44px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 44px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.home2-content-slider__nav:hover {
+  background-color: var(--zeena-base);
+  border-color: var(--zeena-base);
+  color: var(--zeena-white);
+}
+
+.home2-content-slider-pagination {
+  position: relative;
+  width: auto !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home2-content-slider-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 !important;
+  background-color: rgba(var(--zeena-black-rgb), 0.25);
+  opacity: 1;
+}
+
+.home2-content-slider-pagination .swiper-pagination-bullet-active {
+  background-color: var(--zeena-base);
+}
+
 
