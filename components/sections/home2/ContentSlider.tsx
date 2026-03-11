@@ -1,8 +1,9 @@
 "use client";
 
+import { useRef } from "react";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import About from "@/components/sections/home2/About";
+import Article1 from "@/components/sections/home2/About";
 import Team from "@/components/sections/home2/Team";
 import Faq2 from "@/components/sections/home2/Faq";
 
@@ -31,11 +32,27 @@ const swiperOptions = {
 };
 
 export default function ContentSlider() {
+  const sliderSectionRef = useRef<HTMLElement | null>(null);
+
+  const scrollToSlideTopOnMobile = () => {
+    if (typeof window === "undefined") return;
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      sliderSectionRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
-    <section className="home2-content-slider">
-      <Swiper {...swiperOptions} className="home2-content-slider__swiper">
+    <section ref={sliderSectionRef} className="home2-content-slider">
+      <Swiper
+        {...swiperOptions}
+        className="home2-content-slider__swiper"
+        onSlideChangeTransitionEnd={scrollToSlideTopOnMobile}
+      >
         <SwiperSlide>
-          <About />
+          <Article1 />
         </SwiperSlide>
         <SwiperSlide>
           <Team />

@@ -6291,7 +6291,7 @@ ul {
 .about-two__points li {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .about-two__points li+li {
@@ -6305,10 +6305,15 @@ ul {
   justify-content: center;
   height: 20px;
   width: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  flex: 0 0 20px;
+  flex-shrink: 0;
   background-color: var(--zeena-base);
   border-radius: 50%;
   font-size: 14px;
   color: var(--zeena-white);
+  margin-top: 7px;
 }
 
 .about-two__points li .text {
