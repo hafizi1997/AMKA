@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 export default function Footer1() {
   return (
     <>
@@ -38,13 +39,13 @@ export default function Footer1() {
                   </div>
                   <ul className="footer-widget__list list-unstyled">
                     <li>
-                      <Link href="about">About Us</Link>
+                      <Link href="/about">About Us</Link>
                     </li>
                     <li>
-                      <Link href="about">New Campaign</Link>
+                      <Link href="/about">New Campaign</Link>
                     </li>
                     <li>
-                      <Link href="about">New Events</Link>
+                      <Link href="/about">New Events</Link>
                     </li>
                   </ul>
                 </div>
@@ -59,16 +60,19 @@ export default function Footer1() {
                   </div>
                   <ul className="footer-widget__list list-unstyled">
                     <li>
-                      <Link href="about">Press Release</Link>
+                      <Link href="/about">Press Release</Link>
                     </li>
                     <li>
-                      <Link href="contact">Our Teams</Link>
+                      <Link href="/team">Our Teams</Link>
                     </li>
                     <li>
-                      <Link href="blog">Blog Posts</Link>
+                      <Link href="/blog">Blog Posts</Link>
                     </li>
                     <li>
-                      <Link href="about">Social Connect</Link>
+                      <Link href="/inside">Inside Library</Link>
+                    </li>
+                    <li>
+                      <Link href="/contact">Social Connect</Link>
                     </li>
                   </ul>
                 </div>
@@ -92,13 +96,16 @@ export default function Footer1() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="blog">Latest News</Link>
+                      <Link href="/blog">Latest News</Link>
                     </li>
                     <li>
                       <Link href="/services">Popular Services</Link>
                     </li>
                     <li>
-                      <Link href="about">Consulting</Link>
+                      <Link href="/services">Consulting</Link>
+                    </li>
+                    <li>
+                      <Link href="/inside">Inside</Link>
                     </li>
                   </ul>
                 </div>
@@ -113,16 +120,16 @@ export default function Footer1() {
                   </div>
                   <ul className="footer-widget__list list-unstyled">
                     <li>
-                      <Link href="about">Financial Planning</Link>
+                      <Link href="/blog">Financial Planning</Link>
                     </li>
                     <li>
-                      <Link href="about">Care for All People</Link>
+                      <Link href="/blog">Care for All People</Link>
                     </li>
                     <li>
-                      <Link href="about">Build Business</Link>
+                      <Link href="/blog">Build Business</Link>
                     </li>
                     <li>
-                      <Link href="about">Being Volunteer</Link>
+                      <Link href="/blog">Being Volunteer</Link>
                     </li>
                   </ul>
                 </div>
@@ -148,7 +155,7 @@ export default function Footer1() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="tel:7778880000">+60 19-3623141</Link>
+                      <Link href="tel:+60193623141">+60 19-3623141</Link>
                     </li>
                   </ul>
                   <div className="footer-widget__social">
@@ -174,17 +181,18 @@ export default function Footer1() {
           <div className="container">
             <div className="site-footer__bottom-inner">
               <p className="site-footer__bottom-text">
-                Copyright © {new Date().getFullYear()} AMKA Digital Solutions Sdn Bhd. All Rights Reserved.
+                Copyright &copy; {new Date().getFullYear()} AMKA Digital
+                Solutions Sdn Bhd. All Rights Reserved.
               </p>
               <ul className="list-unstyled site-footer__bottom-links">
                 <li>
-                  <Link href="about">Terms &amp; Condition</Link>
+                  <Link href="/about">Terms &amp; Condition</Link>
                 </li>
                 <li>
-                  <Link href="about">Privacy</Link>
+                  <Link href="/about">Privacy</Link>
                 </li>
                 <li>
-                  <Link href="about">Support</Link>
+                  <Link href="/contact">Support</Link>
                 </li>
               </ul>
             </div>
@@ -195,4 +203,3 @@ export default function Footer1() {
     </>
   );
 }
-
