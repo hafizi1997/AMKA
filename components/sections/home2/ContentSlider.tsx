@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Article1 from "@/components/sections/home2/About";
-import Team from "@/components/sections/home2/Team";
+import Article2 from "@/components/sections/home2/Team";
 import Faq2 from "@/components/sections/home2/Faq";
 
 const swiperOptions = {
@@ -55,7 +55,7 @@ export default function ContentSlider() {
           <Article1 />
         </SwiperSlide>
         <SwiperSlide>
-          <Team />
+          <Article2 />
         </SwiperSlide>
         <SwiperSlide>
           <Faq2 />
