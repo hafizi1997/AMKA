@@ -99,7 +99,7 @@ export default function Article1() {
                 </ul>
                 <div className="about-two__btn-and-call">
                   <div className="about-two__btn">
-                    <Link href="about">Discover More</Link>
+                    <Link href="/playbook-growth-engine">Discover More</Link>
                   </div>
                   <div className="about-two__call">
                     <div className="about-two__call-icon">
