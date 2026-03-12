@@ -19,9 +19,25 @@ const INITIAL_FORM: FormState = {
   niche: "",
 };
 
-const PLAYBOOK_DOWNLOAD_PATH = "/assets/documents/pbk_2026_9f3ad2c7a1b4.pdf";
+type PlaybookDownloadTriggerProps = {
+  downloadPath?: string;
+  downloadFileName?: string;
+  source?: string;
+  buttonLabel?: string;
+};
 
-export default function PlaybookDownloadTrigger() {
+const DEFAULT_DOWNLOAD_PATH =
+  "/assets/documents/bd-playbook-training-consulting-professionals.pdf";
+const DEFAULT_DOWNLOAD_FILENAME =
+  "bd-playbook-training-consulting-professionals.pdf";
+const DEFAULT_SOURCE = "playbook-growth-engine";
+
+export default function PlaybookDownloadTrigger({
+  downloadPath = DEFAULT_DOWNLOAD_PATH,
+  downloadFileName = DEFAULT_DOWNLOAD_FILENAME,
+  source = DEFAULT_SOURCE,
+  buttonLabel = "Download Playbook",
+}: PlaybookDownloadTriggerProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("");
@@ -48,8 +64,8 @@ export default function PlaybookDownloadTrigger() {
 
   const triggerDownload = () => {
     const link = document.createElement("a");
-    link.href = PLAYBOOK_DOWNLOAD_PATH;
-    link.download = "AMKA-Business-Development-Playbook.pdf";
+    link.href = downloadPath;
+    link.download = downloadFileName;
     link.rel = "noopener";
     document.body.appendChild(link);
     link.click();
@@ -94,7 +110,7 @@ export default function PlaybookDownloadTrigger() {
           subject: "Playbook download request",
           message:
             "A new playbook access request was submitted from the article page.",
-          source: "playbook-growth-engine",
+          source,
         },
         emailConfig.publicKey,
       );
@@ -115,7 +131,7 @@ export default function PlaybookDownloadTrigger() {
     <>
       <div className="about-two__btn">
         <button type="button" onClick={() => setIsOpen(true)}>
-          Download Playbook
+          {buttonLabel}
         </button>
       </div>
 

@@ -328,7 +328,11 @@ export default function PlaybookTechnicalServicesPage() {
             </section>
 
             <div className="playbook-article__footer-actions justify-content-end">
-              <PlaybookDownloadTrigger />
+              <PlaybookDownloadTrigger
+                downloadPath="/assets/documents/bd-playbook-technical-services-companies.pdf"
+                downloadFileName="bd-playbook-technical-services-companies.pdf"
+                source="playbook-technical-services"
+              />
             </div>
           </article>
         </div>

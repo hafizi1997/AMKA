@@ -346,7 +346,11 @@ export default function PlaybookBuiltEnvironmentPage() {
             </section>
 
             <div className="playbook-article__footer-actions justify-content-end">
-              <PlaybookDownloadTrigger />
+              <PlaybookDownloadTrigger
+                downloadPath="/assets/documents/bd-playbook-built-environment-professionals.pdf"
+                downloadFileName="bd-playbook-built-environment-professionals.pdf"
+                source="playbook-built-environment"
+              />
             </div>
           </article>
         </div>

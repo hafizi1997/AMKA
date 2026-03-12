@@ -16533,4 +16533,265 @@ section.error-page p {
   }
 }
 
+.playbook-library {
+  padding: 120px 0 120px;
+}
+
+.playbook-library__head {
+  margin-bottom: 26px;
+}
+
+.playbook-library__kicker {
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--zeena-base);
+}
+
+.playbook-library__title {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.playbook-library__subtitle {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: var(--zeena-gray);
+}
+
+.playbook-library__search {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.16);
+  border-radius: 8px;
+  padding: 0 16px;
+  margin-top: 18px;
+  color: var(--zeena-black);
+  background: var(--zeena-white);
+}
+
+.playbook-library__filters {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.playbook-library__chip {
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.16);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--zeena-black);
+  background: var(--zeena-white);
+  padding: 10px 14px;
+  transition: all 0.3s ease;
+}
+
+.playbook-library__chip:hover,
+.playbook-library__chip.is-active {
+  background: var(--zeena-base);
+  border-color: var(--zeena-base);
+  color: var(--zeena-white);
+}
+
+.playbook-library__card {
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.16);
+  border-radius: 10px;
+  background: var(--zeena-white);
+  padding: 22px 20px;
+  margin-bottom: 22px;
+  min-height: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.playbook-library .row > [class*="col-"] {
+  display: flex;
+}
+
+.playbook-library__card-category {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  color: var(--zeena-base);
+  font-weight: 700;
+}
+
+.playbook-library__card-title {
+  margin: 0;
+  font-size: 21px;
+  line-height: 1.35;
+}
+
+.playbook-library__card-hook {
+  margin: 12px 0 10px;
+  color: var(--zeena-black);
+  font-weight: 500;
+}
+
+.playbook-library__card-excerpt {
+  margin: 0;
+  color: var(--zeena-gray);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.playbook-library__card-link {
+  display: inline-block;
+  margin-top: auto;
+  padding-top: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--zeena-base);
+}
+
+.playbook-library__downloads {
+  margin-top: 30px;
+}
+
+.playbook-library__unlock {
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.16);
+  border-radius: 10px;
+  background: var(--zeena-extra);
+  padding: 14px 16px;
+  margin-top: 16px;
+}
+
+.playbook-library__unlock-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--zeena-base);
+}
+
+.playbook-library__unlock-text {
+  margin: 6px 0 0;
+  color: var(--zeena-black);
+  font-weight: 600;
+}
+
+.playbook-library__access-form {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.playbook-library__access-form input,
+.playbook-library__access-form select {
+  width: 100%;
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.18);
+  background: var(--zeena-white);
+  border-radius: 6px;
+  height: 42px;
+  padding: 0 12px;
+  color: var(--zeena-black);
+  font-size: 14px;
+}
+
+.playbook-library__access-form .about-two__btn button {
+  padding: 14px 18px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.08em;
+  border-radius: 6px;
+}
+
+.playbook-library__unlock-message {
+  margin: 10px 0 0;
+  color: var(--zeena-base);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.playbook-library__download-row {
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.16);
+  border-radius: 10px;
+  background: var(--zeena-white);
+  padding: 16px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.playbook-library__download-title {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+.playbook-library__download-meta {
+  margin: 4px 0 0;
+  color: var(--zeena-gray);
+  font-size: 14px;
+}
+
+.playbook-library__download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: var(--zeena-base);
+  color: var(--zeena-white);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.playbook-library__download-btn:hover {
+  color: var(--zeena-white);
+}
+
+.playbook-library__download-btn.is-disabled {
+  background: #c6ced7;
+  color: #5b6673;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 991px) {
+  .playbook-library {
+    padding: 90px 0 90px;
+  }
+
+  .playbook-library__title {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .playbook-library {
+    padding: 70px 0 80px;
+  }
+
+  .playbook-library__title {
+    font-size: 30px;
+  }
+
+  .playbook-library__card {
+    min-height: 1px;
+  }
+
+  .playbook-library__download-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .playbook-library__access-form {
+    grid-template-columns: 1fr;
+  }
+}
+
 

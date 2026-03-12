@@ -333,7 +333,11 @@ export default function PlaybookGrowthEnginePage() {
             </section>
 
             <div className="playbook-article__footer-actions justify-content-end">
-              <PlaybookDownloadTrigger />
+              <PlaybookDownloadTrigger
+                downloadPath="/assets/documents/bd-playbook-training-consulting-professionals.pdf"
+                downloadFileName="bd-playbook-training-consulting-professionals.pdf"
+                source="playbook-growth-engine"
+              />
             </div>
           </article>
         </div>
