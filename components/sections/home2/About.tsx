@@ -36,7 +36,7 @@ export default function Article1() {
                     </span>
                   </div>
                   <h2 className="section-title-two__title">
-                    Turn Expertise Into A Repeatable Growth System
+                    Training & Consulting Professionals
                   </h2>
                 </div>
                 <p className="about-two__text">

@@ -8,7 +8,7 @@ export default function PlaybookGrowthEnginePage() {
       headerStyle={3}
       footerStyle={1}
       wrapperCls="playbook-page"
-      breadcrumbTitle="The Business Development Playbook for Training & Consulting Professionals"
+      breadcrumbTitle="Training & Consulting Professionals"
       description="A structured framework for trainers, coaches, and consultants to grow sustainably."
       backgroundImage="/assets/images/backgrounds/service-bg2.png"
     >
@@ -21,8 +21,7 @@ export default function PlaybookGrowthEnginePage() {
             </div>
 
             <h1 className="playbook-article__title">
-              The Business Development Playbook for Training & Consulting
-              Professionals
+              Training & Consulting Professionals
             </h1>
             <p className="playbook-article__subtitle">
               Why many training and consulting practices struggle to grow, and

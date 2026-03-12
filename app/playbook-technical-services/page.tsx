@@ -7,7 +7,7 @@ export default function PlaybookTechnicalServicesPage() {
       headerStyle={3}
       footerStyle={1}
       wrapperCls="playbook-page"
-      breadcrumbTitle="The Business Development Playbook for Technical Services Companies"
+      breadcrumbTitle="How Technical Services Companies Build Predictable Growth"
       description="A structured framework for engineering consultancies, maintenance firms, and specialist service providers to grow sustainably."
       backgroundImage="/assets/images/backgrounds/service-bg2.png"
     >
@@ -20,8 +20,7 @@ export default function PlaybookTechnicalServicesPage() {
             </div>
 
             <h1 className="playbook-article__title">
-              Why Many Technical Services Companies Struggle to Grow - And How
-              to Fix It
+              How Technical Services Companies Build Predictable Growth
             </h1>
             <p className="playbook-article__subtitle">
               A practical playbook for turning technical expertise into

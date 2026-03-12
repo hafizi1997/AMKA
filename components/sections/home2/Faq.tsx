@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Article3() {
@@ -38,15 +39,21 @@ export default function Article3() {
                     onClick={() => handleToggle(1)}
                   >
                     <div className="accrodion-title">
-                      <h4>Completely Iterate Covalent Strategic Theme</h4>
+                      <h4>
+                        Why Do Many Technical Services Firms Struggle To Grow
+                        Consistently?
+                      </h4>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p>
-                          Excepteur sint occaecat cupidatat non proide sunt in
-                          culpa qui off deserunt mollit anim id est laborum.
-                          omnis iste natus error sit voluptate audantium, totam
-                          rem aperiam,
+                          Many technical firms rely heavily on referrals, past
+                          relationships, or occasional project opportunities.
+                          While this may work in the early stages, it often
+                          leads to unpredictable pipelines and long gaps between
+                          projects. Without a structured business development
+                          system, even highly capable firms struggle to build
+                          consistent growth.
                         </p>
                       </div>
                       {/* /.inner */}
@@ -59,15 +66,20 @@ export default function Article3() {
                     onClick={() => handleToggle(2)}
                   >
                     <div className="accrodion-title">
-                      <h4>Few Resons Why You Should Choose Us</h4>
+                      <h4>
+                        What Drives Growth In Professional Services Businesses?
+                      </h4>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p>
-                          Excepteur sint occaecat cupidatat non proide sunt in
-                          culpa qui off deserunt mollit anim id est laborum.
-                          omnis iste natus error sit voluptate audantium, totam
-                          rem aperiam,
+                          Most successful professional services firms grow by
+                          improving three key variables: network size, client
+                          conversion rate, and average engagement value. By
+                          expanding the right relationships, strengthening trust
+                          with decision-makers, and increasing the value of
+                          engagements, companies can create predictable and
+                          scalable revenue growth.
                         </p>
                       </div>
                       {/* /.inner */}
@@ -80,15 +92,19 @@ export default function Article3() {
                     onClick={() => handleToggle(3)}
                   >
                     <div className="accrodion-title">
-                      <h4>How To Update Application New Features</h4>
+                      <h4>
+                        Why Is Trust So Important In Business Development?
+                      </h4>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p>
-                          Excepteur sint occaecat cupidatat non proide sunt in
-                          culpa qui off deserunt mollit anim id est laborum.
-                          omnis iste natus error sit voluptate audantium, totam
-                          rem aperiam,
+                          In professional services, clients rarely buy based on
+                          technical capability alone. They choose firms they
+                          trust to understand their problems and deliver
+                          reliable solutions. Trust is built through
+                          credibility, consistent delivery, and meaningful
+                          relationships with decision-makers over time.
                         </p>
                       </div>
                       {/* /.inner */}
@@ -102,16 +118,20 @@ export default function Article3() {
                   >
                     <div className="accrodion-title">
                       <h4>
-                        How To Connect With The Support To Improve Experience
+                        How Do Successful Firms Turn One Project Into Long-Term
+                        Clients?
                       </h4>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p>
-                          Excepteur sint occaecat cupidatat non proide sunt in
-                          culpa qui off deserunt mollit anim id est laborum.
-                          omnis iste natus error sit voluptate audantium, totam
-                          rem aperiam,
+                          Leading firms focus on building advisory relationships
+                          instead of simply delivering one-off services. By
+                          understanding the client’s broader challenges,
+                          providing valuable insights, and maintaining
+                          consistent communication after project delivery,
+                          companies can move from short-term projects to
+                          long-term strategic partnerships.
                         </p>
                       </div>
                       {/* /.inner */}
@@ -124,14 +144,19 @@ export default function Article3() {
               <div className="faq-two__left">
                 <div className="section-title-two text-left">
                   <div className="section-title-two__tagline-box">
-                    <span className="section-title-two__tagline">Faq</span>
+                    <span className="section-title-two__tagline">
+                      Inside The Playbook
+                    </span>
                   </div>
                   <h2 className="section-title-two__title">
-                    Innovat Solutions Digital Mindset
+                    Common Bussiness Growth Questions
                   </h2>
                 </div>
                 <div className="faq-two__img">
-                  <img src="assets/images/resources/faq-two-img-1.png" />
+                  <img src="assets/images/resources/playbook_built.png" />
+                </div>
+                <div className="about-two__btn mt-4">
+                  <Link href="/playbook-built-environment">Discover More</Link>
                 </div>
               </div>
             </div>
