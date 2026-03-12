@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 export default function Article2() {
+  const growthPotential = 90;
+
   return (
     <>
       {/*Team Two Start*/}
@@ -12,25 +14,32 @@ export default function Article2() {
                 <div className="section-title-two text-left">
                   <div className="section-title-two__tagline-box">
                     <span className="section-title-two__tagline">
-                      Our Team Members
+                      Inside The Playbook
                     </span>
                   </div>
                   <h2 className="section-title-two__title">
-                    Our Expert Person To Provide It Solution
+                    How Technical Services Companies Build Predictable Growth
                   </h2>
                 </div>
                 <p className="team-two__text">
-                  Consectetur adipisicing elit, sed do eiusmod tempor <br />
-                  incididunt ut labore et dolore magna aliqua. Ut <br /> enim ad
-                  minim veniam
+                  Many technical services companies start with strong expertise
+                  but struggle to grow their business consistently. Projects
+                  often come from referrals or occasional connections, creating
+                  unpredictable pipelines and long gaps between engagements. The
+                  playbook introduces a structured business development approach
+                  designed specifically for Malaysian technical services firms.
                 </p>
-                <ul className="list-unstyled team-two__points">
+                <ul className="list-unstyled about-two__points">
                   <li>
                     <div className="icon">
                       <span className="icon-check" />
                     </div>
                     <div className="text">
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+                      <p>
+                        Understand the growth formula used by successful
+                        professional services firms: Network × Buyers × Average
+                        Project Value
+                      </p>
                     </div>
                   </li>
                   <li>
@@ -39,8 +48,8 @@ export default function Article2() {
                     </div>
                     <div className="text">
                       <p>
-                        Duis aute irure dolor in reprehenderit in voluptate eu
-                        fugiat nulla
+                        Learn how trust, relationships, and credibility turn
+                        technical expertise into long-term client partnerships
                       </p>
                     </div>
                   </li>
@@ -51,21 +60,27 @@ export default function Article2() {
                   </div>
                   <div className="team-two__content">
                     <h4 className="team-two__content-title">
-                      Creative Solution
+                      Structured Business Development
                     </h4>
                     <p className="team-two__content-text">
-                      Congue lacinia aenean venenatis arcu rutrum <br />
-                      vitae sus pena tibus lectus dapibus integer
+                      The playbook provides a practical framework for building
+                      reputation, expanding the right network, and <br />
+                      converting conversations into long-term business
+                      opportunities.
                     </p>
                   </div>
                 </div>
                 <div className="team-two__progress">
                   <h4 className="team-two__progress-title">
-                    Successfull Project{" "}
+                    Business Growth Potential
                   </h4>
                   <div className="bar">
-                    <div className="bar-inner count-bar" data-percent="90%">
-                      <div className="count-text">90%</div>
+                    <div
+                      className="bar-inner count-bar counted"
+                      data-percent={`${growthPotential}%`}
+                      style={{ width: `${growthPotential}%` }}
+                    >
+                      <div className="count-text">{growthPotential}%</div>
                     </div>
                   </div>
                 </div>
@@ -82,7 +97,7 @@ export default function Article2() {
                     <div className="team-two__single">
                       <div className="team-two__img-box">
                         <div className="team-two__img">
-                          <img src="assets/images/team/team-2-1.jpg"  />
+                          <img src="assets/images/team/team-2-1.jpg" />
                           <div className="team-two__hover-content">
                             <h4 className="team-two__title">
                               <Link href="team-details">Kevin Martin</Link>
@@ -118,7 +133,7 @@ export default function Article2() {
                     <div className="team-two__single">
                       <div className="team-two__img-box">
                         <div className="team-two__img">
-                          <img src="assets/images/team/team-2-2.jpg"  />
+                          <img src="assets/images/team/team-2-2.jpg" />
                           <div className="team-two__hover-content">
                             <h4 className="team-two__title">
                               <Link href="team-details">Martyn D Joseph</Link>
@@ -154,7 +169,7 @@ export default function Article2() {
                     <div className="team-two__single">
                       <div className="team-two__img-box">
                         <div className="team-two__img">
-                          <img src="assets/images/team/team-2-3.jpg"  />
+                          <img src="assets/images/team/team-2-3.jpg" />
                           <div className="team-two__hover-content">
                             <h4 className="team-two__title">
                               <Link href="team-details">Aljary Joseph</Link>
@@ -190,7 +205,7 @@ export default function Article2() {
                     <div className="team-two__single">
                       <div className="team-two__img-box">
                         <div className="team-two__img">
-                          <img src="assets/images/team/team-2-4.jpg"  />
+                          <img src="assets/images/team/team-2-4.jpg" />
                           <div className="team-two__hover-content">
                             <h4 className="team-two__title">
                               <Link href="team-details">Kevin Coper</Link>
@@ -219,6 +234,10 @@ export default function Article2() {
                   </div>
                   {/*Team Two Single End*/}
                 </div>
+              </div>
+
+              <div className="about-two__btn d-flex justify-content-center">
+                <Link href="/playbook">Discover More</Link>
               </div>
             </div>
           </div>
