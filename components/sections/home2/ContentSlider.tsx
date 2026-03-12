@@ -5,7 +5,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Article1 from "@/components/sections/home2/About";
 import Article2 from "@/components/sections/home2/Team";
-import Faq2 from "@/components/sections/home2/Faq";
+import Article3 from "@/components/sections/home2/Faq";
 
 const swiperOptions = {
   modules: [Navigation, Pagination],
@@ -58,7 +58,7 @@ export default function ContentSlider() {
           <Article2 />
         </SwiperSlide>
         <SwiperSlide>
-          <Faq2 />
+          <Article3 />
         </SwiperSlide>
       </Swiper>
 

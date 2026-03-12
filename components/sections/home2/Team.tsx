@@ -237,7 +237,7 @@ export default function Article2() {
               </div>
 
               <div className="about-two__btn d-flex justify-content-center">
-                <Link href="/playbook">Discover More</Link>
+                <Link href="/playbook-technical-services">Discover More</Link>
               </div>
             </div>
           </div>

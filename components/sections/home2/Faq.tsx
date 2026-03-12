@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-export default function Faq() {
+
+export default function Article3() {
   const [isActive, setIsActive] = useState({
     status: false,
     key: 1,
