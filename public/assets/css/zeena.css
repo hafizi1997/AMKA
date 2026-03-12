@@ -6339,7 +6339,8 @@ ul {
   display: block;
 }
 
-.about-two__btn a {
+.about-two__btn a,
+.about-two__btn button {
   position: relative;
   display: inline-block;
   font-size: 14px;
@@ -6355,13 +6356,16 @@ ul {
   transition: all 500ms ease;
   overflow: hidden;
   z-index: 1;
+  border: 0;
 }
 
-.about-two__btn a:hover {
+.about-two__btn a:hover,
+.about-two__btn button:hover {
   color: var(--zeena-white);
 }
 
-.about-two__btn a::before {
+.about-two__btn a::before,
+.about-two__btn button::before {
   transition-duration: 800ms;
   position: absolute;
   width: 200%;
@@ -6375,7 +6379,8 @@ ul {
   z-index: -1;
 }
 
-.about-two__btn a:hover:before {
+.about-two__btn a:hover:before,
+.about-two__btn button:hover:before {
   top: -40%;
 }
 
@@ -16205,14 +16210,14 @@ section.error-page p {
 --------------------------------------------------------------*/
 .playbook-article {
   padding: 80px 0 120px;
-  background-color: #f4f7fb;
+  background-color: var(--zeena-primary);
 }
 
 .playbook-article__card {
   max-width: 980px;
   margin: 0 auto;
-  background-color: #ffffff;
-  border: 1px solid #d9e2ec;
+  background-color: var(--zeena-white);
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.12);
   border-radius: 8px;
   padding: 28px 30px 32px;
 }
@@ -16230,25 +16235,25 @@ section.error-page p {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #e87722;
+  color: var(--zeena-base);
 }
 
 .playbook-article__series {
   font-size: 13px;
-  color: #6b7280;
+  color: var(--zeena-gray);
 }
 
 .playbook-article__title {
   margin-top: 8px;
   font-size: 42px;
   line-height: 1.15;
-  color: #0f4d7f;
+  color: var(--zeena-black);
   font-weight: 700;
 }
 
 .playbook-article__subtitle {
   margin-top: 8px;
-  color: #425466;
+  color: var(--zeena-gray);
   font-size: 16px;
   line-height: 27px;
 }
@@ -16256,9 +16261,9 @@ section.error-page p {
 .playbook-article__actions {
   margin-top: 18px;
   padding: 12px 14px;
-  border: 1px solid #d9e2ec;
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.12);
   border-radius: 6px;
-  background-color: #f8fafc;
+  background-color: rgba(var(--zeena-primary-rgb), 0.6);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16273,22 +16278,13 @@ section.error-page p {
 }
 
 .playbook-article__pager a {
-  color: #1f4a73;
+  color: var(--zeena-black);
   font-size: 14px;
   font-weight: 600;
 }
 
 .playbook-article__pager span {
-  color: #a3afbf;
-}
-
-.playbook-article__jump {
-  background-color: #f59e0b;
-  color: #111827;
-  font-size: 13px;
-  font-weight: 700;
-  padding: 8px 12px;
-  border-radius: 5px;
+  color: rgba(var(--zeena-black-rgb), 0.35);
 }
 
 .playbook-article section {
@@ -16299,26 +16295,26 @@ section.error-page p {
   font-size: 29px;
   line-height: 1.25;
   margin-bottom: 9px;
-  color: #0b2f4a;
+  color: var(--zeena-black);
 }
 
 .playbook-article h3 {
   font-size: 21px;
   line-height: 1.3;
   margin-bottom: 8px;
-  color: #123d63;
+  color: var(--zeena-black);
 }
 
 .playbook-article p {
-  color: #2f4357;
+  color: var(--zeena-gray);
   font-size: 16px;
   line-height: 27px;
 }
 
 .playbook-article__embed {
-  border: 1px solid #d7e2ef;
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.12);
   border-radius: 8px;
-  background-color: #f8fbff;
+  background-color: rgba(var(--zeena-primary-rgb), 0.45);
   padding: 16px;
 }
 
@@ -16349,7 +16345,7 @@ section.error-page p {
 
 .playbook-article__small {
   margin-top: 10px;
-  color: #5b6e80;
+  color: var(--zeena-gray);
   font-size: 14px;
   line-height: 24px;
 }
@@ -16380,7 +16376,7 @@ section.error-page p {
 
 .playbook-article__footer-actions {
   margin-top: 24px;
-  border-top: 1px solid #dde5ee;
+  border-top: 1px solid rgba(var(--zeena-black-rgb), 0.12);
   padding-top: 16px;
   display: flex;
   align-items: center;
@@ -16390,19 +16386,16 @@ section.error-page p {
 }
 
 .playbook-article__footer-actions a {
-  color: #1f4a73;
+  color: var(--zeena-black);
   font-size: 14px;
   font-weight: 600;
 }
 
-.playbook-article__footer-actions button {
-  border: 0;
-  border-radius: 6px;
-  background-color: #0f4d7f;
-  color: #fff;
-  padding: 10px 14px;
-  font-size: 14px;
-  font-weight: 700;
+.playbook-article__actions .about-two__btn a,
+.playbook-article__footer-actions .about-two__btn button,
+.playbook-modal__form .about-two__btn button {
+  padding: 16px 24px;
+  letter-spacing: 0.08em;
 }
 
 .playbook-page .site-footer {
@@ -16432,8 +16425,8 @@ section.error-page p {
 .playbook-modal__panel {
   position: relative;
   width: min(980px, 100%);
-  background: #f3f5f8;
-  border: 1px solid #c8d2df;
+  background: var(--zeena-white);
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.14);
   border-radius: 10px;
   padding: 18px;
 }
@@ -16452,23 +16445,25 @@ section.error-page p {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #0f4d7f;
+  color: var(--zeena-base);
 }
 
 .playbook-modal__close {
   border: 0;
   background: transparent;
-  color: #3f4c5d;
+  color: var(--zeena-gray);
   font-size: 24px;
   line-height: 1;
   padding: 0;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .playbook-modal__text {
   margin-top: 6px;
   margin-bottom: 14px;
   font-size: 14px;
-  color: #5a6b7d;
+  color: var(--zeena-gray);
   line-height: 1.45;
 }
 
@@ -16481,36 +16476,27 @@ section.error-page p {
 .playbook-modal__form input,
 .playbook-modal__form select {
   width: 100%;
-  border: 1px solid #c4cfdd;
-  background: #fff;
+  border: 1px solid rgba(var(--zeena-black-rgb), 0.18);
+  background: var(--zeena-white);
   border-radius: 6px;
   height: 42px;
   padding: 0 12px;
-  color: #26384b;
+  color: var(--zeena-black);
   font-size: 14px;
 }
 
-.playbook-modal__form button {
+.playbook-modal__form .about-two__btn {
   justify-self: start;
-  border: 0;
-  background: #0f4d7f;
-  color: #fff;
-  border-radius: 7px;
-  padding: 11px 16px;
-  font-size: 13px;
-  line-height: 1;
-  font-weight: 700;
-  text-transform: none;
 }
 
-.playbook-modal__form button:disabled {
+.playbook-modal__form .about-two__btn button:disabled {
   opacity: 0.7;
 }
 
 .playbook-modal__message {
   margin-top: 10px;
   margin-bottom: 0;
-  color: #0f4d7f;
+  color: var(--zeena-base);
   font-size: 13px;
   font-weight: 600;
 }

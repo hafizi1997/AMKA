@@ -30,9 +30,9 @@ export default function PlaybookGrowthEnginePage() {
             </p>
 
             <div className="playbook-article__actions justify-content-end">
-              <a href="#formula" className="playbook-article__jump">
-                Jump to Playbook
-              </a>
+              <div className="about-two__btn">
+                <a href="#formula">Jump to Playbook</a>
+              </div>
             </div>
 
             <section>

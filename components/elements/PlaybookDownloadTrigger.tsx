@@ -113,9 +113,11 @@ export default function PlaybookDownloadTrigger() {
 
   return (
     <>
-      <button type="button" onClick={() => setIsOpen(true)}>
-        Download Playbook
-      </button>
+      <div className="about-two__btn">
+        <button type="button" onClick={() => setIsOpen(true)}>
+          Download Playbook
+        </button>
+      </div>
 
       {isOpen ? (
         <div className="playbook-modal" role="dialog" aria-modal="true">
@@ -132,7 +134,7 @@ export default function PlaybookDownloadTrigger() {
                 aria-label="Close"
                 onClick={() => setIsOpen(false)}
               >
-                ×
+                x
               </button>
             </div>
             <p className="playbook-modal__text">
@@ -186,9 +188,11 @@ export default function PlaybookDownloadTrigger() {
                 <option value="HR / L&D">HR / L&D</option>
               </select>
 
-              <button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Unlocking..." : "Unlock playbook downloads"}
-              </button>
+              <div className="about-two__btn">
+                <button type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? "Unlocking..." : "Unlock playbook downloads"}
+                </button>
+              </div>
             </form>
 
             {message ? (
