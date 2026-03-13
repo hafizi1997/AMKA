@@ -108,6 +108,9 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                   </button>
                 </li>
                 <li>
+                  <Link href="/academy">Academy</Link>
+                </li>
+                <li>
                   <Link href="/inside">Inside</Link>
                 </li>
                 {/* <li

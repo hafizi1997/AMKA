@@ -22,6 +22,9 @@ export default function Menu() {
           </ul>
         </li>
         <li>
+          <Link href="/academy">Academy</Link>
+        </li>
+        <li>
           <Link href="/inside">Inside</Link>
         </li>
         <li>

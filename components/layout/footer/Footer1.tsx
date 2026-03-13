@@ -69,6 +69,9 @@ export default function Footer1() {
                       <Link href="/blog">Blog Posts</Link>
                     </li>
                     <li>
+                      <Link href="/academy">Academy</Link>
+                    </li>
+                    <li>
                       <Link href="/inside">Inside Library</Link>
                     </li>
                     <li>
@@ -106,6 +109,9 @@ export default function Footer1() {
                     </li>
                     <li>
                       <Link href="/inside">Inside</Link>
+                    </li>
+                    <li>
+                      <Link href="/academy">Academy</Link>
                     </li>
                   </ul>
                 </div>
