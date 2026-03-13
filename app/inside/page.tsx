@@ -9,7 +9,7 @@ export default function InsidePage() {
       wrapperCls="playbook-page"
       breadcrumbTitle="Playbook Library"
       description="Browse all AMKA playbook articles and download the matching industry guides."
-      backgroundImage="/assets/images/backgrounds/service-bg2.png"
+      backgroundImage="/assets/images/backgrounds/inside-page-bg.svg"
     >
       <PlaybookInsideView />
     </Layout>
