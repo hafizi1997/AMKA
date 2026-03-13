@@ -97,7 +97,10 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     }}
                   >
                     <li>
-                      <Link href="services">Services</Link>
+                      <Link href="services">Software</Link>
+                    </li>
+                    <li>
+                      <Link href="/academy">Academy</Link>
                     </li>
                   </ul>
                   <button
@@ -106,9 +109,6 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                   >
                     <span className="fa fa-angle-right" />
                   </button>
-                </li>
-                <li>
-                  <Link href="/academy">Academy</Link>
                 </li>
                 <li>
                   <Link href="/inside">Inside</Link>

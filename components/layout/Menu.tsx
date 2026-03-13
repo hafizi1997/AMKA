@@ -17,12 +17,12 @@ export default function Menu() {
           <Link href="#">Services</Link>
           <ul className="sub-menu">
             <li>
-              <Link href="services">Services</Link>
+              <Link href="services">Software</Link>
+            </li>
+            <li>
+              <Link href="/academy">Academy</Link>
             </li>
           </ul>
-        </li>
-        <li>
-          <Link href="/academy">Academy</Link>
         </li>
         <li>
           <Link href="/inside">Inside</Link>
