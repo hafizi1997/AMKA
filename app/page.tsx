@@ -15,6 +15,14 @@ import Pricing from "@/components/sections/home1/Pricing";
 import Video from "@/components/sections/home1/Video";
 import Newsletter from "@/components/sections/home1/Newsletter";
 import ContentSlider from "@/components/sections/home2/ContentSlider";
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  title: "AMKA Company | Digital Solutions for Malaysian Businesses",
+  description:
+    "AMKA Digital Solutions Sdn Bhd builds practical digital systems, custom software, and automation workflows that help Malaysian businesses scale with confidence.",
+  path: "/",
+});
 
 export default function Home() {
   return (

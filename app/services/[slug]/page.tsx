@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Layout from "@/components/layout/Layout";
 import {
   serviceCategories,
   servicesBySlug,
   type ServiceCategory,
 } from "../_data";
+import { buildPageMetadata } from "@/lib/seo";
 
 type PageProps = {
   params: { slug: string };
@@ -13,6 +15,25 @@ type PageProps = {
 
 export function generateStaticParams() {
   return serviceCategories.map((service) => ({ slug: service.slug }));
+}
+
+export function generateMetadata({ params }: PageProps): Metadata {
+  const service = servicesBySlug[params.slug as ServiceCategory["slug"]];
+
+  if (!service) {
+    return buildPageMetadata({
+      title: "Service Not Found",
+      description:
+        "The requested AMKA service page is not available. Explore our digital solution services instead.",
+      path: "/services",
+    });
+  }
+
+  return buildPageMetadata({
+    title: `${service.title} | AMKA Services`,
+    description: `${service.shortDescription} ${service.businessImpact}`,
+    path: `/services/${service.slug}`,
+  });
 }
 
 const industryUseCases: Partial<Record<ServiceCategory["slug"], string[]>> = {
